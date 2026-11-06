@@ -1,0 +1,38 @@
+/* Shared, locally served styles for the public service and partner information. */
+.seo-hero{padding:34px 0 32px;border-bottom:1px solid var(--line)}
+.seo-eyebrow{font:500 11px/1.6 var(--mono);letter-spacing:1.8px;color:var(--gold);margin-bottom:18px}
+.seo-hero h1{max-width:18em;font:700 clamp(30px,3.7vw,47px)/1.35 var(--sans);letter-spacing:-1.4px;margin-bottom:22px}
+.seo-lead{font-size:17px;line-height:1.95;max-width:47em}
+.seo-updated{font-size:12px;color:var(--muted);margin-top:18px}
+.seo-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.seo-actions a{display:inline-block;padding:10px 17px;border:1px solid var(--line);border-radius:7px;text-decoration:none;background:var(--surface);font-size:13px}
+.seo-actions a:first-child{background:var(--dark);border-color:var(--dark);color:var(--surface)}
+.seo-section{padding-top:38px;scroll-margin-top:32px}
+.seo-section>h2{font-size:24px;line-height:1.5;margin-bottom:18px;letter-spacing:-.6px}
+.seo-section>p+p{margin-top:14px}
+.seo-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.seo-card{padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.seo-card h3{font-size:17px;line-height:1.6;margin-bottom:12px}
+.seo-card p{font-size:13px;color:#555f52;line-height:1.95}
+.seo-card .seo-step{font:500 12px/1.5 var(--mono);color:var(--gold);margin-bottom:12px}
+.seo-callout,.seo-facts{padding:25px 28px;background:var(--gold-soft);border:1px solid #ded3bc;border-radius:10px;margin-top:28px}
+.seo-callout h2,.seo-facts h2{font-size:21px;margin-bottom:13px}
+.seo-callout p,.seo-facts p{font-size:13px;line-height:1.95}
+.seo-callout p+p,.seo-facts p+p{margin-top:12px}
+.seo-facts nav{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:16px;font-size:13px}
+.seo-table{width:100%;border-collapse:collapse;background:var(--surface);font-size:13px}
+.seo-table th,.seo-table td{padding:15px 18px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.seo-table th{font-weight:650;background:#eee9dc}
+.seo-table-caption{font-size:12px;color:var(--muted);margin-top:12px}
+.seo-faq{padding:26px 0;border-bottom:1px solid var(--line);scroll-margin-top:32px}
+.seo-faq h2,.seo-faq h3{font-size:20px;line-height:1.65;margin-bottom:12px;letter-spacing:-.3px}
+.seo-faq p{max-width:49em;line-height:1.95}
+.seo-source{font-size:12px;color:var(--muted);margin-top:10px}
+.seo-resource-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0}
+.seo-resource-list a{display:block;height:100%;padding:17px 20px;border:1px solid var(--line);border-radius:8px;text-decoration:none;background:var(--surface)}
+.seo-resource-list b{display:block;font-size:14px;margin-bottom:3px}
+.seo-resource-list span{font-size:12px;color:var(--muted)}
+.seo-footer{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
+@media(max-width:1120px){.seo-section,.seo-faq{scroll-margin-top:130px}}
+@media(max-width:700px){.seo-hero{padding:15px 0 26px}.seo-hero h1{letter-spacing:-.8px}.seo-lead{font-size:15px}.seo-cards,.seo-resource-list{grid-template-columns:1fr}.seo-card{padding:21px}.seo-section{padding-top:30px}.seo-section>h2{font-size:21px}.seo-callout,.seo-facts{padding:22px}.seo-table th,.seo-table td{padding:12px 11px}.seo-faq h2,.seo-faq h3{font-size:18px}.seo-faq{padding:22px 0}}
+@media print{.seo-actions{display:none}.seo-card,.seo-callout,.seo-facts{break-inside:avoid;background:white}.seo-faq{break-inside:avoid}}
