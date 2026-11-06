@@ -36,7 +36,7 @@
   <header class="hero" id="overview" data-chapter>
     <div class="hero-kicker"><span class="status-dot" aria-hidden="true"></span>30 天 · 渠道伙伴增长计划</div>
     <h1>wodeMac <span>营销方案</span></h1>
-    <p class="meta">30 天版 · 价格和提成规则核对于 2026-11-06，来自 wodemac.com 线上数据</p>
+    <p class="meta">30 天版 · Mac 租赁基准价与推广佣金来自 wodemac.com，年付批量折扣按最新方案更新</p>
     <p class="lead" id="plan-lead"></p>
     <div class="presets target"><span class="target-label">30 天目标</span><button type="button" class="btn" data-target="10">10 台</button><button type="button" class="btn" data-target="20">20 台</button><button type="button" class="btn" data-target="50">50 台</button><button type="button" class="btn" data-target="100">100 台</button><button type="button" class="btn" data-target="200">200 台</button><button type="button" class="btn" data-target="500">500 台</button><label class="target-custom">自己填<input class="mini" id="plan-target" type="number" min="1" max="10000" step="1" inputmode="numeric"></label><button type="button" class="btn" id="plan-reset">按目标重新分配</button></div>
     <div class="goal">
@@ -112,7 +112,7 @@
         <div><h4>开场怎么说</h4><p>“你们团队现在最想交给 AI 的，是产品开发、资料整理，还是出海销售和运营？我们提供美国加州的独享 Mac mini 远程环境，帮团队安全、稳定地用好 Claude Code。先用一个真实任务验证效果，再讨论怎么接进现有流程、如何分工，以及需要配几台。”</p></div>
         <div><h4>从哪里找</h4><ul><li>大V和训练营的企业学员、企业内训客户</li><li>账号与充值服务商已有的企业付费客户</li><li>出海服务商、跨境电商社群和海外团队</li><li>有重复任务、明确负责人和采购决策人的中小企业</li></ul></div>
         <div><h4>先问什么</h4><ul><li>哪项工作每周反复做，目前由谁做、怎么交付？</li><li>能否提供一份真实样本，什么结果才算可用？</li><li>多少人使用，涉及哪些资料和访问权限，谁决定预算，准备什么时候开始？</li></ul></div>
-        <div><h4>价值和报价怎么说</h4><p>“我们先用真实任务验证 Claude Code 能否融入现有工作，确认操作流程、交付结果和团队使用方式。Mac 租赁月付 $169，年付 $1,723.80，折合每月 $143.65；年付一单 5 台及以上，第一年再减 2.5%。账号、订阅或额外服务按实际需求另行确认。”</p></div>
+        <div><h4>价值和报价怎么说</h4><p>“我们先用真实任务验证 Claude Code 能否融入现有工作，确认操作流程、交付结果和团队使用方式。Mac 租赁月付 $169，单台年付基准价 $1,723.80，折合每月 $143.65。年付按同一账户同时在租台数享批量折扣：4–10 台 95 折、11–25 台 93 折、26–50 台 9 折、51–100 台 85 折；100 台以上单独报价。账号、订阅或额外服务按实际需求另行确认。”</p></div>
         <div><h4>下一步怎么推进</h4><p>拿到样本和负责人，完成一次演示；再列清使用人数、机器台数、付款周期和交付内容，形成团队报价。先让首个任务交付可用结果，再讨论扩大配置。</p></div>
       </div>
     </article>
@@ -156,8 +156,29 @@
     <ul class="note">
       <li>提成只计客户首单，续费、注册、未付款和退款订单不计，只有一级。周付已停售，网站上也没有限时折扣了。</li>
       <li id="p-range"></li>
-      <li>年付一单 5 台及以上，第一年再减 2.5%，续费恢复年付价。提成按实付算。</li>
+      <li>批量折扣仅限年付，按同一账户同时在租台数确定档位。推广伙伴首单提成按实际付款金额计算。</li>
     </ul>
+    <h3 class="sub" id="annual-bulk">年付批量折扣</h3>
+    <p class="note">以单台年付 $1,723.80 为基准，按整档折扣测算。以下金额按折后单台年费保留两位小数估算；最终以确认报价为准。表内首单佣金适用于推广伙伴。</p>
+    <div class="table">
+      <table class="prices bulk-prices">
+        <thead><tr><th>同一账户同时在租台数</th><th>年付折扣</th><th>每台年付</th><th>折合每月 / 台</th><th>首单佣金 / 台</th></tr></thead>
+        <tbody>
+          <tr><th>1–3 台</th><td class="num">无折扣</td><td class="num">$1,723.80</td><td class="num">$143.65</td><td class="num">$258.57</td></tr>
+          <tr><th>4–10 台</th><td class="num">95 折</td><td class="num">$1,637.61</td><td class="num">$136.47</td><td class="num">$245.64</td></tr>
+          <tr><th>11–25 台</th><td class="num">93 折</td><td class="num">$1,603.13</td><td class="num">$133.59</td><td class="num">$240.47</td></tr>
+          <tr><th>26–50 台</th><td class="num">9 折</td><td class="num">$1,551.42</td><td class="num">$129.29</td><td class="num">$232.71</td></tr>
+          <tr><th>51–100 台</th><td class="num">85 折</td><td class="num">$1,465.23</td><td class="num">$122.10</td><td class="num">$219.78</td></tr>
+          <tr><th>100 台以上</th><td>单独报价</td><td>不低于 $1,379.04</td><td>按确认报价折算</td><td>实付 × 15%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">100 台以上联系销售单独报价，折扣不低于 8 折。$1,379.04 / 台 / 年是按 8 折计算的报价下限。</p>
+    <div class="bulk-calculator" aria-labelledby="bulk-calculator-title">
+      <div class="bulk-calculator-heading"><h3 id="bulk-calculator-title">年付批量测算</h3><label for="bulk-quantity">同一账户同时在租<input id="bulk-quantity" class="bulk-quantity" type="number" min="1" max="10000" step="1" inputmode="numeric" value="10">台</label></div>
+      <p id="bulk-result" aria-live="polite"></p>
+      <a href="#contact">联系 Elian 确认配置与报价 ↗</a>
+    </div>
   </section>
 
   <section class="plan-section" id="commission" data-chapter>
@@ -173,7 +194,7 @@
   <section class="plan-section" id="quote" data-chapter>
     <h2><span class="section-no" aria-hidden="true">06</span>统一话术</h2>
     <p class="quote-principle">搞，就搞最好的！用先进的生产力工具，省下宝贵的时间，去创造更大的价值。</p>
-    <p class="lead">美国独享 Mac mini 远程环境，帮你安全、稳定地用好 Claude Code。Mac 租赁年付 $1,723.80，折合每月 $143.65；团队年付一单 5 台及以上，第一年再减 2.5%。</p>
+    <p class="lead">美国独享 Mac mini 远程环境，帮你安全、稳定地用好 Claude Code。单台年付基准价 $1,723.80，折合每月 $143.65。年付按同一账户同时在租台数分档：4–10 台 95 折、11–25 台 93 折、26–50 台 9 折、51–100 台 85 折，100 台以上联系销售单独报价。</p>
     <p class="note">内容、伙伴说明和报价卡统一使用；账号、订阅及一站式配套服务另行报价。</p>
   </section>
 
@@ -268,6 +289,22 @@
   let plan=derivePlan(10),planShared=null,planLocal=false,planRef=null,planTimer=null,planWriting=false,planDirty=false,planStatus='';
   try{const saved=JSON.parse(localStorage.getItem('wodemac-plan-local-v2')||'null');if(saved){plan=cleanPlan(saved);planLocal=true;}}catch{}
   const setText=(id,text)=>{const el=$(id);if(el)el.textContent=text;};
+  function renderBulk(){
+    const input=$('bulk-quantity');
+    if(input.value===''){setText('bulk-result','请输入同一账户同时在租台数。');return;}
+    const count=planInt(input.value,1,10000,10);
+    const rate=count<=3?100:count<=10?95:count<=25?93:count<=50?90:count<=100?85:80;
+    const unitCents=Math.round(172380*rate/100),totalCents=unitCents*count;
+    if(count>100){
+      setText('bulk-result',count+' 台需单独报价。按 8 折报价下限测算，每台年付不低于 '+money(unitCents/100,2)+'，年付总额不低于 '+money(totalCents/100,2)+'。首单推广佣金按最终实际付款金额的 15% 计算。');
+    }else{
+      const discount=rate===100?'无折扣':rate===95?'95 折':rate===93?'93 折':rate===90?'9 折':'85 折';
+      setText('bulk-result',count+' 台 · '+discount+'：每台年付 '+money(unitCents/100,2)+'，合计 '+money(totalCents/100,2)+'；首单推广佣金按实付 15% 估算，合计 '+money(Math.round(totalCents*15/100)/100,2)+'。');
+    }
+  }
+  $('bulk-quantity').addEventListener('input',renderBulk);
+  $('bulk-quantity').addEventListener('change',()=>{if($('bulk-quantity').value!=='')$('bulk-quantity').value=planInt($('bulk-quantity').value,1,10000,10);renderBulk();});
+  renderBulk();
   function renderPlan(){
     const T=plan.target,s=T/10,sumU=PLAN_CH.reduce((a,[k])=>a+plan.units[k],0),sumL=PLAN_CH.reduce((a,[k])=>a+plan.leads[k],0),sumW=plan.weeks.reduce((a,b)=>a+b,0);
     const pc=Math.max(3,Math.round(3*s)),talks=Math.max(1,Math.round(6*s)),verify=Math.max(1,Math.round(2*s)),recruits=Math.max(1,Math.round(30*s)),byPartner=Math.round(10*s),active=Math.round(10*s),firstRecruits=Math.max(1,Math.round(10*s)),cases=T<=10?2:T<=20?3:5,sessions=T<=20?2:4,ent=plan.units.enterprise>0?Math.max(1,Math.ceil(plan.units.enterprise/2)):0,people=Math.max(0,sumU-plan.units.enterprise),customers=people+ent,extra=Math.max(0,T-10),calls=Math.max(10,Math.round(T/2)+5),totalCalls=calls*22,listSize=Math.max(100,Math.round(100*s));
@@ -276,7 +313,7 @@
     setText('plan-lead','30 天卖出 '+T+' 台。Elian的时间主要用来通过电话、微信、私信招募渠道伙伴：AI 培训大V、ChatGPT / Claude 账号与充值服务商、VPN 服务商及出海服务商。优先找已有付费客户的伙伴，由他们介绍有 Mac 租赁或一站式服务需求的客户。');
     $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 位潜在渠道伙伴，覆盖 AI 培训、ChatGPT / Claude 账号与充值、VPN 及出海服务。30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';$('g-units').innerHTML=T+' <small>台</small>';$('g-leads').innerHTML=sumL+' <small>条</small>';
     setText('plan-status',planLocal?'修改只保存在这台设备上，不会改动共享数字。':planRef?(planStatus||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。');
-    setText('p-range',T+' 台首期收款按原价算，全月付 '+money(T*169)+'，全年付 '+money(T*1723.8,2)+'。年付回款快，所以主推年付。');
+    setText('p-range',T+' 台销售目标按不同客户单台原价估算，全月付 '+money(T*169)+'，全年付 '+money(T*1723.8,2)+'。批量折扣按各客户账户分别核算。');
     $('p-recruit').innerHTML='<b>招募目标：</b>签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';
     setText('t-content','每周整理 '+cases+' 个真实案例，给伙伴转发和讲课用。不单独算台数，不投流。');
     setText('t-enterprise','从大V的企业学员、账号与充值服务商的企业付费客户、出海服务商中找，武汉、北京、上海、广州、深圳各联系 '+pc+' 家服务商。按团队配置，约 '+ent+' 家企业、'+plan.units.enterprise+' 台。');

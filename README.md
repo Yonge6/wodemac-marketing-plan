@@ -32,6 +32,10 @@
 - 与宣传素材共用 `materials.js`；支持 `#training`、`#business`、`#parents` 和 `#service` 分类直达。
 - 客户案例：https://wodemac.vilesaint.com/cases.html
 
+## 年付批量折扣
+
+年付批量折扣采用最新提供的阶梯：同一账户同时在租 1–3 台原价、4–10 台 95 折、11–25 台 93 折、26–50 台 9 折、51–100 台 85 折；100 台以上单独报价，下限 8 折。以 $1,723.80 为单台年付基准，先将折后单台年费保留两位，再计算测算总额。销售目标与同一账户台数分别计算。
+
 ## 微信联系
 
 营销方案底部 `#contact` 展示 Elian 微信二维码，原图来自官网 `https://wodemac.com/assets/wechat-qr.jpg`，保存在 `assets/contact/elian-wechat-qr.jpg`。页面支持查看与保存原图；如二维码更新，请同步替换此文件。
