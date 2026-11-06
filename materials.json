@@ -7,7 +7,7 @@
   "groups": [
     {
       "id": "training",
-      "name": "AI 培训伙伴"
+      "name": "渠道伙伴"
     },
     {
       "id": "business",
@@ -35,7 +35,7 @@
       "id": "training-2",
       "group": "training",
       "title": "推广伙伴合作说明",
-      "description": "用于介绍专属链接与首单佣金。",
+      "description": "面向 AI 培训、账号与充值、VPN 及出海服务伙伴，介绍专属链接与首单佣金。",
       "image": null,
       "download": null
     },
