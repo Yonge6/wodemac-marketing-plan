@@ -14,27 +14,31 @@
 
 - `index.html`：营销方案、章节导航及 10 / 20 / 50 / 100 / 200 / 500 台目标切换。
 - `styles.css`：方案与素材中心共享样式，包含手机排版及打印样式。
-- `materials.html`：宣传素材中心，按四类客户筛选。
-- `materials.json`：素材清单。已上架一张学生家长参考截图，可下载原图；其余素材仍为占位。
+- `materials.html`：宣传素材中心，按六个主题分类筛选。
+- `materials.json`：素材清单。已上架 16 张完整场景海报，另保留一张学生家长参考截图，共 17 项。
 - `materials.js`：分类筛选及图片、下载状态展示。
 
-后续上传海报到仓库（建议放入 `assets/materials/`），将清单对应条目的 `image` 改为图片相对路径即可上架。`download` 可选，留空时下载原图。建议海报比例为 iPhone 竖版 1170 × 2532；所有占位图和预览均使用相同比例。
+后续上传海报到仓库（建议放入 `assets/materials/`），将清单对应条目的 `image` 改为图片相对路径即可上架。`download` 可选，留空时下载原图。建议海报比例为 iPhone 竖版 1170 × 2532；网页按此比例展示，下载保留生成原图的原生像素。
 
 ## 访问地址
 
-- 正式地址：https://wodemac.vilesaint.com/
-- 宣传素材：https://wodemac.vilesaint.com/materials.html
+- 正式地址：http://wodemac.vilesaint.com/
+- 宣传素材：http://wodemac.vilesaint.com/materials.html
 
 ## 海报样稿预览
 
-`materials-preview.html` 展示四款待确认的独立海报，从宣传素材页进入。原图位于 `assets/materials/samples-20261106-final/`，WebP 用于网页预览，PNG 用于原图查看和下载。原图通过 ego 浏览器内 ChatGPT 生成，已直接包含官网 Logo 参考、文案、场景和小网址；本轮未后期拼接 Logo，也未制作拼版总览。正式素材清单等待确认后再更新。
+`materials-preview.html` 保留首批四款海报及创意思路。完整素材库按品牌理念（1）、学生家长（3）、个人用户（3）、出海企业（3）、渠道伙伴（3）、一站式服务（3）分类，另附一张家长参考截图。
+
+原图位于 `assets/materials/samples-20261106-final/`（首批四张）和 `assets/materials/campaign-20261106/`（后续十二张），WebP 用于网页预览，PNG 用于原图查看和下载。海报通过 ego 浏览器内 ChatGPT 生成，直接包含官网 Logo 参考、文案、场景和小网址；没有后期拼接 Logo，也没有拼版。每张只讲一个重点，不含预约演示、价格和佣金。
+
+正式域名当前使用 HTTP；HTTPS 证书尚未完成配置。
 
 ## 客户案例
 
 - `cases.html` / `cases.json`：按四类客户筛选，当前每类两个照片占位，尚无真实案例。
 - 将客户照片放入 `assets/cases/`，填写对应条目的 `image`、`title` 和 `description` 即可上架；`download` 留空时下载原图。
 - 与宣传素材共用 `materials.js`；支持 `#training`、`#business`、`#parents` 和 `#service` 分类直达。
-- 客户案例：https://wodemac.vilesaint.com/cases.html
+- 客户案例：http://wodemac.vilesaint.com/cases.html
 
 ## 年付批量折扣
 

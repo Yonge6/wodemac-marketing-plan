@@ -23,7 +23,7 @@
         const poster=create(item.image?'a':'div','poster-preview '+item.group);
         poster.style.aspectRatio=catalog.format.width+'/'+catalog.format.height;
         if(item.image){
-          poster.href=item.image;poster.target='_blank';poster.rel='noopener';poster.setAttribute('aria-label','查看原图：'+item.title);
+          poster.href=item.download||item.image;poster.target='_blank';poster.rel='noopener';poster.setAttribute('aria-label','查看原图：'+item.title);
           const img=create('img');img.src=item.image;img.alt=item.title;img.loading='lazy';img.width=catalog.format.width;img.height=catalog.format.height;poster.append(img);
         }else{
           poster.setAttribute('role','img');poster.setAttribute('aria-label',item.title+(isCases?'，客户案例照片待补充':'，iPhone 竖版图片待上架'));

@@ -6,54 +6,158 @@
   },
   "groups": [
     {
-      "id": "training",
-      "name": "渠道伙伴"
-    },
-    {
-      "id": "business",
-      "name": "出海企业"
+      "id": "brand",
+      "name": "品牌理念"
     },
     {
       "id": "parents",
       "name": "学生家长"
     },
     {
+      "id": "personal",
+      "name": "个人用户"
+    },
+    {
+      "id": "business",
+      "name": "出海企业"
+    },
+    {
+      "id": "training",
+      "name": "渠道伙伴"
+    },
+    {
       "id": "service",
-      "name": "一站式客户"
+      "name": "一站式服务"
     }
   ],
   "items": [
     {
-      "id": "training-1",
-      "group": "training",
-      "title": "用好 Claude Code，从真实任务开始",
-      "description": "用于课程、训练营和学员社群，介绍环境配置、任务演示与工作流落地。",
-      "image": null,
-      "download": null
+      "id": "manifesto",
+      "group": "brand",
+      "title": "搞，就搞最好的！",
+      "description": "用最先进的工具，把工具的能力变成自己的生产力。",
+      "image": "assets/materials/samples-20261106-final/manifesto.webp",
+      "download": "assets/materials/samples-20261106-final/manifesto.png"
     },
     {
-      "id": "training-2",
-      "group": "training",
-      "title": "推广伙伴合作说明",
-      "description": "面向 AI 培训、账号与充值、VPN 及出海服务伙伴，介绍专属链接与首单佣金。",
-      "image": null,
-      "download": null
+      "id": "parents-runway",
+      "group": "parents",
+      "title": "孩子的 AI 起跑线",
+      "description": "从第一次动手创造开始，让先进工具成为孩子探索的起点。",
+      "image": "assets/materials/samples-20261106-final/parents-runway.webp",
+      "download": "assets/materials/samples-20261106-final/parents-runway.png"
     },
     {
-      "id": "business-3",
+      "id": "parents-ideas",
+      "group": "parents",
+      "title": "让想法长出作品",
+      "description": "用加州独享 Mac 上的 Claude Code，开始动手创造。",
+      "image": "assets/materials/campaign-20261106/parents-ideas.webp",
+      "download": "assets/materials/campaign-20261106/parents-ideas.png"
+    },
+    {
+      "id": "parents-questions",
+      "group": "parents",
+      "title": "让好奇心走得更远",
+      "description": "用 Claude Code，把一个问题变成一次动手探索。",
+      "image": "assets/materials/campaign-20261106/parents-questions.webp",
+      "download": "assets/materials/campaign-20261106/parents-questions.png"
+    },
+    {
+      "id": "environment",
+      "group": "personal",
+      "title": "别把创造力耗在运行环境上",
+      "description": "美国加州独享 Mac，让精力回到 Claude Code 与真正的创造。",
+      "image": "assets/materials/samples-20261106-final/environment.webp",
+      "download": "assets/materials/samples-20261106-final/environment.png"
+    },
+    {
+      "id": "time-life",
+      "group": "personal",
+      "title": "省下的不只是时间，更是生命",
+      "description": "把省下来的时间，留给生活和更有价值的创造。",
+      "image": "assets/materials/samples-20261106-final/time-life.webp",
+      "download": "assets/materials/samples-20261106-final/time-life.png"
+    },
+    {
+      "id": "personal-network",
+      "group": "personal",
+      "title": "换个网络，工作不必重来",
+      "description": "任务在美国加州的独享 Mac 上运行。",
+      "image": "assets/materials/campaign-20261106/personal-network.webp",
+      "download": "assets/materials/campaign-20261106/personal-network.png"
+    },
+    {
+      "id": "business-after-hours",
       "group": "business",
-      "title": "出海团队的独享 Mac",
-      "description": "用于企业客户与出海服务商沟通。",
-      "image": null,
-      "download": null
+      "title": "团队下班，远端继续运行",
+      "description": "Claude Code 在美国加州的独享 Mac 上运行。",
+      "image": "assets/materials/campaign-20261106/business-after-hours.webp",
+      "download": "assets/materials/campaign-20261106/business-after-hours.png"
     },
     {
-      "id": "business-4",
+      "id": "business-ideas",
       "group": "business",
-      "title": "让 Claude Code 融入团队工作流",
-      "description": "用于开发、资料整理、销售和运营场景介绍，先验证任务，再扩大配置。",
-      "image": null,
-      "download": null
+      "title": "别让好想法停在文档里",
+      "description": "用加州独享 Mac 上的 Claude Code，把想法往前推进。",
+      "image": "assets/materials/campaign-20261106/business-ideas.webp",
+      "download": "assets/materials/campaign-20261106/business-ideas.png"
+    },
+    {
+      "id": "business-focus",
+      "group": "business",
+      "title": "团队的时间用来做产品",
+      "description": "加州独享 Mac 由我们托管，团队专注 Claude Code 工作流。",
+      "image": "assets/materials/campaign-20261106/business-focus.webp",
+      "download": "assets/materials/campaign-20261106/business-focus.png"
+    },
+    {
+      "id": "partner-paid-clients",
+      "group": "training",
+      "title": "把客户的工具用起来",
+      "description": "用加州独享 Mac，承接 Claude Code 的真实工作。",
+      "image": "assets/materials/campaign-20261106/partner-paid-clients.webp",
+      "download": "assets/materials/campaign-20261106/partner-paid-clients.png"
+    },
+    {
+      "id": "partner-training",
+      "group": "training",
+      "title": "把方法变成真实作品",
+      "description": "加州独享 Mac，让 Claude Code 实践有处落地。",
+      "image": "assets/materials/campaign-20261106/partner-training.webp",
+      "download": "assets/materials/campaign-20261106/partner-training.png"
+    },
+    {
+      "id": "partner-subscriptions",
+      "group": "training",
+      "title": "服务延伸到生产力",
+      "description": "把加州独享 Mac，带给需要用好 Claude Code 的客户。",
+      "image": "assets/materials/campaign-20261106/partner-subscriptions.webp",
+      "download": "assets/materials/campaign-20261106/partner-subscriptions.png"
+    },
+    {
+      "id": "service-no-fuss",
+      "group": "service",
+      "title": "想用好工具，不想折腾",
+      "description": "账号订阅由伙伴衔接，加州 Mac 环境由我们配置。",
+      "image": "assets/materials/campaign-20261106/service-no-fuss.webp",
+      "download": "assets/materials/campaign-20261106/service-no-fuss.png"
+    },
+    {
+      "id": "service-managed",
+      "group": "service",
+      "title": "机器在加州，运维有我们",
+      "description": "电源、网络和硬件，由我们负责。",
+      "image": "assets/materials/campaign-20261106/service-managed.webp",
+      "download": "assets/materials/campaign-20261106/service-managed.png"
+    },
+    {
+      "id": "service-data",
+      "group": "service",
+      "title": "认真对待你的创造",
+      "description": "wodeMac 不把你的数据用于训练、出售或广告。",
+      "image": "assets/materials/campaign-20261106/service-data.webp",
+      "download": "assets/materials/campaign-20261106/service-data.png"
     },
     {
       "id": "parents-ai-learning-reference",
@@ -62,38 +166,6 @@
       "description": "用户提供的参考截图，涉及 Codex、Claude Code 辅助学习的讨论，供伙伴了解家长关注点。",
       "image": "assets/materials/parents-ai-learning-reference.jpg",
       "download": "assets/materials/parents-ai-learning-reference.jpg"
-    },
-    {
-      "id": "parents-5",
-      "group": "parents",
-      "title": "孩子的 AI 起跑线，从第一次动手开始",
-      "description": "面向学生家长，介绍先进工具、项目实践与家长参与方式，引导预约项目演示。",
-      "image": null,
-      "download": null
-    },
-    {
-      "id": "parents-6",
-      "group": "parents",
-      "title": "账号、订阅与美国 Mac mini",
-      "description": "用于介绍组合服务，价格待成本核清后确定。",
-      "image": null,
-      "download": null
-    },
-    {
-      "id": "service-7",
-      "group": "service",
-      "title": "从账号到机器，一次配置",
-      "description": "用于介绍账号、订阅支付与远程环境的服务分工。",
-      "image": null,
-      "download": null
-    },
-    {
-      "id": "service-8",
-      "group": "service",
-      "title": "让 Claude Code 的生产力落到日常",
-      "description": "用于介绍独享远程环境、首次任务演示与后续工作流交付。",
-      "image": null,
-      "download": null
     }
   ]
 }
