@@ -151,12 +151,7 @@ main.wide { max-width: 1160px; gap: 28px; }
 }
 </style>
 
-<nav class="tabs" role="tablist" aria-label="页面">
-  <button id="tab-plan" role="tab" aria-selected="true" aria-controls="plan" data-page="plan">营销方案</button>
-  <button id="tab-finance" role="tab" aria-selected="false" aria-controls="finance" data-page="finance">算账</button>
-</nav>
-
-<main id="plan" role="tabpanel" aria-labelledby="tab-plan">
+<main id="plan">
   <header>
     <h1>wodeMac 营销方案</h1>
     <p class="meta">30 天版 · 价格和提成规则核对于 2026-11-05，来自 wodemac.com 线上数据</p>
@@ -169,7 +164,6 @@ main.wide { max-width: 1160px; gap: 28px; }
       <div><b id="g-leads"></b><span>需要的去重线索</span></div>
     </div>
     <p class="meta">这些都是待验证的目标，不代表已有订单。推广不花现金，提成在客户付款后才产生，人工时间另算。</p>
-    <div class="alert" id="plan-devices" hidden></div>
   </header>
 
   <section>
@@ -330,19 +324,6 @@ main.wide { max-width: 1160px; gap: 28px; }
   <p class="meta">2026-11-05 改成以经销商伙伴为主的打法，由 2026-11-01 版完整方案简化而来。渠道的台数分配是本版建议。价格以结算页为准。</p>
 </main>
 
-<main id="finance" class="wide" role="tabpanel" aria-labelledby="tab-finance" hidden>
-  <header>
-    <h1>算账</h1>
-    <p class="lead" id="bottomline"></p>
-    <p class="meta" id="save-status" aria-live="polite"></p>
-  </header>
-  <div class="mobile-summary" id="mobile-summary"></div>
-  <div class="layout">
-    <form class="inputs" id="inputs" autocomplete="off"></form>
-    <div class="results" id="results"></div>
-  </div>
-</main>
-
 <script>
 /*ENGINE-START*/
 const FinanceModel=(()=>{
@@ -394,41 +375,7 @@ const FinanceModel=(()=>{
 (function(){
   const M=FinanceModel,$=id=>document.getElementById(id);
   const money=(n,d=0)=>Number.isFinite(n)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:d,minimumFractionDigits:d}).format(n):'—';
-  const sign=(n,d=0)=>`<span class="${n>=0?'good':'bad'}">${money(n,d)}</span>`;
-  const GROUPS=[
-    ['规模',[['blocked','预留 / 演示 / 维修台数'],['occupancy','付费占用率 %']]],
-    ['价格（默认是线上最新价）',[['monthly','月付 $/月'],['quarterly','季付 折合 $/月'],['half','半年付 折合 $/月'],['annual','年付 折合 $/月']]],
-    ['客户选哪档（%，其余算月付）',[['quarterlyShare','季付占比'],['halfShare','半年付占比'],['annualShare','年付占比']]],
-    ['首单折扣（网站现在没有）',[['offerUnits','打折台数'],['offerOff','折扣 %']]],
-    ['伙伴提成（只计首单）',[['commissionedShare','走伙伴的订单 %'],['cMonth','月付提成 %'],['cQuarter','季付提成 %'],['cHalf','半年付提成 %'],['cAnnual','年付提成 %']]],
-    ['采购和初始投入',[['purchase','单台采购价 $'],['purchaseTax','采购税 %'],['networkSetup','网络建设 $'],['ups','UPS $'],['fitout','机房布置 $'],['launchBudget','30 天营销预算 $']]],
-    ['每月运维',[['watts','单台功率 W'],['networkWatts','网络设备功率 W'],['electricity','电价 $/度'],['cooling','散热系数'],['network','网络 $'],['software','软件 $/台'],['labor','人工 $'],['support','售后 $/在租台'],['rent','场地 $'],['other','其他 $'],['marketing','持续营销 $']]],
-    ['手续费和准备金',[['payment','支付手续费 %'],['refund','退款准备 %'],['replacement','维修换机 %/年']]],
-    ['续费、折旧和退出',[['monthlyRenew','月付续费率 %'],['quarterlyRenew','季付续费率 %'],['halfRenew','半年付续费率 %'],['annualRenew','年付续费率 %'],['life','折旧月数'],['residual','折旧残值 %'],['horizon','测算月数'],['saleResidual','期末转售 %']]]
-  ];
-  let values=M.clean(),shared=null,localOnly=false,db=null,docRef=null,writeTimer=null,writing=false,dirty=false,status='';
-  try{const saved=JSON.parse(localStorage.getItem('wodemac-finance-local')||'null');if(saved&&saved.values){values=M.clean(saved.values);localOnly=true;}}catch{}
-
-  function renderInputs(){
-    const presets=`<div><h3>设备总数</h3><div class="fields"><label>台数<input id="f-machines" data-k="machines" type="number" inputmode="decimal" step="any"></label></div><div class="presets" style="margin-top:10px"><button type="button" class="btn" data-preset="10">10 台</button><button type="button" class="btn" data-preset="20">20 台</button><button type="button" class="btn" data-preset="50">50 台</button><button type="button" class="btn" data-preset="100">100 台</button><button type="button" class="btn" data-preset="500">500 台</button></div></div>`;
-    $('inputs').innerHTML=presets+GROUPS.map(([title,items])=>`<div><h3>${title}</h3><div class="fields">${items.map(([k,l])=>`<label>${l}<input id="f-${k}" data-k="${k}" type="number" inputmode="decimal" step="any"></label>`).join('')}</div></div>`).join('')+`<button type="button" class="btn" id="reset">恢复默认值</button>`;
-    syncInputs();
-  }
-  function syncInputs(){document.querySelectorAll('#inputs input').forEach(el=>{if(el!==document.activeElement)el.value=values[el.dataset.k];});}
-
-  function chart(id,title,series,startLabel){
-    const W=chartW(),small=W<640,H=small?240:280,L=small?50:66,R=14,T=12,B=30,all=series.flatMap(s=>s.values);let min=Math.min(0,...all),max=Math.max(0,...all);if(max-min<1)max=min+1;
-    const N=series[0].values.length,x=i=>L+(W-L-R)*i/Math.max(1,N-1),y=v=>T+(H-T-B)*(1-(v-min)/(max-min));
-    const k=v=>{const a=Math.abs(v);return (v<0?'-':'')+(a>=1000?'$'+(a/1000).toFixed(a>=10000?0:1)+'k':'$'+Math.round(a));};
-    let g='';for(let i=0;i<5;i++){const v=min+(max-min)*i/4;g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end">${k(v)}</text>`;}
-    g+=`<line class="zero" x1="${L}" x2="${W-R}" y1="${y(0)}" y2="${y(0)}"/>`;
-    [...new Set(small?[0,Math.floor((N-1)/2),N-1]:[0,Math.floor((N-1)/3),Math.floor((N-1)*2/3),N-1])].forEach(i=>{g+=`<text x="${x(i)}" y="${H-10}" text-anchor="${i===0?'start':i===N-1?'end':'middle'}">${startLabel&&i===0?startLabel:'第 '+i+' 月'}</text>`;});
-    series.forEach(s=>{g+=`<polyline fill="none" stroke="var(${s.color})" stroke-width="2" stroke-linejoin="round" ${s.dashed?'stroke-dasharray="6 5"':''} points="${s.values.map((v,i)=>x(i)+','+y(v)).join(' ')}"/>`;});
-    return `<section><h2>${title}</h2><div class="chart" data-chart="${id}"><div class="legend">${series.map(s=>`<span><i style="background:var(${s.color})"></i>${s.name}</span>`).join('')}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}。逐月数字见下方明细表。">${g}<line class="cross" y1="${T}" y2="${H-B}" x1="-10" x2="-10"/></svg><div class="tip" hidden></div></div></section>`;
-  }
-  const chartW=()=>innerWidth<640?Math.max(280,innerWidth-58):800;
-  const jumpLabel=()=>{const box=$('inputs').getBoundingClientRect();return box.top<innerHeight*.5&&box.bottom>0?'看结果':'改假设';};
-  const charts={};
+  const values=M.clean();
   const PLAN_CH=[['partner',.6,5.6],['enterprise',.3,5],['vip',.1,4]];
   const planInt=(v,lo,hi,fb)=>{const n=Math.round(Number(v));return Number.isFinite(n)&&v!==''&&v!=null?Math.min(hi,Math.max(lo,n)):fb;};
   function derivePlan(T){T=planInt(T,1,10000,10);const units={};let used=0;PLAN_CH.slice(1).forEach(([k,s])=>{units[k]=Math.round(T*s);used+=units[k];});units.partner=Math.max(0,T-used);const leads={};PLAN_CH.forEach(([k,,p])=>leads[k]=Math.round(units[k]*p));const weeks=[.1,.2,.3].map(x=>Math.round(T*x));weeks.push(Math.max(0,T-weeks[0]-weeks[1]-weeks[2]));return {target:T,units,leads,weeks};}
@@ -444,9 +391,8 @@ const FinanceModel=(()=>{
     setText('plan-lead','30 天卖出 '+T+' 台。你的时间主要用来通过电话、微信、私信联系做 AI 培训的大V，请他们做经销商伙伴；出海企业和一站式客户也主要通过伙伴来。');
     $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 个 AI 培训大V和出海服务商，30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';setText('g-units',T+' 台');setText('g-leads',sumL+' 条');
     setText('plan-status',planLocal?'修改只保存在这台设备上，不会改动共享数字。':planRef?(planStatus||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。');
-    const dev=$('plan-devices');dev.hidden=extra===0;if(extra){const c=M.clean(values),cost=extra*c.purchase*(1+c.purchaseTax/100);dev.innerHTML='<p><b>这个目标要新增 '+extra+' 台设备。</b>按现有 10 台算，新增设备按单台 '+money(c.purchase,2)+' 加 '+c.purchaseTax+'% 税，约 '+money(cost)+'。</p><p>这笔钱不在 $0 现金预算里，新机器到货前也不能交付。</p>';}
     const fin=F=>M.calc({...M.clean(values),...M.scaleFor(T),...F}),r=fin({}),soft=Math.max(1,Math.round(T*.8)),rs=fin({occupancy:soft/T*100});
-    setText('p-profit','按算账页的假设，'+T+' 台全部卖出时，首年每月约 '+money(r.avgProfit)+'，第 2 年起每月约 '+money(r.avgProfitY2)+'，约 '+(r.breakeven??'—')+' 台保本。赚钱主要靠客户续费。');
+    setText('p-profit','按当前成本假设，'+T+' 台全部卖出时，首年每月约 '+money(r.avgProfit)+'，第 2 年起每月约 '+money(r.avgProfitY2)+'，约 '+(r.breakeven??'—')+' 台保本。赚钱主要靠客户续费。');
     setText('p-profit-note','卖到 '+soft+' 台时，首年每月约 '+money(rs.avgProfit)+'。运营成本按规模估算，默认客户全部续费，这些都是模型假设。');
     setText('p-range',T+' 台首期收款按原价算，全月付 '+money(T*169)+'，全年付 '+money(T*1723.8,2)+'。年付回款快，所以主推年付。');
     $('p-recruit').innerHTML='<b>招募目标：</b>签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';
@@ -466,103 +412,12 @@ const FinanceModel=(()=>{
   }
   async function planFlush(){if(planWriting||!planDirty||!planRef)return;planWriting=true;planDirty=false;planStatus='正在保存…';setText('plan-status',planStatus);try{await planRef.set({...plan,updatedAt:new Date().toISOString()});planStatus='已保存，打开这个页面的人都会看到。';}catch(e){planLocal=true;planStatus='';try{localStorage.setItem('wodemac-plan-local-v2',JSON.stringify(plan));}catch{}}planWriting=false;renderPlan();if(planDirty&&!planLocal)planFlush();}
   function planChanged(){renderPlan();if(planLocal||!planRef){try{localStorage.setItem('wodemac-plan-local-v2',JSON.stringify(plan));}catch{}return;}planDirty=true;clearTimeout(planTimer);planTimer=setTimeout(planFlush,700);}
-  function wireCharts(){document.querySelectorAll('[data-chart]').forEach(box=>{const def=charts[box.dataset.chart],svg=box.querySelector('svg'),tip=box.querySelector('.tip'),cross=box.querySelector('.cross');
-    const move=e=>{const r=svg.getBoundingClientRect(),W=chartW(),L=W<640?50:66,px=(e.clientX-r.left)/r.width*W,N=def.series[0].values.length,i=Math.max(0,Math.min(N-1,Math.round((px-L)/(W-L-14)*(N-1)))),cx=L+(W-L-14)*i/Math.max(1,N-1);cross.setAttribute('x1',cx);cross.setAttribute('x2',cx);tip.hidden=false;tip.innerHTML=`<b>${i===0&&def.start?def.start:'第 '+i+' 月'}</b><br>`+def.series.map(s=>s.name+'：'+money(s.values[i])).join('<br>');const bw=box.clientWidth,left=cx/W*r.width+12;tip.style.left=Math.max(6,Math.min(left,bw-tip.offsetWidth-6))+'px';};
-    svg.addEventListener('pointermove',move);svg.addEventListener('pointerdown',move);svg.addEventListener('pointerleave',()=>{tip.hidden=true;cross.setAttribute('x1',-10);cross.setAttribute('x2',-10);});});}
-
-  function render(){
-    const r=M.calc(values),c=r.c,y12=r.rows[11];
-    const noCommission=M.calc({...c,commissionedShare:0}),maxCommission=M.calc({...c,commissionedShare:100});
-    $('bottomline').innerHTML=`${c.machines} 台设备，付费 ${r.paid} 台。首期收款 <b>${money(r.first.receipts)}</b>，其中伙伴提成 <b>${money(r.first.commission)}</b>。算上折旧，首年每月平均 ${sign(r.avgProfit)}。${r.breakeven==null?'按当前价格，卖得再多也无法保本。':r.breakeven>r.available?`按当前结构要约 ${r.breakeven} 台付费才保本，超过了可卖的 ${r.available} 台。`:`按当前结构约 ${r.breakeven} 台付费就能保本。`}这些都是假设，不是实际经营数字。`;
-    const series1=[{name:'累计现金（已扣投入）',color:'--series-1',values:[-r.capex-c.launchBudget,...r.rows.map(x=>x.cash)]},{name:'再扣风险和履约准备',color:'--series-2',dashed:true,values:[-r.capex-c.launchBudget,...r.rows.map(x=>x.protectedCash)]}];
-    const series2=[{name:'累计收款',color:'--series-1',values:[0,...r.rows.slice(0,12).map(x=>x.cumReceipt)]},{name:'累计已履约收入',color:'--series-2',dashed:true,values:[0,...r.rows.slice(0,12).map(x=>x.cumEarned)]}];
-    charts.cash={series:series1,start:'开始'};charts.revenue={series:series2,start:'开始'};
-    $('mobile-summary').innerHTML=`<div>首年每月<b>${sign(r.avgProfit)}</b></div><div>保本台数<b>${r.breakeven??'—'}</b></div><div>首期收款<b>${money(r.first.receipts)}</b></div><button type="button" class="btn" id="jump">${jumpLabel()}</button>`;
-    const labels={electricity:'电力和散热',network:'网络',software:'软件',labor:'人工',other:'其他',rent:'场地',marketing:'持续营销',support:'售后'};
-    const prices=[-20,-10,0,10,20].map(d=>Math.max(0,c.annual+d)),occ=[50,60,70,80,90,100];
-    $('results').innerHTML=`
-      <div class="cards">
-        <div class="card"><span>前期设备和设施投入</span><b>${money(r.capex)}</b><span>另加营销预算 ${money(c.launchBudget)}</span></div>
-        <div class="card"><span>首期收款</span><b>${money(r.first.receipts)}</b><span>未扣手续费和提成</span></div>
-        <div class="card"><span>首年每月平均结果</span><b>${sign(r.avgProfit)}</b><span>含折旧，税前。第 2 年每月 ${money(r.avgProfitY2)}</span></div>
-        <div class="card"><span>现金回正</span><b>${r.firstCross?r.firstCross+' 个月':'—'}</b><span>${r.durable?'扣准备金后第 '+r.durable+' 个月起持续回正':c.horizon+' 个月内扣准备金后未回正'}</span></div>
-      </div>
-      <section><h2>提成这笔账</h2>
-        <div class="table"><table class="tight"><thead><tr><th>情况</th><th>平均提成率</th><th>首期提成</th><th>首年每月</th><th>第 2 年每月</th></tr></thead><tbody>
-          <tr><th>当前假设</th><td class="num">${(r.rate*100).toFixed(1)}%</td><td class="num">${money(r.first.commission)}</td><td class="num">${sign(r.avgProfit)}</td><td class="num">${sign(r.avgProfitY2)}</td></tr>
-          <tr><th>全部订单走伙伴</th><td class="num">${(maxCommission.rate*100).toFixed(1)}%</td><td class="num">${money(maxCommission.first.commission)}</td><td class="num">${sign(maxCommission.avgProfit)}</td><td class="num">${sign(maxCommission.avgProfitY2)}</td></tr>
-          <tr><th>没有提成</th><td class="num">0.0%</td><td class="num">$0</td><td class="num">${sign(noCommission.avgProfit)}</td><td class="num">${sign(noCommission.avgProfitY2)}</td></tr>
-        </tbody></table></div>
-        <p class="note">提成只计客户首单，续费不计，只有一级。平均提成率按首期收款算。保本台数按首年算。</p>
-      </section>
-      <section><h2>各档收款</h2>
-        <div class="table"><table class="tight"><thead><tr><th>方案</th><th>台数</th><th>原价一次付</th><th>首期实收合计</th><th>每月履约收入（原价）</th></tr></thead><tbody>
-          ${r.plans.map((p,i)=>{if(p.key==='week')return '';const f=p.offer?r.offerFactor:1,once=p.key==='week'?c.week:p.price*p.term;return `<tr><th>${p.name}</th><td class="num">${r.counts[i]}</td><td class="num">${money(once)}</td><td class="num">${money(r.counts[i]*p.price*p.term*f)}</td><td class="num">${money(r.counts[i]*p.price)}</td></tr>`;}).join('')}
-        </tbody></table></div>
-        <p class="note">全年付方案的首年保本价约 ${money(r.annualFloor,2)}/月。按当前结构，要约 ${r.breakeven??'—'} 台付费才能保本。</p>
-      </section>
-      ${chart('cash','现金回收',series1,'开始')}
-      ${chart('revenue','首年收款和已履约收入',series2,'开始')}
-      <div class="two">
-        <section><h2>每月运营成本</h2><div class="rows">
-          ${Object.entries(r.costLines).map(([k,v])=>`<div class="row"><span>${labels[k]}</span><b class="num">${money(v,2)}</b></div>`).join('')}
-          <div class="row"><span>每月折旧（非现金）</span><b class="num">${money(r.dep)}</b></div>
-          <div class="row"><span>运营合计（不含提成和折旧）</span><b class="num">${money(r.opex)}</b></div>
-        </div></section>
-        <section><h2>收到预付款后要留多少</h2><div class="rows">
-          <div class="row"><span>首期收款</span><b class="num">${money(r.first.receipts)}</b></div>
-          <div class="row"><span>手续费和首期提成</span><b class="num">−${money(r.first.fees+r.first.commission)}</b></div>
-          <div class="row"><span>已签周期的履约成本</span><b class="num">−${money(r.fullServiceReserve)}</b></div>
-          <div class="row"><span>退款和维修准备</span><b class="num">−${money(r.first.receipts*c.refund/100+r.replacement*r.firstTerm)}</b></div>
-          <div class="row"><span>可用来回补投入的余额</span><b class="num">${sign(r.protectedUpfront)}</b></div>
-        </div><p class="note">这不是净利润，也还没扣设备投入。第 12 月未履约收入 ${money(y12.deferred)}，履约成本准备 ${money(y12.serviceReserve)}。</p></section>
-      </div>
-      <section><h2>年付价格和付费占用率</h2>
-        <div class="table"><table class="tight"><thead><tr><th>年付折合月价</th>${occ.map(o=>`<th>${o}%</th>`).join('')}</tr></thead><tbody>
-          ${prices.map(p=>`<tr><th>${money(p,2)}</th>${occ.map(o=>{const v=M.calc({...c,annual:p,occupancy:o,blocked:0}).avgProfit;return `<td class="num ${v>=0?'cell-good':'cell-bad'}">${money(v)}</td>`;}).join('')}</tr>`).join('')}
-        </tbody></table></div>
-        <p class="note">表中是首年每月平均结果，含折旧。其他参数不变，这张表不计预留台数。</p>
-      </section>
-      <section><h2>口径和退出</h2>
-        <ul class="note"><li>所有订单第一天同时开始，没有计入 30 天的逐步成交，也没有新客户补位。</li><li>提成按“走伙伴的订单比例”平均摊到每笔订单，只算首期，实际退款和提成冲回没有模拟。年付 5 台以上的 2.5% 优惠没有计入。</li><li>未含所得税、融资利息和超预算维修。单台采购价是估算，不是报价。</li><li>期末转售按 ${money(r.saleValue)} 算。全额退还未履约收入后，项目净现金 ${money(r.exitCash)}。年化 IRR ${r.irr!=null&&Math.abs(r.irr)<100?(r.irr*100).toFixed(1)+'%':'无法给出唯一值'}，这是情景结果，不是保证收益。</li></ul>
-      </section>
-      <section><h2>逐月明细</h2>
-        <div class="table"><table class="tight"><thead><tr><th>月</th><th>在租</th><th>收款</th><th>提成</th><th>履约收入</th><th>累计现金</th><th>履约准备</th><th>风险准备</th><th>准备后现金</th></tr></thead><tbody>
-          ${r.rows.map(x=>`<tr><td class="num">${x.month}</td><td class="num">${x.active.toFixed(1)}</td>${[x.receipts,x.commission,x.earned,x.cash,x.serviceReserve,x.risk,x.protectedCash].map(v=>`<td class="num">${money(v)}</td>`).join('')}</tr>`).join('')}
-        </tbody></table></div>
-      </section>`;
-    wireCharts();
-    document.querySelectorAll('[data-preset]').forEach(b=>b.classList.toggle('on',+b.dataset.preset===c.machines));
-    drawStatus();
-    renderPlan();
-  }
-  function drawStatus(){const t=localOnly?'修改只保存在这台设备上，不会改动共享数字。':db?(status||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。';$('save-status').textContent=t+' 这里改价不会改网站价格。';}
-
-  function saveLocal(){try{localStorage.setItem('wodemac-finance-local',JSON.stringify({values}));}catch{}}
-  async function flush(){if(writing||!dirty||!docRef)return;writing=true;dirty=false;status='正在保存…';drawStatus();try{await docRef.set({values,updatedAt:new Date().toISOString()});status='已保存，打开这个页面的人都会看到。';}catch(e){localOnly=true;status='';saveLocal();}writing=false;drawStatus();if(dirty&&!localOnly)flush();}
-  function changed(){render();if(localOnly||!docRef){saveLocal();return;}dirty=true;clearTimeout(writeTimer);writeTimer=setTimeout(flush,700);}
-
-  $('inputs').addEventListener('input',e=>{const k=e.target.dataset.k;if(!k||e.target.value==='')return;values=M.clean({...values,[k]:e.target.value});changed();});
-  $('inputs').addEventListener('change',e=>{if(e.target.dataset.k&&e.target.value==='')e.target.value=values[e.target.dataset.k];else if(e.target.dataset.k)e.target.value=values[e.target.dataset.k];});
-  $('inputs').addEventListener('submit',e=>e.preventDefault());
-  $('inputs').addEventListener('click',e=>{const preset=e.target.dataset.preset;if(preset){values=M.clean({...values,...M.presets[preset]});syncInputs();changed();}
-    if(e.target.id==='reset'){if(localOnly){localOnly=false;try{localStorage.removeItem('wodemac-finance-local');}catch{}values=M.clean(shared||{});syncInputs();render();}else{values=M.clean();syncInputs();changed();}}});
-
-  function showPage(page){const finance=page==='finance';$('plan').hidden=finance;$('finance').hidden=!finance;$('tab-plan').setAttribute('aria-selected',String(!finance));$('tab-finance').setAttribute('aria-selected',String(finance));window.scrollTo(0,0);}
   $('plan').addEventListener('click',e=>{const T=e.target.dataset&&e.target.dataset.target;if(T){plan=derivePlan(T);planChanged();}if(e.target.id==='plan-reset'){plan=derivePlan(plan.target);planChanged();}});
   $('plan').addEventListener('input',e=>{const el=e.target;if(!el.classList.contains('mini')||el.value==='')return;const id=el.id;if(id==='plan-target'){const n=planInt(el.value,1,10000,plan.target);if(n!==plan.target){plan=derivePlan(n);planChanged();}return;}const n=planInt(el.value,0,1000000,0);if(id[0]==='u')plan.units[id.slice(2)]=n;else if(id[0]==='l')plan.leads[id.slice(2)]=n;else if(id[0]==='w')plan.weeks[+id.slice(2)]=n;plan=cleanPlan(plan);planChanged();});
   $('plan').addEventListener('change',e=>{if(e.target.classList.contains('mini'))renderPlan();});
-  document.querySelector('.tabs').addEventListener('click',e=>{const p=e.target.dataset.page;if(p)showPage(p);});
   document.querySelectorAll('.work').forEach(tb=>{const heads=[...tb.querySelectorAll('thead th')].map(h=>h.textContent);tb.querySelectorAll('tbody tr').forEach(row=>[...row.children].forEach((cell,i)=>cell.setAttribute('data-label',heads[i]||'')));});
-  $('mobile-summary').addEventListener('click',e=>{if(e.target.id!=='jump')return;const toInputs=e.target.textContent==='改假设';(toInputs?$('inputs'):$('results')).scrollIntoView();scrollBy(0,-150);});
-  addEventListener('scroll',()=>{const j=$('jump');if(j)j.textContent=jumpLabel();},{passive:true});
-  let bucket=chartW();addEventListener('resize',()=>{const w=chartW();if(w!==bucket){bucket=w;render();}});
-  renderInputs();render();showPage(location.hash==='#finance'?'finance':'plan');
 
-  (async()=>{try{if(!window.claude)return;db=await window.claude.use('db');if(!db){drawStatus();return;}docRef=db.doc('finance/pilot');planRef=db.doc('finance/plan-v2');drawStatus();renderPlan();
-    planRef.onSnapshot(snap=>{if(!snap.exists)return;planShared=snap.data();if(!planLocal&&!planDirty&&!planWriting&&!snap.metadata?.hasPendingWrites){plan=cleanPlan(planShared);renderPlan();}},()=>{});
-    docRef.onSnapshot(snap=>{if(!snap.exists)return;const d=snap.data();if(!d||typeof d.values!=='object')return;shared=d.values;if(!localOnly&&!dirty&&!writing&&!snap.metadata?.hasPendingWrites){values=M.clean(shared);syncInputs();render();}},()=>{});
-  }catch{}})();
+  renderPlan();
 })();
 </script>
 
