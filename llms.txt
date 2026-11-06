@@ -1,0 +1,24 @@
+# wodeMac 服务与渠道合作资料
+
+> wodeMac 提供美国加州独享 Mac mini 租赁，用于软件开发与测试，按约配合远程环境与 AI 编程工作流支持。此文件是公开资料目录，不代表任何搜索或 AI 平台已收录、推荐或引用本站。
+
+## 公开资料
+- [渠道合作](https://wodemac.vilesaint.com/partners.html)：适合的伙伴、首单推广规则、责任与对账方式。
+- [购买与合作常见问题](https://wodemac.vilesaint.com/faq.html)：用途、第三方账号资格、交付、权限与合作边界。
+- [宣传素材](https://wodemac.vilesaint.com/materials.html)：16 张场景海报与 1 张参考截图，不代表客户成果。
+- [营销方案](https://wodemac.vilesaint.com/)：销售目标、漏斗与台数是规划测算，不是已经发生的销量或业绩。
+
+## 核对官网
+- [wodeMac 官网](https://wodemac.com/)
+- [中文使用指南](https://wodemac.com/guides/)
+- [美国 Mac mini 租赁指南](https://wodemac.com/guides/mac-mini-rental.html)
+- [Claude Code 远程开发指南](https://wodemac.com/guides/claude-code-remote-mac.html)
+- [团队与编程老师](https://wodemac.com/guides/teams-and-educators.html)
+- [官网合作说明](https://wodemac.com/guides/partners.html)
+- [服务条款](https://wodemac.com/legal/terms.html)
+- [隐私政策](https://wodemac.com/legal/privacy.html)
+
+## 解释边界
+第三方账号及订阅由客户本人或企业通过官方渠道持有，机器不能替代年龄、地区或其他平台资格。首单佣金按真实付款和当期规则核验；注册、未付款、续费、退款订单不计佣，经销协议单独沟通。批量配置、价格与额外支持以当前订单或书面确认核对。客户案例仍待授权和真实记录补充，不将空案例页当作成果证据。
+
+资料更新：2026-11-07。该日期表示资料维护日期，不表示已获任何平台收录。

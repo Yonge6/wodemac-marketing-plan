@@ -46,5 +46,11 @@
     });
     window.addEventListener('hashchange',()=>{selected=groupFromHash();render();});
     render();
-  }catch(error){count.textContent=label+'暂未加载';document.getElementById('library-error').hidden=false;}
+  }catch(error){
+    const available=grid.querySelectorAll('.asset-card').length;
+    const message=document.getElementById('library-error');
+    if(available){count.textContent=available+' 项'+label+' · 分类筛选暂不可用';message.textContent='分类筛选暂不可用，仍可查看和下载下方素材。';}
+    else{count.textContent=label+'暂未加载';}
+    message.hidden=false;
+  }
 })();

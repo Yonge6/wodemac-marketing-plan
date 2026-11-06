@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wodemac.vilesaint.com/sitemap.xml

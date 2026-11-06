@@ -22,8 +22,10 @@
 
 ## 访问地址
 
-- 正式地址：http://wodemac.vilesaint.com/
-- 宣传素材：http://wodemac.vilesaint.com/materials.html
+- 正式地址：https://wodemac.vilesaint.com/
+- 宣传素材：https://wodemac.vilesaint.com/materials.html
+- 渠道合作：https://wodemac.vilesaint.com/partners.html
+- 购买与合作问答：https://wodemac.vilesaint.com/faq.html
 
 ## 海报样稿预览
 
@@ -31,14 +33,14 @@
 
 原图位于 `assets/materials/samples-20261106-final/`（首批四张）和 `assets/materials/campaign-20261106/`（后续十二张），WebP 用于网页预览，PNG 用于原图查看和下载。海报通过 ego 浏览器内 ChatGPT 生成，直接包含官网 Logo 参考、文案、场景和小网址；没有后期拼接 Logo，也没有拼版。每张只讲一个重点，不含预约演示、价格和佣金。
 
-正式域名当前使用 HTTP；HTTPS 证书尚未完成配置。
+域名证书和 GitHub Pages 的强制 HTTPS 由发布负责人单独核验。本轮 SEO 文件以 HTTPS 为规范地址；文件生成、验证通过不等于已经部署或已被搜索收录。
 
 ## 客户案例
 
 - `cases.html` / `cases.json`：按四类客户筛选，当前每类两个照片占位，尚无真实案例。
 - 将客户照片放入 `assets/cases/`，填写对应条目的 `image`、`title` 和 `description` 即可上架；`download` 留空时下载原图。
 - 与宣传素材共用 `materials.js`；支持 `#training`、`#business`、`#parents` 和 `#service` 分类直达。
-- 客户案例：http://wodemac.vilesaint.com/cases.html
+- 客户案例：https://wodemac.vilesaint.com/cases.html
 
 ## 年付批量折扣
 
@@ -54,3 +56,38 @@
 营销方案按三类核心客户重写：出海团队（执行力、商业产出和增长机会）、学生家长（AI 能力起点、家庭共创与作品）、AI 培训老师及网红大V（内容、课程、学员案例与招生）。账号、使用环境、充值订阅与机器作为共同的使用门槛，另列服务分工；账号充值、VPN 等服务商保留为获客渠道。同步更新电话微信话术、统一话术、渠道任务与每周行动。
 
 本轮仅更新营销方案网页。宣传素材目录和海报图片保留现状，待用户审核方案后再重新出图；不得将现有素材视为本轮文案的新版海报。价格、提成和年付批量折扣逻辑保持原有版本。
+
+## 中文 SEO / GEO 资料维护（2026-11-07）
+
+- `partners.html`：AI 编程老师、出海开发服务商和 IT 实施伙伴的公开合作说明；包含首单佣金、归属、人工对账与经销边界。
+- `faq.html`：购买与合作常见问题，说明软件开发与测试用途、第三方自有账号及资格、交付核对、权限和证据边界。
+- `seo.css`：新增资料页与首页服务事实区的本地样式，沿用暖纸色与侧栏布局。
+- `index.html`：只添加可直接读取的服务事实与新页入口，明确目标、漏斗、台数测算不是实际销量或业绩；原价格、阶梯折扣表、计算器和计划逻辑保留。
+- `materials.html`：从 `materials.json` 预渲染 17 项真实素材（16 张海报加 1 张参考截图）。没有 JavaScript 也可查看、下载；脚本成功后仍用 `replaceChildren()` 切换分类，加载失败则保留静态内容。
+- `cases.html`、`materials-preview.html`：保留页面和真实待补充说明，设为 `noindex,follow`，不放入站点地图。不创建虚构客户案例。
+- 六个 HTML 页面移除外部 Google Fonts 请求；现有样式中的系统字体回退继续生效。
+- `robots.txt` 允许公开抓取并声明 `sitemap.xml`；地图只列首页、渠道合作、问答、宣传素材四个规范地址。
+- `llms.txt` 只是公开资料目录，不是任何搜索或 AI 产品的收录、推荐、排名或引用保证。
+
+不扩散批量折扣冲突：营销计划保留用户已批准的阶梯版本；新页和结构化数据不引用阶梯折扣，统一要求核对当前订单或书面报价。官网条款、营销页和最终订单若有差异，应先核定规则，不能用 SEO 改写代替商业确认。
+
+### 生成与验证
+
+无需安装依赖，使用 Python 3.9 或以上版本：
+
+```sh
+python3 scripts/update_seo.py
+python3 scripts/validate_seo.py
+```
+
+公开问答与 JSON-LD 来自 `scripts/update_seo.py` 的同一份 `FAQ` 数据，修改后重新生成，避免可见正文和标记不一致。新资料页的正文也在该脚本维护。原有页面的 SEO head、新导航、首页服务事实区及素材生成区由脚本管理，其他原文不改。素材以 `materials.json` 为源，引用资源必须是仓库内真实文件；统一展示比例不表示所有原图拥有相同像素尺寸。
+
+如规范域名协议确需调整，可传入已核验的地址重新生成：
+
+```sh
+python3 scripts/update_seo.py --base-url https://wodemac.vilesaint.com
+```
+
+验证包含 head 唯一性、可见 FAQ 与 JSON-LD 一致性、17 张静态卡片、站内链接与资源存在、索引策略和 XML 地图。搜索平台的域名验证文件由发布负责人维护，不加入 sitemap 或正文导航。
+
+上线、证书、搜索平台提交、抓取、收录、排名和 AI 引用均须分别核实；本地检查通过不代表其中任一步骤已完成。
