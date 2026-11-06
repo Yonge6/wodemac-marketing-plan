@@ -235,17 +235,6 @@ main.wide { max-width: 1160px; gap: 28px; }
   </section>
 
   <section>
-    <h2>怎么才能赚钱</h2>
-    <p id="p-profit"></p>
-    <ul class="steps">
-            <li><b>主推年付：</b>目标是年付 30%、季付 40%、月付 30%。</li>
-      <li><b>提成只计首单：</b>续费不计，第 2 年起利润明显增加。</li>
-      <li><b>压人工：</b>每月人工从 $500 降到 $300。</li>
-    </ul>
-    <p class="note" id="p-profit-note"></p>
-  </section>
-
-  <section>
     <h2>提成规则</h2>
     <ul>
       <li><b>规则：</b>伙伴登录后生成专属链接。客户首单按方案计提成：年付 15%、半年付 10%、季付 7.5%、月付 5%。续费、注册、未付款和退款订单不计，只有一级，没有二级。</li>
@@ -322,61 +311,13 @@ main.wide { max-width: 1160px; gap: 28px; }
     </div>
   </section>
 
-  <p class="meta">2026-11-05 改成以经销商伙伴为主的打法，由 2026-11-01 版完整方案简化而来。渠道的台数分配是本版建议。价格以结算页为准。</p>
 </main>
 
 <script>
-/*ENGINE-START*/
-const FinanceModel=(()=>{
-  const defaults={machines:10,blocked:0,occupancy:100,week:89,monthly:169,quarterly:160.55,half:152.1,annual:143.65,weekShare:0,quarterlyShare:40,halfShare:0,annualShare:30,offerUnits:0,offerOff:20,purchase:719.2,purchaseTax:7.75,networkSetup:800,ups:600,fitout:500,launchBudget:0,watts:30,networkWatts:60,electricity:.3,cooling:1.6,network:200,software:8,support:10,labor:300,other:100,rent:0,marketing:0,commissionedShare:60,cMonth:5,cQuarter:7.5,cHalf:10,cAnnual:15,payment:3,refund:2,replacement:10,weekRenew:100,monthlyRenew:100,quarterlyRenew:100,halfRenew:100,annualRenew:100,life:36,residual:20,horizon:36,saleResidual:20};
-  const ranges={machines:[1,10000],blocked:[0,10000],occupancy:[0,100],week:[0,10000],monthly:[0,10000],quarterly:[0,10000],half:[0,10000],annual:[0,10000],weekShare:[0,100],quarterlyShare:[0,100],halfShare:[0,100],annualShare:[0,100],offerUnits:[0,10000],offerOff:[0,100],purchase:[0,100000],purchaseTax:[0,50],networkSetup:[0,1e7],ups:[0,1e7],fitout:[0,1e7],launchBudget:[0,1e6],watts:[0,1000],networkWatts:[0,100000],electricity:[0,10],cooling:[1,5],network:[0,1e6],software:[0,10000],support:[0,10000],labor:[0,1e6],other:[0,1e6],rent:[0,1e6],marketing:[0,1e6],commissionedShare:[0,100],cMonth:[0,100],cQuarter:[0,100],cHalf:[0,100],cAnnual:[0,100],payment:[0,50],refund:[0,50],replacement:[0,100],weekRenew:[0,100],monthlyRenew:[0,100],quarterlyRenew:[0,100],halfRenew:[0,100],annualRenew:[0,100],life:[1,120],residual:[0,100],horizon:[12,60],saleResidual:[0,100]};
-  const integer=new Set(['machines','blocked','life','horizon','offerUnits']);
-  const presets={10:{machines:10,blocked:0,occupancy:100,networkSetup:800,ups:600,fitout:500,network:200,networkWatts:60,labor:300,other:100,marketing:0,launchBudget:0},20:{machines:20,blocked:0,occupancy:100,networkSetup:1100,ups:1075,fitout:1625,network:250,networkWatts:90,labor:600,other:138,marketing:0,launchBudget:0},50:{machines:50,blocked:3,occupancy:80,networkSetup:2000,ups:2500,fitout:5000,network:400,networkWatts:180,labor:1500,other:250,marketing:0,launchBudget:0},100:{machines:100,blocked:5,occupancy:80,networkSetup:4000,ups:5000,fitout:10000,network:900,networkWatts:300,labor:2800,other:450,marketing:0,launchBudget:0},500:{machines:500,blocked:25,occupancy:80,networkSetup:20000,ups:25000,fitout:50000,network:4500,networkWatts:1500,labor:14000,other:2250,marketing:0,launchBudget:0}};
-  function clean(x={}){const c={...defaults};for(const k of Object.keys(defaults)){const n=Number(x[k]);if(x[k]!==''&&x[k]!=null&&Number.isFinite(n)){c[k]=Math.min(ranges[k][1],Math.max(ranges[k][0],n));if(integer.has(k))c[k]=Math.round(c[k]);}}
-    c.blocked=Math.min(c.blocked,c.machines);c.quarterlyShare=Math.min(c.quarterlyShare,100-c.annualShare);c.halfShare=Math.min(c.halfShare,100-c.annualShare-c.quarterlyShare);c.weekShare=Math.min(c.weekShare,100-c.annualShare-c.quarterlyShare-c.halfShare);return c;}
-  const monthShare=c=>100-c.weekShare-c.quarterlyShare-c.halfShare-c.annualShare;
-  function plansOf(c){return [
-    {key:'week',name:'周付',term:1,price:c.week*52/12,share:c.weekShare,renew:c.weekRenew,offer:false},
-    {key:'monthly',name:'月付',term:1,price:c.monthly,share:monthShare(c),renew:c.monthlyRenew,offer:true},
-    {key:'quarterly',name:'季付',term:3,price:c.quarterly,share:c.quarterlyShare,renew:c.quarterlyRenew,offer:true},
-    {key:'half',name:'半年付',term:6,price:c.half,share:c.halfShare,renew:c.halfRenew,offer:true},
-    {key:'annual',name:'年付',term:12,price:c.annual,share:c.annualShare,renew:c.annualRenew,offer:true}];}
-  function allocate(n,plans){const raw=plans.map(p=>p.share*n/100),v=raw.map(Math.floor),order=plans.map((_,i)=>i).sort((a,b)=>(raw[b]-v[b])-(raw[a]-v[a])||b-a);let left=n-v.reduce((a,b)=>a+b,0);for(let i=0;i<left;i++)v[order[i%plans.length]]++;return v;}
-  function uniqueIRR(cfs){const signs=cfs.filter(v=>Math.abs(v)>1e-9).map(Math.sign);let changes=0;for(let i=1;i<signs.length;i++)if(signs[i]!==signs[i-1])changes++;if(changes!==1||signs[0]!==-1||signs.at(-1)!==1)return null;const npv=r=>cfs.reduce((s,v,t)=>s+v/Math.pow(1+r,t),0);const roots=[];let prevR=-.8,prevV=npv(prevR);for(let i=1;i<=600;i++){const r=Math.exp(Math.log(.2)+(Math.log(11)-Math.log(.2))*i/600)-1,v=npv(r);if(Number.isFinite(v)&&Number.isFinite(prevV)&&v*prevV<0){let lo=prevR,hi=r;for(let j=0;j<90;j++){const mid=(lo+hi)/2;if(npv(lo)*npv(mid)<=0)hi=mid;else lo=mid;}const root=(lo+hi)/2;if(!roots.some(x=>Math.abs(x-root)<1e-6))roots.push(root);}prevR=r;prevV=v;}return roots.length===1?Math.pow(1+roots[0],12)-1:null;}
-  function calc(x={}){const c=clean(x),available=c.machines-c.blocked,paid=Math.min(Math.floor(c.machines*c.occupancy/100+1e-9),available),plans=plansOf(c),counts=allocate(paid,plans);
-    // Partners earn only on a customer's first payment; each plan has its own rate.
-    plans.forEach(p=>p.comm=c.commissionedShare/100*({week:0,monthly:c.cMonth,quarterly:c.cQuarter,half:c.cHalf,annual:c.cAnnual}[p.key])/100);
-    const firstList=plans.reduce((s,p,i)=>s+counts[i]*p.price*p.term,0),rate=firstList>0?plans.reduce((s,p,i)=>s+counts[i]*p.price*p.term*p.comm,0)/firstList:0,rate1=rate,rate2=0;
-    const hardware=c.machines*c.purchase*(1+c.purchaseTax/100),infra=c.networkSetup+c.ups+c.fitout,capex=hardware+infra;
-    const electricity=(c.machines*c.watts+c.networkWatts)/1000*730*c.electricity*c.cooling;
-    const costLines={electricity,network:c.network,software:c.software*c.machines,labor:c.labor,other:c.other,rent:c.rent,marketing:c.marketing,support:paid*c.support};
-    const fixed=Object.entries(costLines).filter(([k])=>k!=='support').reduce((s,[,v])=>s+v,0),opex=fixed+paid*c.support;
-    const dep=hardware*(1-c.residual/100)/c.life+infra/c.life,monthlyRevenue=plans.reduce((s,p,i)=>s+counts[i]*p.price,0),replacement=hardware*c.replacement/100/12;
-    const offerFactor=1-(paid>0?Math.min(1,c.offerUnits/paid):0)*c.offerOff/100;
-    let cash=-capex-c.launchBudget,cumReceipt=0,cumEarned=0,risk=0;const rows=[];
-    for(let t=1;t<=c.horizon;t++){let active=0,receipts=0,earned=0,reserveSeats=0,maxRemaining=0,commission=0,commissionExpense=0;
-      plans.forEach((p,i)=>{const a=counts[i]*Math.pow(p.renew/100,Math.floor((t-1)/p.term)),disc=p.offer&&t<=p.term?offerFactor:1,step=(t-1)%p.term;active+=a;earned+=a*p.price*disc;if(step===0)receipts+=a*p.price*p.term*disc;if(t<=p.term){commissionExpense+=a*p.price*disc*p.comm;if(step===0)commission+=a*p.price*p.term*disc*p.comm;}const rem=a>0?p.term-1-step:0;reserveSeats+=a*rem;maxRemaining=Math.max(maxRemaining,rem);});
-      const fees=receipts*c.payment/100,operating=fixed+active*c.support,flow=receipts-fees-commission-operating,serviceReserve=fixed*maxRemaining+c.support*reserveSeats;
-      cash+=flow;cumReceipt+=receipts;cumEarned+=earned;risk+=receipts*c.refund/100+replacement;
-      const deferred=Math.max(0,cumReceipt-cumEarned),profit=earned*(1-c.payment/100)-commissionExpense-operating-(t<=c.life?dep:0)-(t===1?c.launchBudget:0);
-      rows.push({month:t,active,receipts,earned,commission,commissionExpense,fees,operating,flow,cash,risk,serviceReserve,protectedCash:cash-risk-serviceReserve,deferred,profit,cumReceipt,cumEarned});}
-    const first=rows[0],firstTerm=Math.max(0,...plans.map((p,i)=>counts[i]?p.term:0)),fullServiceReserve=fixed*firstTerm+c.support*plans.reduce((s,p,i)=>s+counts[i]*p.term,0);
-    const protectedUpfront=first.receipts-first.fees-first.commission-first.receipts*c.refund/100-replacement*firstTerm-fullServiceReserve;
-    const first12=rows.slice(0,12),avgProfit=first12.reduce((s,r)=>s+r.profit,0)/12,avgFlow=first12.reduce((s,r)=>s+r.flow,0)/12,year2=rows.slice(12,24),avgProfitY2=year2.reduce((s,r)=>s+r.profit,0)/Math.max(1,year2.length),commissionY1=first12.reduce((s,r)=>s+r.commission,0);
-    const blended=plans.reduce((s,p)=>s+p.price*p.share/100,0),commUnit=plans.reduce((s,p)=>s+p.share/100*p.price*Math.min(p.term,12)*p.comm,0)/12,contribution=blended*(1-c.payment/100)-commUnit-c.support,breakeven=contribution>0?Math.ceil((fixed+dep+c.launchBudget/12)/contribution):null;
-    const firstCross=rows.find(r=>r.cash>=0)?.month??null;let durable=null;for(let i=0;i<rows.length;i++){if(rows.slice(i).every(r=>r.protectedCash>=0)){durable=rows[i].month;break;}}
-    const annualDen=1-c.payment/100-plans[4].comm,annualFloor=paid>0&&annualDen>0?((fixed+dep+c.launchBudget/12)/paid+c.support)/annualDen:null;
-    const last=rows.at(-1),saleValue=c.machines*c.purchase*c.saleResidual/100,exitCash=last.cash+saleValue-last.deferred,cashflows=[-capex-c.launchBudget,...rows.map(r=>r.flow)];cashflows[cashflows.length-1]+=saleValue-last.deferred;
-    return {c,available,paid,plans,counts,offerFactor,avgProfitY2,rate,rate1,rate2,hardware,infra,capex,electricity,costLines,fixed,opex,dep,monthlyRevenue,replacement,rows,first,firstTerm,fullServiceReserve,protectedUpfront,avgProfit,avgFlow,commissionY1,blended,contribution,breakeven,annualFloor,firstCross,durable,saleValue,exitCash,irr:uniqueIRR(cashflows)};}
-  function scaleFor(n){const keys=['networkSetup','ups','fitout','network','networkWatts','labor','other'],sizes=Object.keys(presets).map(Number).sort((a,b)=>a-b),T=Math.max(sizes[0],n);let i=0;while(i<sizes.length-2&&T>sizes[i+1])i++;const a=presets[sizes[i]],b=presets[sizes[i+1]],w=(T-sizes[i])/(sizes[i+1]-sizes[i]),out={machines:n,blocked:0,occupancy:100,marketing:0,launchBudget:0};keys.forEach(k=>out[k]=Math.round(a[k]+(b[k]-a[k])*w));return out;}
-  return {defaults,clean,calc,presets,monthShare,scaleFor};
-})();
-/*ENGINE-END*/
 
 (function(){
-  const M=FinanceModel,$=id=>document.getElementById(id);
+  const $=id=>document.getElementById(id);
   const money=(n,d=0)=>Number.isFinite(n)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:d,minimumFractionDigits:d}).format(n):'—';
-  const values=M.clean();
   const PLAN_CH=[['partner',.6,5.6],['enterprise',.3,5],['vip',.1,4]];
   const planInt=(v,lo,hi,fb)=>{const n=Math.round(Number(v));return Number.isFinite(n)&&v!==''&&v!=null?Math.min(hi,Math.max(lo,n)):fb;};
   function derivePlan(T){T=planInt(T,1,10000,10);const units={};let used=0;PLAN_CH.slice(1).forEach(([k,s])=>{units[k]=Math.round(T*s);used+=units[k];});units.partner=Math.max(0,T-used);const leads={};PLAN_CH.forEach(([k,,p])=>leads[k]=Math.round(units[k]*p));const weeks=[.1,.2,.3].map(x=>Math.round(T*x));weeks.push(Math.max(0,T-weeks[0]-weeks[1]-weeks[2]));return {target:T,units,leads,weeks};}
@@ -392,9 +333,6 @@ const FinanceModel=(()=>{
     setText('plan-lead','30 天卖出 '+T+' 台。你的时间主要用来通过电话、微信、私信联系做 AI 培训的大V，请他们做经销商伙伴；出海企业和一站式客户也主要通过伙伴来。');
     $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 个 AI 培训大V和出海服务商，30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';setText('g-units',T+' 台');setText('g-leads',sumL+' 条');
     setText('plan-status',planLocal?'修改只保存在这台设备上，不会改动共享数字。':planRef?(planStatus||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。');
-    const fin=F=>M.calc({...M.clean(values),...M.scaleFor(T),...F}),r=fin({}),soft=Math.max(1,Math.round(T*.8)),rs=fin({occupancy:soft/T*100});
-    setText('p-profit','按当前成本假设，'+T+' 台全部卖出时，首年每月约 '+money(r.avgProfit)+'，第 2 年起每月约 '+money(r.avgProfitY2)+'，约 '+(r.breakeven??'—')+' 台保本。赚钱主要靠客户续费。');
-    setText('p-profit-note','卖到 '+soft+' 台时，首年每月约 '+money(rs.avgProfit)+'。运营成本按规模估算，默认客户全部续费，这些都是模型假设。');
     setText('p-range',T+' 台首期收款按原价算，全月付 '+money(T*169)+'，全年付 '+money(T*1723.8,2)+'。年付回款快，所以主推年付。');
     $('p-recruit').innerHTML='<b>招募目标：</b>签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';
     setText('t-content','每周整理 '+cases+' 个真实案例，给伙伴转发和讲课用。不单独算台数，不投流。');
