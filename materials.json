@@ -26,8 +26,8 @@
     {
       "id": "training-1",
       "group": "training",
-      "title": "课堂方法，落到真实任务",
-      "description": "用于课程、训练营和学员社群。",
+      "title": "用好 Claude Code，从真实任务开始",
+      "description": "用于课程、训练营和学员社群，介绍环境配置、任务演示与工作流落地。",
       "image": null,
       "download": null
     },
@@ -50,16 +50,16 @@
     {
       "id": "business-4",
       "group": "business",
-      "title": "把 AI 接进团队工作流",
-      "description": "用于资料、销售和运营场景介绍。",
+      "title": "让 Claude Code 融入团队工作流",
+      "description": "用于开发、资料整理、销售和运营场景介绍，先验证任务，再扩大配置。",
       "image": null,
       "download": null
     },
     {
       "id": "parents-5",
       "group": "parents",
-      "title": "面向家长的 AI 学习环境介绍",
-      "description": "用于北京、上海、广州、深圳、武汉等重点城市的家长客群。",
+      "title": "用 Claude Code，动手做一个小项目",
+      "description": "面向重点城市的学生家长，介绍项目实践、操作权限与家长参与方式。",
       "image": null,
       "download": null
     },
@@ -82,8 +82,8 @@
     {
       "id": "service-8",
       "group": "service",
-      "title": "从演示到工作流落地",
-      "description": "用于介绍首次任务演示与后续交付。",
+      "title": "让 Claude Code 的生产力落到日常",
+      "description": "用于介绍独享远程环境、首次任务演示与后续工作流交付。",
       "image": null,
       "download": null
     }
