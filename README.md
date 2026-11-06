@@ -19,3 +19,9 @@
 - `materials.js`：分类筛选及图片、下载状态展示。
 
 后续上传海报到仓库（建议放入 `assets/materials/`），将清单对应条目的 `image` 改为图片相对路径即可上架。`download` 可选，留空时下载原图。建议海报比例为 iPhone 竖版 1170 × 2532；所有占位图和预览均使用相同比例。
+
+## 访问地址
+
+- 正式地址：https://wodemac.vilesaint.com/
+- 宣传素材：https://wodemac.vilesaint.com/materials.html
+- 域名解析：`wodemac` CNAME → `yonge6.github.io`；GitHub Pages 自定义域名由根目录 `CNAME` 保留。

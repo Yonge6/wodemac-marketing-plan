@@ -43,7 +43,6 @@
       <div><b>$0</b><span>30 天现金预算</span></div>
       <div><b id="g-leads"></b><span>需要的去重线索</span></div>
     </div>
-    <p class="meta">这些都是待验证的目标，不代表已有订单。推广不花现金，提成在客户付款后才产生，人工时间另算。</p>
     <p class="meta save-state" id="plan-status" aria-live="polite"></p>
   </header>
 
@@ -54,7 +53,7 @@
 
 
   <section class="plan-section" id="execution" data-chapter>
-    <h2><span class="section-no" aria-hidden="true">01</span>你的时间怎么花</h2>
+    <h2><span class="section-no" aria-hidden="true">01</span>Elian的时间怎么花</h2>
     <ul class="steps">
       <li id="time-calls"></li>
       <li><b>两成时间陪伙伴成交：</b>帮伙伴给学员或企业客户做演示，回答技术问题，盯交付。</li>
@@ -240,7 +239,7 @@
     const pc=Math.max(3,Math.round(3*s)),talks=Math.max(1,Math.round(6*s)),verify=Math.max(1,Math.round(2*s)),recruits=Math.max(1,Math.round(30*s)),byPartner=Math.round(10*s),active=Math.round(10*s),firstRecruits=Math.max(1,Math.round(10*s)),cases=T<=10?2:T<=20?3:5,sessions=T<=20?2:4,ent=plan.units.enterprise>0?Math.max(1,Math.ceil(plan.units.enterprise/2)):0,people=Math.max(0,sumU-plan.units.enterprise),customers=people+ent,extra=Math.max(0,T-10),calls=Math.max(10,Math.round(T/2)+5),totalCalls=calls*22,listSize=Math.max(100,Math.round(100*s));
     document.querySelectorAll('#plan input.mini').forEach(el=>{if(el===document.activeElement)return;const id=el.id;if(id==='plan-target')el.value=T;else if(id[0]==='u')el.value=plan.units[id.slice(2)];else if(id[0]==='l')el.value=plan.leads[id.slice(2)];else if(id[0]==='w')el.value=plan.weeks[+id.slice(2)];});
     document.querySelectorAll('[data-target]').forEach(b=>{const selected=+b.dataset.target===T;b.classList.toggle('on',selected);b.setAttribute('aria-pressed',String(selected));});
-    setText('plan-lead','30 天卖出 '+T+' 台。你的时间主要用来通过电话、微信、私信联系做 AI 培训的大V，请他们做渠道伙伴；出海企业和一站式客户也主要通过伙伴来。');
+    setText('plan-lead','30 天卖出 '+T+' 台。Elian的时间主要用来通过电话、微信、私信联系做 AI 培训的大V，请他们做渠道伙伴；出海企业和一站式客户也主要通过伙伴来。');
     $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 个 AI 培训大V和出海服务商，30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';$('g-units').innerHTML=T+' <small>台</small>';$('g-leads').innerHTML=sumL+' <small>条</small>';
     setText('plan-status',planLocal?'修改只保存在这台设备上，不会改动共享数字。':planRef?(planStatus||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。');
     setText('p-range',T+' 台首期收款按原价算，全月付 '+money(T*169)+'，全年付 '+money(T*1723.8,2)+'。年付回款快，所以主推年付。');
