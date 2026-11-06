@@ -1,0 +1,19 @@
+{
+  "format": {"width": 1170, "height": 2532, "label": "客户案例照片"},
+  "groups": [
+    {"id": "training", "name": "AI 培训伙伴"},
+    {"id": "business", "name": "出海企业"},
+    {"id": "parents", "name": "学生家长"},
+    {"id": "service", "name": "一站式客户"}
+  ],
+  "items": [
+    {"id": "training-case-1", "group": "training", "title": "AI 培训伙伴案例 01", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "training-case-2", "group": "training", "title": "AI 培训伙伴案例 02", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "business-case-1", "group": "business", "title": "出海企业案例 01", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "business-case-2", "group": "business", "title": "出海企业案例 02", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "parents-case-1", "group": "parents", "title": "学生家长案例 01", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "parents-case-2", "group": "parents", "title": "学生家长案例 02", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "service-case-1", "group": "service", "title": "一站式客户案例 01", "description": "待补充客户照片与案例说明。", "image": null, "download": null},
+    {"id": "service-case-2", "group": "service", "title": "一站式客户案例 02", "description": "待补充客户照片与案例说明。", "image": null, "download": null}
+  ]
+}

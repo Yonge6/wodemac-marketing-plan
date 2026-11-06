@@ -24,4 +24,11 @@
 
 - 正式地址：https://wodemac.vilesaint.com/
 - 宣传素材：https://wodemac.vilesaint.com/materials.html
+
+## 客户案例
+
+- `cases.html` / `cases.json`：按四类客户筛选，当前每类两个照片占位，尚无真实案例。
+- 将客户照片放入 `assets/cases/`，填写对应条目的 `image`、`title` 和 `description` 即可上架；`download` 留空时下载原图。
+- 与宣传素材共用 `materials.js`；支持 `#training`、`#business`、`#parents` 和 `#service` 分类直达。
+- 客户案例：https://wodemac.vilesaint.com/cases.html
 - 域名解析：`wodemac` CNAME → `yonge6.github.io`；GitHub Pages 自定义域名由根目录 `CNAME` 保留。
