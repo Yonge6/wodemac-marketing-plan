@@ -25,6 +25,10 @@
 - 正式地址：https://wodemac.vilesaint.com/
 - 宣传素材：https://wodemac.vilesaint.com/materials.html
 
+## 海报样稿预览
+
+`materials-preview.html` 展示四款待确认的独立海报，从宣传素材页进入。原图位于 `assets/materials/samples-20261106-final/`，WebP 用于网页预览，PNG 用于原图查看和下载。原图通过 ego 浏览器内 ChatGPT 生成，已直接包含官网 Logo 参考、文案、场景和小网址；本轮未后期拼接 Logo，也未制作拼版总览。正式素材清单等待确认后再更新。
+
 ## 客户案例
 
 - `cases.html` / `cases.json`：按四类客户筛选，当前每类两个照片占位，尚无真实案例。
