@@ -31,4 +31,8 @@
 - 将客户照片放入 `assets/cases/`，填写对应条目的 `image`、`title` 和 `description` 即可上架；`download` 留空时下载原图。
 - 与宣传素材共用 `materials.js`；支持 `#training`、`#business`、`#parents` 和 `#service` 分类直达。
 - 客户案例：https://wodemac.vilesaint.com/cases.html
+
+## 微信联系
+
+营销方案底部 `#contact` 展示 Elian 微信二维码，原图来自官网 `https://wodemac.com/assets/wechat-qr.jpg`，保存在 `assets/contact/elian-wechat-qr.jpg`。页面支持查看与保存原图；如二维码更新，请同步替换此文件。
 - 域名解析：`wodemac` CNAME → `yonge6.github.io`；GitHub Pages 自定义域名由根目录 `CNAME` 保留。
