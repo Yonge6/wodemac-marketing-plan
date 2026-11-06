@@ -195,7 +195,7 @@ main.wide { max-width: 1160px; gap: 28px; }
   </section>
 
   <section>
-    <h2>给大V打电话说什么</h2>
+    <h2>通过电话、微信、私信联系大V时说什么</h2>
     <div class="script">
       <div><h3>开场</h3><p>“我们在美国加州提供独享 Mac mini 远程工作环境，帮人把 AI 工作流真正跑起来。想约 30 分钟，用你自己的一个真实任务演示一遍。你觉得有用，再推荐给学员。”</p></div>
       <div><h3>客户去哪里找</h3><ul><li>你的付费学员和训练营</li><li>你做过内训的企业</li><li>你的社群、知识星球和直播间里问“具体怎么用”的人</li><li>你服务过的出海企业和海外华人学员</li></ul></div>
@@ -272,12 +272,12 @@ main.wide { max-width: 1160px; gap: 28px; }
       <table class="work">
         <thead><tr><th>渠道</th><th>具体做什么</th><th>线索</th><th>台数</th></tr></thead>
         <tbody>
-          <tr><th>AI 培训大V（经销商）</th><td>每天打电话，先请大V用自己的任务看演示，再开专属链接。大V把学员和企业客户带过来，我们负责演示和交付。</td><td class="num"><input class="mini" id="l-partner" type="number" min="0" step="1" inputmode="numeric" aria-label="AI 培训大V线索"></td><td class="num"><input class="mini" id="u-partner" type="number" min="0" step="1" inputmode="numeric" aria-label="AI 培训大V台数"></td></tr>
+          <tr><th>AI 培训大V（经销商）</th><td>每天通过电话、微信、私信联系，先请大V用自己的任务看演示，再开专属链接。大V把学员和企业客户带过来，我们负责演示和交付。</td><td class="num"><input class="mini" id="l-partner" type="number" min="0" step="1" inputmode="numeric" aria-label="AI 培训大V线索"></td><td class="num"><input class="mini" id="u-partner" type="number" min="0" step="1" inputmode="numeric" aria-label="AI 培训大V台数"></td></tr>
           <tr><th>出海中小企业</th><td id="t-enterprise"></td><td class="num"><input class="mini" id="l-enterprise" type="number" min="0" step="1" inputmode="numeric" aria-label="出海中小企业线索"></td><td class="num"><input class="mini" id="u-enterprise" type="number" min="0" step="1" inputmode="numeric" aria-label="出海中小企业台数"></td></tr>
           <tr><th>一站式客户</th><td>一次搞好独享 Mac、远程环境、工具安装和工作流；海外公司和支付交给合作供应商。多来自大V介绍。</td><td class="num"><input class="mini" id="l-vip" type="number" min="0" step="1" inputmode="numeric" aria-label="一站式客户线索"></td><td class="num"><input class="mini" id="u-vip" type="number" min="0" step="1" inputmode="numeric" aria-label="一站式客户台数"></td></tr>
           <tr><th>内容（配合伙伴）</th><td id="t-content"></td><td class="num">—</td><td class="num">—</td></tr>
           <tr><th>伙伴说明会</th><td id="t-session"></td><td class="num">—</td><td class="num">—</td></tr>
-          <tr><th>AI 和客户表</th><td>AI 整理大V名单、通话记录和跟进消息草稿，人审核后再发。只用现有工具。</td><td class="num">—</td><td class="num">—</td></tr>
+          <tr><th>AI 和客户表</th><td>AI 整理大V名单、沟通记录和跟进消息草稿，人审核后再发。只用现有工具。</td><td class="num">—</td><td class="num">—</td></tr>
           <tr class="total"><th>合计</th><td id="t-sum-note"></td><td class="num" id="t-leads"></td><td class="num" id="t-units"></td></tr>
         </tbody>
       </table>
@@ -310,7 +310,7 @@ main.wide { max-width: 1160px; gap: 28px; }
         <li id="s-14"></li>
         <li id="s-21"></li>
         <li>招到的伙伴一周内没发链接：先查说明和案例，不要再加人。</li>
-        <li>打满 50 通电话还没签下 1 个伙伴：换名单或换开场白。</li>
+        <li>通过电话、微信、私信累计联系 50 次还没签下 1 个伙伴：换名单或换开场白。</li>
         <li>出现投诉或平台限制：停掉相应的联系方式。</li>
       </ul>
     </div>
@@ -441,8 +441,8 @@ const FinanceModel=(()=>{
     const pc=Math.max(3,Math.round(3*s)),talks=Math.max(1,Math.round(6*s)),verify=Math.max(1,Math.round(2*s)),recruits=Math.max(1,Math.round(30*s)),byPartner=Math.round(10*s),active=Math.round(10*s),firstRecruits=Math.max(1,Math.round(10*s)),cases=T<=10?2:T<=20?3:5,sessions=T<=20?2:4,ent=plan.units.enterprise>0?Math.max(1,Math.ceil(plan.units.enterprise/2)):0,people=Math.max(0,sumU-plan.units.enterprise),customers=people+ent,extra=Math.max(0,T-10),calls=Math.max(10,Math.round(T/2)+5),totalCalls=calls*22,listSize=Math.max(100,Math.round(100*s));
     document.querySelectorAll('#plan input.mini').forEach(el=>{if(el===document.activeElement)return;const id=el.id;if(id==='plan-target')el.value=T;else if(id[0]==='u')el.value=plan.units[id.slice(2)];else if(id[0]==='l')el.value=plan.leads[id.slice(2)];else if(id[0]==='w')el.value=plan.weeks[+id.slice(2)];});
     document.querySelectorAll('[data-target]').forEach(b=>b.classList.toggle('on',+b.dataset.target===T));
-    setText('plan-lead','30 天卖出 '+T+' 台。你的时间主要用来给做 AI 培训的大V打电话，请他们做经销商伙伴；出海企业和一站式客户也主要通过伙伴来。');
-    $('time-calls').innerHTML='<b>八成时间打电话：</b>每天给 '+calls+' 个 AI 培训大V和出海服务商打电话，30 天约 '+totalCalls+' 通，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';setText('g-units',T+' 台');setText('g-leads',sumL+' 条');
+    setText('plan-lead','30 天卖出 '+T+' 台。你的时间主要用来通过电话、微信、私信联系做 AI 培训的大V，请他们做经销商伙伴；出海企业和一站式客户也主要通过伙伴来。');
+    $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 个 AI 培训大V和出海服务商，30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';setText('g-units',T+' 台');setText('g-leads',sumL+' 条');
     setText('plan-status',planLocal?'修改只保存在这台设备上，不会改动共享数字。':planRef?(planStatus||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。');
     const dev=$('plan-devices');dev.hidden=extra===0;if(extra){const c=M.clean(values),cost=extra*c.purchase*(1+c.purchaseTax/100);dev.innerHTML='<p><b>这个目标要新增 '+extra+' 台设备。</b>按现有 10 台算，新增设备按单台 '+money(c.purchase,2)+' 加 '+c.purchaseTax+'% 税，约 '+money(cost)+'。</p><p>这笔钱不在 $0 现金预算里，新机器到货前也不能交付。</p>';}
     const fin=F=>M.calc({...M.clean(values),...M.scaleFor(T),...F}),r=fin({}),soft=Math.max(1,Math.round(T*.8)),rs=fin({occupancy:soft/T*100});
@@ -457,9 +457,9 @@ const FinanceModel=(()=>{
     $('t-funnel').innerHTML='<span><b>'+sumL+'</b>线索</span><i>→</i><span><b>'+Math.round(sumL*.6)+'</b>演示</span><i>→</i><span><b>'+Math.round(sumL*.3)+'</b>任务验证</span><i>→</i><span><b>'+customers+'</b>付费客户</span><i>→</i><span><b>'+sumU+'</b>台</span>';
     setText('t-customers',customers+' 位客户：'+people+' 个个人客户，加 '+ent+' 家出海企业（共 '+plan.units.enterprise+' 台）。');
     let run=0;plan.weeks.forEach((w,i)=>{run+=w;setText('c-'+i,run);});
-    setText('w-t-0','列出 '+listSize+' 个 AI 培训大V和出海服务商名单，写好一页伙伴说明，找 2–3 家一站式供应商并核对授权。开始每天打 '+calls+' 通电话，签下前 '+firstRecruits+' 个伙伴。'+(extra?'定好新增 '+extra+' 台设备的采购和到货时间。':''));
-    setText('w-t-1','每天 '+calls+' 通电话。办第一场伙伴说明会。陪首批伙伴给学员或企业客户做演示，帮他们拿到第一单。和 '+talks+' 家出海服务商沟通。');
-    setText('w-t-2','每天 '+calls+' 通电话，伙伴累计签下 '+recruits+' 个。办第二场说明会。写出出海企业的团队配置方案。');
+    setText('w-t-0','列出 '+listSize+' 个 AI 培训大V和出海服务商名单，写好一页伙伴说明，找 2–3 家一站式供应商并核对授权。开始每天通过电话、微信、私信联系 '+calls+' 位潜在伙伴，签下前 '+firstRecruits+' 个伙伴。'+(extra?'定好新增 '+extra+' 台设备的采购和到货时间。':''));
+    setText('w-t-1','每天通过电话、微信、私信联系 '+calls+' 位潜在伙伴。办第一场伙伴说明会。陪首批伙伴给学员或企业客户做演示，帮他们拿到第一单。和 '+talks+' 家出海服务商沟通。');
+    setText('w-t-2','每天通过电话、微信、私信联系 '+calls+' 位潜在伙伴，伙伴累计签下 '+recruits+' 个。办第二场说明会。写出出海企业的团队配置方案。');
     setText('w-t-3','集中陪伙伴成交和报价，签下 '+ent+' 家出海企业。第一次核对提成，复盘哪个大V带来几台。');
     $('w-note').innerHTML=sumW!==T?'<span class="warn">四周合计 '+sumW+' 台，和目标差 '+Math.abs(sumW-T)+' 台。</span>':'';
     setText('s-14','第 14 天累计不到 '+Math.max(1,Math.round(T*.2))+' 台：先改说法和演示。');setText('s-21','第 21 天累计不到 '+Math.max(1,Math.round(T*.5))+' 台：把时间集中到成交最好的两三个大V，重新估算月底台数。');
