@@ -56,6 +56,14 @@
       "download": null
     },
     {
+      "id": "parents-ai-learning-reference",
+      "group": "parents",
+      "title": "家长关注：用 AI 辅助学习",
+      "description": "用户提供的参考截图，涉及 Codex、Claude Code 辅助学习的讨论，供伙伴了解家长关注点。",
+      "image": "assets/materials/parents-ai-learning-reference.jpg",
+      "download": "assets/materials/parents-ai-learning-reference.jpg"
+    },
+    {
       "id": "parents-5",
       "group": "parents",
       "title": "用 Claude Code，动手做一个小项目",
