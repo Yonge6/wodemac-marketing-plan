@@ -1,173 +1,60 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>wodeMac 营销方案</title><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
-<meta name="claude:viewport-fit-sides" content="cover">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ee">
+<meta name="description" content="wodeMac 30 天营销执行方案：渠道伙伴、客户话术、Mac 租赁价格、推广佣金与每周行动。">
+<title>wodeMac 营销方案</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
-<style>
-/* Layout: one continuous reading column, every section open; tables carry the numbers. */
-:root {
-  --bg: #f5f7fa; --surface: #ffffff; --fg: #141b25; --muted: #5b6778; --line: #d9dfe8; --accent: #2457c5; --accent-soft: #e6edfb; --warn: #9a4b00; --warn-soft: #fbeedd; --good: #0b6e55; --bad: #b3261e; --good-soft: #e2f3ee; --bad-soft: #fbe9e7; --series-1: #2457c5; --series-2: #0f8a6a;
-  --sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
-}
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #10151d; --surface: #171e29; --fg: #eaf0fa; --muted: #97a6bd; --line: #2b3443; --accent: #79a2ff; --accent-soft: #1d2a44; --warn: #f2b26b; --warn-soft: #33261a; --good: #60d7b0; --bad: #ffb0ad; --good-soft: #17302a; --bad-soft: #3a2224; --series-1: #6a8fee; --series-2: #2ba882; color-scheme: dark;
-} }
-:root[data-theme="dark"] {
-  --bg: #10151d; --surface: #171e29; --fg: #eaf0fa; --muted: #97a6bd; --line: #2b3443; --accent: #79a2ff; --accent-soft: #1d2a44; --warn: #f2b26b; --warn-soft: #33261a; --good: #60d7b0; --bad: #ffb0ad; --good-soft: #17302a; --bad-soft: #3a2224; --series-1: #6a8fee; --series-2: #2ba882; color-scheme: dark;
-}
-* { box-sizing: border-box; }
-body { background: var(--bg); color: var(--fg); font: 400 16px/1.75 var(--sans); }
-main { max-width: 860px; margin: 0 auto; padding-block: 48px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; }
-main > * { min-width: 0; }
-h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.2; font-weight: 900; margin: 0; text-wrap: balance; }
-h2 { font-size: 22px; line-height: 1.4; font-weight: 700; margin: 0 0 14px; text-wrap: balance; }
-p { margin: 0; }
-ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
-header { display: grid; gap: 14px; }
-.lead { font-size: 19px; line-height: 1.7; max-width: 38em; }
-.meta, .note { color: var(--muted); font-size: 14px; }
-.note { margin-top: 12px; }
-.goal { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 8px; }
-.goal div { background: var(--accent-soft); padding: 14px 16px; border-radius: 6px; min-width: 0; }
-.goal b { display: block; font: 600 26px/1.3 var(--mono); color: var(--accent); }
-.goal span { font-size: 14px; color: var(--muted); }
-.alert { background: var(--warn-soft); padding: 18px 20px; border-radius: 6px; display: grid; gap: 6px; }
-.alert h2 { color: var(--warn); margin: 0; }
-.table { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
-table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.6; }
-th, td { padding: 11px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
-tr:last-child > * { border-bottom: 0; }
-thead th { color: var(--muted); font-size: 13px; font-weight: 500; white-space: nowrap; }
-tbody th { font-weight: 700; white-space: nowrap; }
-.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.prices { min-width: 620px; }
-.prices .num { text-align: right; }
-.prices thead th:not(:first-child) { text-align: right; }
-.work { min-width: 620px; }
-.total th, .total td { font-weight: 700; background: var(--accent-soft); }
-.funnel { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; font-size: 15px; }
-.funnel b { font: 600 20px var(--mono); color: var(--accent); margin-right: 3px; }
-.funnel i { font-style: normal; color: var(--muted); }
-.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
-.two > * { min-width: 0; }
-.funnel-note { margin-top: 10px; }
-.steps { margin-top: 2px; }
-.mini { width: 76px; font: 400 15px var(--mono); padding: 5px 7px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); text-align: right; }
-.target { margin-top: 2px; }
-.target-label { font-weight: 700; }
-.target-custom { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); }
-.warn { color: var(--warn); }
-.alert p + p { margin-top: 4px; }
-.segs { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
-.segs li, .script > div { display: grid; gap: 4px; min-width: 0; }
-.segs h3, .script h3 { margin: 0; font-size: 16px; font-weight: 700; }
-.script { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 32px; }
-.script ul { gap: 4px; }
-.segs + .note, .segs + .sub { margin-top: 16px; }
-.sub { margin: 0 0 4px; font-size: 16px; font-weight: 700; }
-a { color: var(--accent); overflow-wrap: anywhere; }
-.tabs { max-width: 1160px; margin: 0 auto; padding-block: 18px 0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; gap: 8px; }
-.tabs button, .btn { font: 500 15px/1.4 var(--sans); padding: 8px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); cursor: pointer; }
-.tabs button[aria-selected="true"], .btn.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
-button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-main.wide { max-width: 1160px; gap: 28px; }
-.layout { display: grid; grid-template-columns: 330px minmax(0, 1fr); gap: 28px; align-items: start; }
-.layout > * { min-width: 0; }
-.inputs { display: grid; gap: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; }
-.inputs h3 { margin: 0 0 10px; font-size: 15px; font-weight: 700; }
-.fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; }
-.fields label { display: grid; gap: 3px; font-size: 13px; line-height: 1.4; color: var(--muted); align-content: end; min-width: 0; }
-.fields input { width: 100%; font: 400 15px var(--mono); padding: 6px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); }
-.presets { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.results { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
-.results > * { min-width: 0; }
-.results h2 { font-size: 19px; margin-bottom: 10px; }
-.cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; min-width: 0; display: grid; gap: 4px; align-content: start; }
-.card span { font-size: 13px; color: var(--muted); line-height: 1.5; }
-.card b { font: 600 22px/1.3 var(--mono); overflow-wrap: anywhere; }
-.card b span { font-size: inherit; line-height: inherit; }
-.good, .card b .good { color: var(--good); } .bad, .card b .bad { color: var(--bad); }
-.rows { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 14px; }
-.row { display: flex; justify-content: space-between; gap: 14px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
-.row:last-child { border-bottom: 0; font-weight: 700; }
-.chart { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 12px 6px; }
-.chart svg { display: block; width: 100%; height: auto; touch-action: pan-y; }
-.chart text { fill: var(--muted); font: 12px var(--mono); }
-.chart .grid { stroke: var(--line); stroke-width: 1; }
-.chart .zero { stroke: var(--muted); stroke-width: 1; }
-.chart .cross { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
-.legend i { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 6px; }
-.tip { position: absolute; top: 34px; pointer-events: none; background: var(--fg); color: var(--bg); font-size: 12px; line-height: 1.6; padding: 6px 9px; border-radius: 4px; white-space: nowrap; }
-.tight th, .tight td { padding: 6px 10px; font-size: 13px; }
-.cell-good { background: var(--good-soft); } .cell-bad { background: var(--bad-soft); }
-.scroll { max-height: none; }
-@media (max-width: 980px) { .layout { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 720px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 620px) { main { padding-block: 32px 56px; gap: 40px; } .two { grid-template-columns: minmax(0, 1fr); } .goal { grid-template-columns: minmax(0, 1fr); } }
-
-.mobile-summary { display: none; }
-@media (max-width: 980px) {
-  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
-  .tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; }
-  .tabs button { flex: 1; min-height: 44px; }
-  main { padding-block: 20px 56px; }
-  .results { order: -1; }
-  .mobile-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: 8px; align-items: center; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 64px); z-index: 4; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
-  .mobile-summary div { display: grid; min-width: 0; font-size: 11px; line-height: 1.4; color: var(--muted); }
-  .mobile-summary b { font: 600 14px/1.4 var(--mono); color: var(--fg); overflow-wrap: anywhere; }
-  .mobile-summary b .good { color: var(--good); } .mobile-summary b .bad { color: var(--bad); }
-  .mobile-summary .btn { min-height: 40px; padding: 4px 10px; font-size: 13px; white-space: nowrap; }
-  .fields input { scroll-margin-top: 170px; }
-}
-@media (max-width: 620px) {
-  .btn { min-height: 44px; }
-  .fields input, .mini { font-size: 16px; min-height: 44px; }
-  .target-label { width: 100%; }
-  .script { grid-template-columns: minmax(0, 1fr); }
-  .target-custom { flex: 1 1 40%; }
-  .target-custom .mini { flex: 1; width: auto; min-width: 0; }
-  #plan-reset { flex: 1 1 45%; }
-  .presets .btn { flex: 1 1 20%; padding-inline: 4px; }
-  .work { min-width: 0; }
-  .work thead { display: none; }
-  .work, .work tbody, .work tr, .work th, .work td { display: block; width: 100%; }
-  .work tr { padding: 12px 14px; border-bottom: 1px solid var(--line); display: grid; gap: 4px; }
-  .work tr:last-child { border-bottom: 0; }
-  .work th, .work td { padding: 0; border: 0; white-space: normal; }
-  .work th { font-size: 16px; }
-  .work td:empty { display: none; }
-  .work .total { background: var(--accent-soft); }
-  .work .total th, .work .total td { background: transparent; }
-  .work td.num { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .work td.num::before { content: attr(data-label); font-family: var(--sans); color: var(--muted); }
-  .prices { min-width: 560px; }
-  .prices th:first-child, .tight th:first-child, .tight td:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); }
-  .tight th:first-child { white-space: normal; min-width: 88px; max-width: 110px; }
-  .cards .card b { font-size: 19px; }
-  .tip { white-space: normal; max-width: 220px; }
-  .row { font-size: 15px; }
-}
-</style>
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#plan">跳到方案正文</a>
+<aside class="sidebar" aria-label="方案目录">
+  <a class="wordmark" href="#overview" aria-label="wodeMac 营销方案首页">wodeMac<span class="brand-dot" aria-hidden="true"></span></a>
+  <p class="sidebar-caption">营销执行方案</p>
+  <nav class="chapter-nav" aria-label="章节导航">
+    <a class="current" href="#overview" aria-current="location"><span>00</span>方案总览</a>
+    <a href="#execution"><span>01</span>时间分配</a>
+    <a href="#customers"><span>02</span>目标客户</a>
+    <a href="#conversation"><span>03</span>沟通话术</a>
+    <a href="#pricing"><span>04</span>价格与佣金</a>
+    <a href="#commission"><span>05</span>提成规则</a>
+    <a href="#quote"><span>06</span>统一话术</a>
+    <a href="#channels"><span>07</span>渠道拆解</a>
+    <a href="#timeline"><span>08</span>每周行动</a>
+    <a href="#review"><span>09</span>复盘与边界</a>
+    <a class="materials-nav" href="materials.html"><span>↗</span>宣传素材</a>
+  </nav>
+  <a class="official-link" href="https://wodemac.com/" target="_blank" rel="noopener">访问 wodeMac 官网 <span aria-hidden="true">↗</span></a>
+</aside>
 <main id="plan">
-  <header>
-    <h1>wodeMac 营销方案</h1>
+  <header class="hero" id="overview" data-chapter>
+    <div class="hero-kicker"><span class="status-dot" aria-hidden="true"></span>30 天 · 渠道伙伴增长计划</div>
+    <h1>wodeMac <span>营销方案</span></h1>
     <p class="meta">30 天版 · 价格和提成规则核对于 2026-11-06，来自 wodemac.com 线上数据</p>
-    <div class="presets target"><span class="target-label">30 天目标</span><button type="button" class="btn" data-target="10">10 台</button><button type="button" class="btn" data-target="20">20 台</button><button type="button" class="btn" data-target="50">50 台</button><label class="target-custom">自己填<input class="mini" id="plan-target" type="number" min="1" max="10000" step="1" inputmode="numeric"></label><button type="button" class="btn" id="plan-reset">按目标重新分配</button></div>
     <p class="lead" id="plan-lead"></p>
-    <p class="meta" id="plan-status" aria-live="polite"></p>
+    <div class="presets target"><span class="target-label">30 天目标</span><button type="button" class="btn" data-target="10">10 台</button><button type="button" class="btn" data-target="20">20 台</button><button type="button" class="btn" data-target="50">50 台</button><button type="button" class="btn" data-target="100">100 台</button><button type="button" class="btn" data-target="200">200 台</button><button type="button" class="btn" data-target="500">500 台</button><label class="target-custom">自己填<input class="mini" id="plan-target" type="number" min="1" max="10000" step="1" inputmode="numeric"></label><button type="button" class="btn" id="plan-reset">按目标重新分配</button></div>
     <div class="goal">
       <div><b id="g-units"></b><span>30 天新卖出目标</span></div>
       <div><b>$0</b><span>30 天现金预算</span></div>
       <div><b id="g-leads"></b><span>需要的去重线索</span></div>
     </div>
     <p class="meta">这些都是待验证的目标，不代表已有订单。推广不花现金，提成在客户付款后才产生，人工时间另算。</p>
+    <p class="meta save-state" id="plan-status" aria-live="polite"></p>
   </header>
 
-  <section>
-    <h2>你的时间怎么花</h2>
+  <a class="materials-entry" href="materials.html">
+    <div><span class="entry-label">伙伴工具箱</span><h2>宣传素材 <span aria-hidden="true">↗</span></h2></div>
+    <p>AI 培训伙伴 · 出海企业 · 学生家长 · 一站式客户<br><span>按客户群查找，iPhone 竖版海报陆续上架。</span></p>
+  </a>
+
+
+  <section class="plan-section" id="execution" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">01</span>你的时间怎么花</h2>
     <ul class="steps">
       <li id="time-calls"></li>
       <li><b>两成时间陪伙伴成交：</b>帮伙伴给学员或企业客户做演示，回答技术问题，盯交付。</li>
@@ -175,20 +62,20 @@ main.wide { max-width: 1160px; gap: 28px; }
     </ul>
   </section>
 
-  <section>
-    <h2>三类客户</h2>
+  <section class="plan-section" id="customers" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">02</span>三类客户</h2>
     <ol class="segs">
       <li><h3>1. 做 AI 培训的大V（渠道伙伴）</h3><p>最重要的一类。他们自带学员和企业客户。先让大V自己把工作流跑起来，有了真实的效率变化和案例，再传给学员。</p><p class="note">推广伙伴用专属链接带客户，按客户首单拿提成：年付 15%、半年付 10%、季付 7.5%、月付 5%。经销商的合作方式和价格单独沟通。</p></li>
       <li><h3>2. 想出海的中小企业</h3><p>给团队每个人配一台独享 Mac 和用得上的 AI 工作流，用最新的生产力工具做出海的资料、销售和运营。</p><p class="note">去哪找：大V的企业学员、出海服务商、跨境电商社群。</p></li>
-      <li><h3>3. 不差钱、要一站式服务的客户</h3><p>从海外账号、海外支付，到 Claude 注册与订阅，再到海外独享 Mac、远程环境和 AI 工作流落地，一站式协助配置，客户不用逐项折腾。</p><p class="note">余老师负责 ID 注册、账号开通、订阅和支付；我们负责海外独享 Mac、远程环境与 AI 工作流落地。</p></li>
+      <li><h3>3. 不差钱、要一站式服务的客户</h3><p>从海外账号、海外支付，到 Claude 注册与订阅，再到海外独享 Mac、远程环境和 AI 工作流落地，一站式协助配置，客户不用逐项折腾。</p><p class="audience-focus"><b>重点拓展学生家长：</b>优先覆盖北京、上海、广州、深圳、武汉等重点城市，推广“账号开通＋充值订阅＋美国 Mac mini 远程使用”的组合服务。</p><p class="note">余老师负责 ID 注册、账号开通、订阅和支付；我们负责海外独享 Mac、远程环境与 AI 工作流落地。</p></li>
     </ol>
     <h3 class="sub">一站式服务怎么落地</h3>
     <p class="note">先由余老师核清 ID 注册、账号、订阅和支付的各项成本，我们再确定整套服务售价，最后约定分销比例。当前先明确分工和服务内容，成本、整套售价与分销比例待确认。</p>
     <p class="note">值得花时间跟进的客户，要能答上三个问题：每周都在做同一件事吗？能给一份真实样本吗？谁决定花这笔钱？</p>
   </section>
 
-  <section>
-    <h2>通过电话、微信、私信联系大V时说什么</h2>
+  <section class="plan-section" id="conversation" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">03</span>通过电话、微信、私信联系大V时说什么</h2>
     <div class="script">
       <div><h3>开场</h3><p>“我们在美国加州提供独享 Mac mini 远程工作环境，帮人把 AI 工作流真正跑起来。想约 30 分钟，用你自己的一个真实任务演示一遍。你觉得有用，再推荐给学员。”</p></div>
       <div><h3>客户去哪里找</h3><ul><li>你的付费学员和训练营</li><li>你做过内训的企业</li><li>你的社群、知识星球和直播间里问“具体怎么用”的人</li><li>你服务过的出海企业和海外华人学员</li></ul></div>
@@ -199,19 +86,14 @@ main.wide { max-width: 1160px; gap: 28px; }
     </div>
   </section>
 
-  <section>
-    <h2>网址</h2>
-    <div class="table">
-      <table>
-        <tbody>
-          <tr><th>官网</th><td><a href="https://wodemac.com/">https://wodemac.com/</a></td></tr>
-        </tbody>
-      </table>
-    </div>
+
+  <section class="partner-entry" aria-label="官网与分销入口">
+    <div><span>官网 · 推广伙伴入口</span><a href="https://wodemac.com/" target="_blank" rel="noopener">wodemac.com ↗</a></div>
+    <p>登录后，可以生成自己的分销链接。</p>
   </section>
 
-  <section>
-    <h2>Mac 租赁价格和推广佣金</h2>
+  <section class="plan-section" id="pricing" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">04</span>Mac 租赁价格和推广佣金</h2>
     <p class="note">以下为 Mac 租赁价格，表内佣金适用于推广伙伴；经销商合作方式和价格单独沟通。包含 ID 注册、账号、订阅和支付的一站式整套服务，待余老师核清成本后另行定价、约定分销比例。</p>
     <div class="table">
       <table class="prices">
@@ -231,8 +113,8 @@ main.wide { max-width: 1160px; gap: 28px; }
     </ul>
   </section>
 
-  <section>
-    <h2>推广伙伴提成规则</h2>
+  <section class="plan-section" id="commission" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">05</span>推广伙伴提成规则</h2>
     <ul>
       <li><b>规则：</b>推广伙伴登录后生成专属链接。客户首单按方案计提成：年付 15%、半年付 10%、季付 7.5%、月付 5%。续费、注册、未付款和退款订单不计，只有一级，没有二级。</li>
       <li><b>归属：</b>客户通过链接首次访问后 30 天内注册，才算这个伙伴带来的。</li>
@@ -241,21 +123,21 @@ main.wide { max-width: 1160px; gap: 28px; }
     </ul>
   </section>
 
-  <section>
-    <h2>统一话术</h2>
+  <section class="plan-section" id="quote" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">06</span>统一话术</h2>
     <p class="lead">年付 $1,723.80，折合每月 $143.65；团队年付一单 5 台及以上，第一年再减 2.5%。</p>
     <p class="note">内容、伙伴说明和报价卡都用这一句。</p>
   </section>
 
-  <section>
-    <h2>这些台数从哪里来</h2>
+  <section class="plan-section" id="channels" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">07</span>这些台数从哪里来</h2>
     <div class="table">
       <table class="work">
         <thead><tr><th>渠道</th><th>具体做什么</th><th>线索</th><th>台数</th></tr></thead>
         <tbody>
           <tr><th>AI 培训大V（渠道伙伴）</th><td>每天通过电话、微信、私信联系，先请大V用自己的任务看演示，再开专属链接。大V把学员和企业客户带过来，我们负责演示和交付。</td><td class="num"><input class="mini" id="l-partner" type="number" min="0" step="1" inputmode="numeric" aria-label="AI 培训大V线索"></td><td class="num"><input class="mini" id="u-partner" type="number" min="0" step="1" inputmode="numeric" aria-label="AI 培训大V台数"></td></tr>
           <tr><th>出海中小企业</th><td id="t-enterprise"></td><td class="num"><input class="mini" id="l-enterprise" type="number" min="0" step="1" inputmode="numeric" aria-label="出海中小企业线索"></td><td class="num"><input class="mini" id="u-enterprise" type="number" min="0" step="1" inputmode="numeric" aria-label="出海中小企业台数"></td></tr>
-          <tr><th>一站式客户</th><td>一站式衔接海外账号与支付、Claude 注册与订阅、海外独享 Mac 和 AI 工作流落地。余老师负责 ID 注册、账号、订阅和支付，成本核清后再定整套售价和分销比例。多来自大V介绍。</td><td class="num"><input class="mini" id="l-vip" type="number" min="0" step="1" inputmode="numeric" aria-label="一站式客户线索"></td><td class="num"><input class="mini" id="u-vip" type="number" min="0" step="1" inputmode="numeric" aria-label="一站式客户台数"></td></tr>
+          <tr><th>一站式客户</th><td>一站式衔接海外账号与支付、Claude 注册与订阅、海外独享 Mac 和 AI 工作流落地。余老师负责 ID 注册、账号、订阅和支付，成本核清后再定整套售价和分销比例。重点触达北京、上海、广州、深圳、武汉等城市的学生家长，也通过大V介绍客户。</td><td class="num"><input class="mini" id="l-vip" type="number" min="0" step="1" inputmode="numeric" aria-label="一站式客户线索"></td><td class="num"><input class="mini" id="u-vip" type="number" min="0" step="1" inputmode="numeric" aria-label="一站式客户台数"></td></tr>
           <tr><th>内容（配合伙伴）</th><td id="t-content"></td><td class="num">—</td><td class="num">—</td></tr>
           <tr><th>伙伴说明会</th><td id="t-session"></td><td class="num">—</td><td class="num">—</td></tr>
           <tr><th>AI 和客户表</th><td>AI 整理大V名单、沟通记录和跟进消息草稿，人审核后再发。只用现有工具。</td><td class="num">—</td><td class="num">—</td></tr>
@@ -267,8 +149,8 @@ main.wide { max-width: 1160px; gap: 28px; }
     <p class="note funnel-note" id="t-customers"></p>
   </section>
 
-  <section>
-    <h2>30 天节奏</h2>
+  <section class="plan-section" id="timeline" data-chapter>
+    <h2><span class="section-no" aria-hidden="true">08</span>30 天节奏</h2>
     <div class="table">
       <table class="work">
         <thead><tr><th>时间</th><th>当周台数</th><th>累计</th><th>要完成的事</th></tr></thead>
@@ -284,9 +166,9 @@ main.wide { max-width: 1160px; gap: 28px; }
     <p class="note">每位客户的交付：开通当天完成第一次输入 → 72 小时内拿到第一份可用结果 → 第 7 天独立重复一次。</p>
   </section>
 
-  <section class="two">
+  <section class="two plan-section" id="review" data-chapter>
     <div>
-      <h2>什么时候停下来改</h2>
+      <h2><span class="section-no" aria-hidden="true">09</span>什么时候停下来改</h2>
       <ul>
         <li id="s-14"></li>
         <li id="s-21"></li>
@@ -296,7 +178,7 @@ main.wide { max-width: 1160px; gap: 28px; }
       </ul>
     </div>
     <div>
-      <h2>不能做的事</h2>
+      <h2><span class="section-no" aria-hidden="true">10</span>不能做的事</h2>
       <ul>
         <li>不收入门费，不按拉人头发奖励，只按客户首单的真实付款计提成。</li>
         <li>不承诺收入。发分销内容前，先查各平台规则。</li>
@@ -326,9 +208,9 @@ main.wide { max-width: 1160px; gap: 28px; }
     const T=plan.target,s=T/10,sumU=PLAN_CH.reduce((a,[k])=>a+plan.units[k],0),sumL=PLAN_CH.reduce((a,[k])=>a+plan.leads[k],0),sumW=plan.weeks.reduce((a,b)=>a+b,0);
     const pc=Math.max(3,Math.round(3*s)),talks=Math.max(1,Math.round(6*s)),verify=Math.max(1,Math.round(2*s)),recruits=Math.max(1,Math.round(30*s)),byPartner=Math.round(10*s),active=Math.round(10*s),firstRecruits=Math.max(1,Math.round(10*s)),cases=T<=10?2:T<=20?3:5,sessions=T<=20?2:4,ent=plan.units.enterprise>0?Math.max(1,Math.ceil(plan.units.enterprise/2)):0,people=Math.max(0,sumU-plan.units.enterprise),customers=people+ent,extra=Math.max(0,T-10),calls=Math.max(10,Math.round(T/2)+5),totalCalls=calls*22,listSize=Math.max(100,Math.round(100*s));
     document.querySelectorAll('#plan input.mini').forEach(el=>{if(el===document.activeElement)return;const id=el.id;if(id==='plan-target')el.value=T;else if(id[0]==='u')el.value=plan.units[id.slice(2)];else if(id[0]==='l')el.value=plan.leads[id.slice(2)];else if(id[0]==='w')el.value=plan.weeks[+id.slice(2)];});
-    document.querySelectorAll('[data-target]').forEach(b=>b.classList.toggle('on',+b.dataset.target===T));
+    document.querySelectorAll('[data-target]').forEach(b=>{const selected=+b.dataset.target===T;b.classList.toggle('on',selected);b.setAttribute('aria-pressed',String(selected));});
     setText('plan-lead','30 天卖出 '+T+' 台。你的时间主要用来通过电话、微信、私信联系做 AI 培训的大V，请他们做渠道伙伴；出海企业和一站式客户也主要通过伙伴来。');
-    $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 个 AI 培训大V和出海服务商，30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';setText('g-units',T+' 台');setText('g-leads',sumL+' 条');
+    $('time-calls').innerHTML='<b>八成时间联系伙伴：</b>每天通过电话、微信、私信联系 '+calls+' 个 AI 培训大V和出海服务商，30 天约 '+totalCalls+' 次，目标签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';$('g-units').innerHTML=T+' <small>台</small>';$('g-leads').innerHTML=sumL+' <small>条</small>';
     setText('plan-status',planLocal?'修改只保存在这台设备上，不会改动共享数字。':planRef?(planStatus||'修改后自动保存。'):'当前只能在这台设备上试算。修改不会共享。');
     setText('p-range',T+' 台首期收款按原价算，全月付 '+money(T*169)+'，全年付 '+money(T*1723.8,2)+'。年付回款快，所以主推年付。');
     $('p-recruit').innerHTML='<b>招募目标：</b>签下 '+recruits+' 个伙伴，其中 '+active+' 个真正带来客户。';
@@ -351,9 +233,18 @@ main.wide { max-width: 1160px; gap: 28px; }
   $('plan').addEventListener('click',e=>{const T=e.target.dataset&&e.target.dataset.target;if(T){plan=derivePlan(T);planChanged();}if(e.target.id==='plan-reset'){plan=derivePlan(plan.target);planChanged();}});
   $('plan').addEventListener('input',e=>{const el=e.target;if(!el.classList.contains('mini')||el.value==='')return;const id=el.id;if(id==='plan-target'){const n=planInt(el.value,1,10000,plan.target);if(n!==plan.target){plan=derivePlan(n);planChanged();}return;}const n=planInt(el.value,0,1000000,0);if(id[0]==='u')plan.units[id.slice(2)]=n;else if(id[0]==='l')plan.leads[id.slice(2)]=n;else if(id[0]==='w')plan.weeks[+id.slice(2)]=n;plan=cleanPlan(plan);planChanged();});
   $('plan').addEventListener('change',e=>{if(e.target.classList.contains('mini'))renderPlan();});
-  document.querySelectorAll('.work').forEach(tb=>{const heads=[...tb.querySelectorAll('thead th')].map(h=>h.textContent);tb.querySelectorAll('tbody tr').forEach(row=>[...row.children].forEach((cell,i)=>cell.setAttribute('data-label',heads[i]||'')));});
+  document.querySelectorAll('.work, .prices').forEach(tb=>{const heads=[...tb.querySelectorAll('thead th')].map(h=>h.textContent);tb.querySelectorAll('tbody tr').forEach(row=>[...row.children].forEach((cell,i)=>cell.setAttribute('data-label',heads[i]||'')));});
 
   renderPlan();
+  const chapterLinks=[...document.querySelectorAll('.chapter-nav a')];
+  if('IntersectionObserver' in window){
+    const chapters=new IntersectionObserver(entries=>{
+      for(const entry of entries){if(!entry.isIntersecting)continue;
+        chapterLinks.forEach(link=>{const current=link.hash==='#'+entry.target.id;link.classList.toggle('current',current);if(current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+      }
+    },{rootMargin:'-12% 0px -65% 0px',threshold:0});
+    document.querySelectorAll('[data-chapter]').forEach(section=>chapters.observe(section));
+  }
 })();
 </script>
 

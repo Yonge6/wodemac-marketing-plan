@@ -1,0 +1,91 @@
+{
+  "format": {
+    "width": 1170,
+    "height": 2532,
+    "label": "iPhone 竖版"
+  },
+  "groups": [
+    {
+      "id": "training",
+      "name": "AI 培训伙伴"
+    },
+    {
+      "id": "business",
+      "name": "出海企业"
+    },
+    {
+      "id": "parents",
+      "name": "学生家长"
+    },
+    {
+      "id": "service",
+      "name": "一站式客户"
+    }
+  ],
+  "items": [
+    {
+      "id": "training-1",
+      "group": "training",
+      "title": "课堂方法，落到真实任务",
+      "description": "用于课程、训练营和学员社群。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "training-2",
+      "group": "training",
+      "title": "推广伙伴合作说明",
+      "description": "用于介绍专属链接与首单佣金。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "business-3",
+      "group": "business",
+      "title": "出海团队的独享 Mac",
+      "description": "用于企业客户与出海服务商沟通。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "business-4",
+      "group": "business",
+      "title": "把 AI 接进团队工作流",
+      "description": "用于资料、销售和运营场景介绍。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "parents-5",
+      "group": "parents",
+      "title": "面向家长的 AI 学习环境介绍",
+      "description": "用于北京、上海、广州、深圳、武汉等重点城市的家长客群。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "parents-6",
+      "group": "parents",
+      "title": "账号、订阅与美国 Mac mini",
+      "description": "用于介绍组合服务，价格待成本核清后确定。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "service-7",
+      "group": "service",
+      "title": "从账号到机器，一次配置",
+      "description": "用于介绍账号、订阅支付与远程环境的服务分工。",
+      "image": null,
+      "download": null
+    },
+    {
+      "id": "service-8",
+      "group": "service",
+      "title": "从演示到工作流落地",
+      "description": "用于介绍首次任务演示与后续交付。",
+      "image": null,
+      "download": null
+    }
+  ]
+}
