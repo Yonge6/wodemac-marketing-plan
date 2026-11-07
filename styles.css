@@ -67,3 +67,14 @@ main{max-width:1200px;margin:0 auto 0 220px;padding:40px clamp(28px,4.4vw,76px) 
 
 /* Newest material badge. */
 .asset-new{display:inline-block;margin-left:8px;padding:0 7px;border-radius:999px;background:var(--gold);color:#fffefa;font-size:9px;line-height:16px;letter-spacing:.5px;vertical-align:1px}
+
+/* Full-screen save view for in-app browsers that ignore <a download> (see save-image.js). */
+.save-image-open,.save-image-open body{overflow:hidden}
+.save-image-layer{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;background:#111410f2;color:#f1ead8;-webkit-user-select:none;user-select:none}
+.save-image-layer[hidden]{display:none}
+.save-image-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(12px + env(safe-area-inset-top)) 16px 12px;font-size:14px;line-height:1.5}
+.save-image-bar b{color:#e8c27c}
+.save-image-close{flex:none;padding:6px 16px;border:1px solid #e8c27c;border-radius:999px;background:transparent;color:#e8c27c;font-size:14px}
+.save-image-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:0 12px;overflow:auto}
+.save-image-stage img{display:block;max-width:100%;max-height:100%;object-fit:contain;-webkit-touch-callout:default;-webkit-user-select:auto;user-select:auto;pointer-events:auto}
+.save-image-tip{padding:10px 16px calc(14px + env(safe-area-inset-bottom));color:#aab3a5;font-size:12px;text-align:center}
