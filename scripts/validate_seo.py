@@ -125,9 +125,9 @@ for filename, page in pages.items():
             check(unquote(parsed.fragment) in set(pages[target.name].ids) | allowed_groups, f"{filename}: missing target anchor: {ref}")
 
 catalog = json.loads((ROOT / "materials.json").read_text())
-check(len(catalog["items"]) == 17, "Expected the reviewed catalog of 16 posters plus one reference image")
+check(len(catalog["items"]) == 22, "Expected the reviewed catalog of 21 posters plus one reference image")
 check(set(pages["materials.html"].material_ids) == {item["id"] for item in catalog["items"]}, "Static material cards differ from materials.json")
-check(len(pages["materials.html"].material_ids) == 17, "Static material cards must appear exactly once")
+check(len(pages["materials.html"].material_ids) == 22, "Static material cards must appear exactly once")
 
 namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 tree = ET.parse(ROOT / "sitemap.xml")
@@ -149,4 +149,4 @@ if errors:
     for error in errors:
         print("- " + error)
     sys.exit(1)
-print("PASS: six unique page heads, visible/schema FAQ parity, 17 static material cards, local links/assets, index policy, four canonical sitemap URLs and honest service/plan facts.")
+print("PASS: six unique page heads, visible/schema FAQ parity, 22 static material cards, local links/assets, index policy, four canonical sitemap URLs and honest service/plan facts.")

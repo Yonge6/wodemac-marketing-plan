@@ -64,3 +64,6 @@ main{max-width:1200px;margin:0 auto 0 220px;padding:40px clamp(28px,4.4vw,76px) 
 .access-value .scene-link{margin-top:16px;background:#ffffff0d;border-color:#dfc18a66}
 .access-value .scene-link a{color:#f1ead8}.access-value .scene-link small{color:#aab3a5}.access-value .scene-link code{background:#ffffff1a;color:#f1ead8}
 .access-value .copy-link{border-color:#dfc18a;color:#dfc18a}.access-value .copy-link:hover{background:#dfc18a26}
+
+/* Newest material badge. */
+.asset-new{display:inline-block;margin-left:8px;padding:0 7px;border-radius:999px;background:var(--gold);color:#fffefa;font-size:9px;line-height:16px;letter-spacing:.5px;vertical-align:1px}

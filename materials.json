@@ -22,6 +22,10 @@
       "name": "出海企业"
     },
     {
+      "id": "teachers",
+      "name": "AI 老师与大V"
+    },
+    {
       "id": "training",
       "name": "渠道伙伴"
     },
@@ -31,6 +35,51 @@
     }
   ],
   "items": [
+    {
+      "id": "overview-values",
+      "group": "brand",
+      "title": "同一套前沿工具，不同的价值",
+      "description": "团队要商业竞争力，家长要孩子的起点，老师要作品与生意。按客户选价值主张时先发这张。",
+      "image": "assets/materials/campaign-20261107/overview-values.webp",
+      "download": "assets/materials/campaign-20261107/overview-values.png",
+      "new": true
+    },
+    {
+      "id": "business-weapon",
+      "group": "business",
+      "title": "给团队配上生产力重武器",
+      "description": "更快做出产品与内容，去争取更大的生意。适合发给出海团队负责人和企业客户。",
+      "image": "assets/materials/campaign-20261107/business-weapon.webp",
+      "download": "assets/materials/campaign-20261107/business-weapon.png",
+      "new": true
+    },
+    {
+      "id": "parents-startline",
+      "group": "parents",
+      "title": "AI 时代的起跑线，正在重新画",
+      "description": "把前沿工具带进家庭，为孩子准备更高的能力起点。家长引导，孩子动手。",
+      "image": "assets/materials/campaign-20261107/parents-startline.webp",
+      "download": "assets/materials/campaign-20261107/parents-startline.png",
+      "new": true
+    },
+    {
+      "id": "teachers-works",
+      "group": "teachers",
+      "title": "先做出更强的作品，再赢得更多学员",
+      "description": "内容、课程和学员案例，都是增长的底气。适合发给 AI 培训老师和大V。",
+      "image": "assets/materials/campaign-20261107/teachers-works.webp",
+      "download": "assets/materials/campaign-20261107/teachers-works.png",
+      "new": true
+    },
+    {
+      "id": "access-barrier",
+      "group": "service",
+      "title": "很多人卡住的不是想法，而是根本没有跑通",
+      "description": "把少数人率先掌握的工具，变成你自己的日常生产力。机器、远程环境和工作流由我们接上。",
+      "image": "assets/materials/campaign-20261107/access-barrier.webp",
+      "download": "assets/materials/campaign-20261107/access-barrier.png",
+      "new": true
+    },
     {
       "id": "manifesto",
       "group": "brand",

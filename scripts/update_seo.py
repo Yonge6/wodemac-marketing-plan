@@ -142,7 +142,7 @@ def render_materials() -> str:
                 raise ValueError(f"Expected an existing local material: {path}")
         image, download = item["image"], item.get("download") or item["image"]
         ratio = f'{catalog["format"]["width"]}/{catalog["format"]["height"]}'
-        cards.append(f'''<article class="asset-card" data-asset-id="{esc(item['id'])}" data-group="{esc(item['group'])}"><a class="poster-preview {esc(item['group'])}" style="aspect-ratio:{ratio}" href="{esc(download)}" target="_blank" rel="noopener" aria-label="查看原图：{esc(item['title'])}"><img src="{esc(image)}" alt="{esc(item['title'])}" loading="lazy"></a><div class="asset-details"><p class="asset-category">{esc(groups[item['group']])}</p><h2>{esc(item['title'])}</h2><p class="asset-description">{esc(item['description'])}</p><a class="asset-download" href="{esc(download)}" download>下载图片 ↓</a></div></article>''')
+        cards.append(f'''<article class="asset-card" data-asset-id="{esc(item['id'])}" data-group="{esc(item['group'])}"><a class="poster-preview {esc(item['group'])}" style="aspect-ratio:{ratio}" href="{esc(download)}" target="_blank" rel="noopener" aria-label="查看原图：{esc(item['title'])}"><img src="{esc(image)}" alt="{esc(item['title'])}" loading="lazy"></a><div class="asset-details"><p class="asset-category">{esc(groups[item['group']])}{'<span class="asset-new">最新</span>' if item.get('new') else ''}</p><h2>{esc(item['title'])}</h2><p class="asset-description">{esc(item['description'])}</p><a class="asset-download" href="{esc(download)}" download>下载图片 ↓</a></div></article>''')
     return "\n<!-- materials:generated:start -->\n" + "\n".join(cards) + "\n<!-- materials:generated:end -->\n"
 
 
@@ -158,7 +158,7 @@ def main() -> None:
         "index.html": ("Mac mini 租赁渠道合作与营销方案 | wodeMac", "wodeMac 美国加州独享 Mac mini 租赁的渠道合作与营销资料。了解远程开发与测试用途、客户适用条件、首单推广规则、宣传素材和购买合作问答。", False, None, "WebPage"),
         "partners.html": ("Mac mini 租赁渠道合作：AI 编程老师与实施伙伴 | wodeMac", "了解 wodeMac 美国加州独享 Mac mini 的渠道合作方式：面向 AI 编程老师、出海开发服务商与 IT 实施伙伴，说明交付分工、首单计佣、客户归属和人工对账。", False, [FAQ[8], FAQ[9], FAQ[10]], "WebPage"),
         "faq.html": ("美国 Mac mini 租赁与渠道合作常见问题 | wodeMac", "购买与合作前核对 wodeMac 的开发测试用途、第三方自有账号与资格、交付、独享权限、首单佣金、每月对账和经销边界。", False, FAQ, "WebPage"),
-        "materials.html": ("伙伴宣传素材：16 张场景海报与参考截图 | wodeMac", "wodeMac 合作伙伴宣传素材，包含 16 张场景化海报与 1 张家长参考截图，按品牌理念、学生家长、个人用户、出海企业、渠道伙伴和一站式服务分类查看及下载。", False, None, "CollectionPage"),
+        "materials.html": ("伙伴宣传素材：21 张场景海报与参考截图 | wodeMac", "wodeMac 合作伙伴宣传素材，包含 21 张场景化海报与 1 张家长参考截图，按品牌理念、学生家长、个人用户、出海企业、AI 老师与大V、渠道伙伴和一站式服务分类查看及下载，最新素材排在最前。", False, None, "CollectionPage"),
         "cases.html": ("客户案例资料待补充 | wodeMac", "wodeMac 客户案例资料页，当前预留分类位置，真实客户照片与案例说明待客户授权和核验后补充。", True, None, "CollectionPage"),
         "materials-preview.html": ("海报样稿预览 | wodeMac", "wodeMac 首批四款海报的创意思路与大图预览，完整宣传海报可在素材库查看和下载；创意场景不代表实际客户案例。", True, None, "WebPage"),
     }
@@ -177,7 +177,7 @@ def main() -> None:
                 source = source.replace('  <section class="belief"', "  " + facts + '\n\n  <section class="belief"', 1)
         if filename == "materials.html":
             source = re.sub(r'<div class="asset-grid" id="asset-grid">.*?</div>\s*(?=<p class="library-error")', lambda _: '<div class="asset-grid" id="asset-grid">' + render_materials() + '</div>\n    ', source, flags=re.S)
-            source = re.sub(r'(<p id="asset-count" aria-live="polite">).*?(</p>)', r'\g<1>17 项素材 · 17 项已上架\2', source)
+            source = re.sub(r'(<p id="asset-count" aria-live="polite">).*?(</p>)', r'\g<1>22 项素材 · 22 项已上架\2', source)
         (ROOT / filename).write_text(source)
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n")
     namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -197,7 +197,7 @@ def main() -> None:
 ## 公开资料
 - [渠道合作]({base}/partners.html)：适合的伙伴、首单推广规则、责任与对账方式。
 - [购买与合作常见问题]({base}/faq.html)：用途、第三方账号资格、交付、权限与合作边界。
-- [宣传素材]({base}/materials.html)：16 张场景海报与 1 张参考截图，不代表客户成果。
+- [宣传素材]({base}/materials.html)：21 张场景海报与 1 张参考截图，不代表客户成果。
 - [营销方案]({base}/)：销售目标、漏斗与台数是规划测算，不是已经发生的销量或业绩。
 
 ## 核对官网
