@@ -384,4 +384,5 @@
 document.addEventListener('click',async e=>{const b=e.target.closest('.copy-link');if(!b)return;const done=t=>{b.textContent=t;setTimeout(()=>{b.textContent='复制链接';},1600);};try{await navigator.clipboard.writeText(b.dataset.copy);done('已复制');}catch{done('请长按链接复制');}});
 </script>
 
+<script src="save-image.js" defer></script>
 </body></html>
