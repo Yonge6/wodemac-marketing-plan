@@ -5,7 +5,7 @@
   const isCases=document.body.dataset.library==='cases';
   const label=isCases?'案例':'素材';
   try{
-    const response=await fetch(isCases?'cases.json':'materials.json');
+    const response=await fetch(isCases?'cases.json':'materials.json',{cache:'no-cache'});
     if(!response.ok)throw new Error('Materials unavailable');
     const catalog=await response.json();
     const groups=new Map(catalog.groups.map(group=>[group.id,group.name]));
