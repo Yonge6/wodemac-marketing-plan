@@ -36,13 +36,42 @@
   ],
   "items": [
     {
+      "id": "team-per-seat",
+      "group": "business",
+      "title": "一人一台，整个团队一起开跑",
+      "description": "F1 发车格大场面。团队每人配一台，适合发给要给成员批量配机器的出海团队负责人。",
+      "image": "assets/materials/campaign-20261107-growth/team-per-seat.webp",
+      "download": "assets/materials/campaign-20261107-growth/team-per-seat.png",
+      "new": true,
+      "promo": "一人一台，整个团队一起开跑。\n每位成员一台美国加州独享 Mac，Claude Code 各跑各的，不用排队。团队多台可以微信咨询。\n👉 wodemac.com"
+    },
+    {
+      "id": "partner-export-services",
+      "group": "training",
+      "title": "你帮客户出海，加州 Mac 我们备好",
+      "description": "复古航海地图与港口油画风格。适合发给出海开发服务商和 IT 实施公司。",
+      "image": "assets/materials/campaign-20261107-growth/partner-export-services.webp",
+      "download": "assets/materials/campaign-20261107-growth/partner-export-services.png",
+      "new": true,
+      "promo": "你帮客户出海，加州 Mac 我们备好。\n出海开发服务商、IT 实施伙伴：给你服务的团队配上美国加州独享 Mac 和 Claude Code 工作流，项目交付更顺。欢迎来聊合作。\n👉 wodemac.com"
+    },
+    {
+      "id": "solo-team",
+      "group": "personal",
+      "title": "一个人，也能带出一支队伍",
+      "description": "皮影戏混搭霓虹光。适合发给独立开发者和一人公司。",
+      "image": "assets/materials/campaign-20261107-growth/solo-team.webp",
+      "download": "assets/materials/campaign-20261107-growth/solo-team.png",
+      "new": true,
+      "promo": "一个人，也能带出一支队伍。\n一台美国加州独享 Mac，让 Claude Code 帮你写、测、跑，你专心做决定。\n👉 wodemac.com"
+    },
+    {
       "id": "big-bang",
       "group": "brand",
       "title": "一个想法，可以炸出一个世界",
       "description": "宇宙大爆炸风格。品牌理念，适合任何客群开场。",
       "image": "assets/materials/campaign-20261107-bold/big-bang.webp",
       "download": "assets/materials/campaign-20261107-bold/big-bang.png",
-      "new": true,
       "promo": "一个想法，可以炸出一个世界。\n用最好的工具，把想法做成真的。美国加州独享 Mac，为 Claude Code 准备好。\n👉 wodemac.com"
     },
     {
@@ -52,7 +81,6 @@
       "description": "电影级体育场大场面。号召从旁观到动手。",
       "image": "assets/materials/campaign-20261107-bold/not-spectator.webp",
       "download": "assets/materials/campaign-20261107-bold/not-spectator.png",
-      "new": true,
       "promo": "AI 浪潮里，别只当观众。\n走下看台，亲手把 Claude Code 用起来。环境和机器，wodeMac 帮你备好。\n👉 wodemac.com"
     },
     {
@@ -62,7 +90,6 @@
       "description": "超现实巨物航母。适合发给出海团队负责人。",
       "image": "assets/materials/campaign-20261107-bold/small-team-global.webp",
       "download": "assets/materials/campaign-20261107-bold/small-team-global.png",
-      "new": true,
       "promo": "小团队，也能打全世界的市场。\n一台美国加州独享 Mac，让 Claude Code 替团队把活跑起来。\n👉 wodemac.com"
     },
     {
@@ -72,7 +99,6 @@
       "description": "好莱坞大片海报风格。适合发给想自己做东西的个人用户。",
       "image": "assets/materials/campaign-20261107-bold/main-character.webp",
       "download": "assets/materials/campaign-20261107-bold/main-character.png",
-      "new": true,
       "promo": "这一次，主角是你。\n独享一台美国加州 Mac，用 Claude Code 把想做的 App、游戏、网站亲手做出来。\n👉 wodemac.com"
     },
     {
@@ -82,7 +108,6 @@
       "description": "中国剪纸风格。家长陪着孩子，把画变成会动的作品。",
       "image": "assets/materials/campaign-20261107-bold/paper-dragon.webp",
       "download": "assets/materials/campaign-20261107-bold/paper-dragon.png",
-      "new": true,
       "promo": "孩子的想象力，值得一双翅膀。\n家长陪着，用 Claude Code 把孩子的画变成会动的作品。\n👉 wodemac.com"
     },
     {
@@ -92,7 +117,6 @@
       "description": "发布会大舞台风格。适合发给 AI 培训老师和大V。",
       "image": "assets/materials/campaign-20261107-bold/launch-class.webp",
       "download": "assets/materials/campaign-20261107-bold/launch-class.png",
-      "new": true,
       "promo": "把你的课，开成一场发布会。\n现场拿出用 Claude Code 做的作品，学员自然信服。加州独享 Mac，为你的课备好环境。\n👉 wodemac.com"
     },
     {
@@ -102,7 +126,6 @@
       "description": "波普漫画风格。适合发给有影响力的渠道伙伴。",
       "image": "assets/materials/campaign-20261107-bold/pop-partner.webp",
       "download": "assets/materials/campaign-20261107-bold/pop-partner.png",
-      "new": true,
       "promo": "你负责影响力，我们负责落地。\n机器、远程环境和工作流由 wodeMac 交付，你的客户直接用上 Claude Code。欢迎来聊合作。\n👉 wodemac.com"
     },
     {
@@ -112,7 +135,6 @@
       "description": "浮世绘木刻风格。安装、配置、运维交给我们。",
       "image": "assets/materials/campaign-20261107-bold/cable-wave.webp",
       "download": "assets/materials/campaign-20261107-bold/cable-wave.png",
-      "new": true,
       "promo": "折腾的浪，我们来挡。\n安装、配置、运维交给 wodeMac，你在加州独享 Mac 上安心用 Claude Code。\n👉 wodemac.com"
     },
     {
