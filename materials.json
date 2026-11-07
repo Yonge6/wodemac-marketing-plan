@@ -36,13 +36,142 @@
   ],
   "items": [
     {
+      "id": "manifesto",
+      "group": "brand",
+      "title": "搞，就搞最好的！",
+      "description": "包豪斯几何风格。品牌理念总纲，适合任何客群开场。",
+      "image": "assets/materials/campaign-20261107-refresh/manifesto.webp",
+      "download": "assets/materials/campaign-20261107-refresh/manifesto.png",
+      "new": true,
+      "promo": "搞，就搞最好的！\n用最先进的工具，把工具的能力变成自己的生产力。美国加州独享 Mac，为 Claude Code 准备好。\n👉 wodemac.com"
+    },
+    {
+      "id": "parents-ideas",
+      "group": "parents",
+      "title": "让孩子的想法，长出自己的作品",
+      "description": "水彩绘本风格。家长陪着孩子，把一张画变成作品。",
+      "image": "assets/materials/campaign-20261107-refresh/parents-ideas.webp",
+      "download": "assets/materials/campaign-20261107-refresh/parents-ideas.png",
+      "new": true,
+      "promo": "让孩子的想法，长出自己的作品。\n一个小花园、一个小机器人、一个小网页，家长陪着，用 Claude Code 和孩子一起动手做出来。\n👉 wodemac.com"
+    },
+    {
+      "id": "parents-questions",
+      "group": "parents",
+      "title": "让孩子的好奇心，走得更远",
+      "description": "星空天文风格。把孩子的一个问题，变成一次动手探索。",
+      "image": "assets/materials/campaign-20261107-refresh/parents-questions.webp",
+      "download": "assets/materials/campaign-20261107-refresh/parents-questions.png",
+      "new": true,
+      "promo": "让孩子的好奇心，走得更远。\n孩子问出一个问题，就和他一起用 Claude Code 动手探索一次，答案是自己做出来的。\n👉 wodemac.com"
+    },
+    {
+      "id": "environment",
+      "group": "personal",
+      "title": "别把创造力，耗在运行环境上",
+      "description": "扁平编辑插画风格。适合发给想用好工具的个人用户。",
+      "image": "assets/materials/campaign-20261107-refresh/environment.webp",
+      "download": "assets/materials/campaign-20261107-refresh/environment.png",
+      "new": true,
+      "promo": "别把创造力，耗在运行环境上。\n美国加州独享 Mac，环境我们备好，你的精力留给 Claude Code 和真正想做的东西。\n👉 wodemac.com"
+    },
+    {
+      "id": "personal-network",
+      "group": "personal",
+      "title": "换个网络，工作不必重来",
+      "description": "五十年代旅行海报风格。任务跑在加州的独享 Mac 上。",
+      "image": "assets/materials/campaign-20261107-refresh/personal-network.webp",
+      "download": "assets/materials/campaign-20261107-refresh/personal-network.png",
+      "new": true,
+      "promo": "换个网络，工作不必重来。\n任务跑在美国加州的独享 Mac 上，在家、在路上、换了 Wi-Fi，连回去就能接着做。\n👉 wodemac.com"
+    },
+    {
+      "id": "business-ideas",
+      "group": "business",
+      "title": "别让好想法，停在文档里",
+      "description": "折纸艺术风格。把想法推进成能看、能试的东西。",
+      "image": "assets/materials/campaign-20261107-refresh/business-ideas.webp",
+      "download": "assets/materials/campaign-20261107-refresh/business-ideas.png",
+      "new": true,
+      "promo": "别让好想法，停在文档里。\n用加州独享 Mac 上的 Claude Code，把想法往前推一步，做成能看、能试的东西。\n👉 wodemac.com"
+    },
+    {
+      "id": "business-focus",
+      "group": "business",
+      "title": "团队的时间，应该用来做产品",
+      "description": "黑白时装大片风格。机器我们托管，团队专注产品。",
+      "image": "assets/materials/campaign-20261107-refresh/business-focus.webp",
+      "download": "assets/materials/campaign-20261107-refresh/business-focus.png",
+      "new": true,
+      "promo": "团队的时间，应该用来做产品。\n加州独享 Mac 由我们托管，电源、网络、硬件不用操心，团队专注 Claude Code 工作流。\n👉 wodemac.com"
+    },
+    {
+      "id": "partner-paid-clients",
+      "group": "training",
+      "title": "客户已经为 AI 付费，下一步是把工具用起来",
+      "description": "玻璃质感 3D 图标风格。适合发给账号与订阅服务商。",
+      "image": "assets/materials/campaign-20261107-refresh/partner-paid-clients.webp",
+      "download": "assets/materials/campaign-20261107-refresh/partner-paid-clients.png",
+      "new": true,
+      "promo": "客户已经为 AI 付费，下一步是把工具用起来。\n账号与订阅服务商：加州独享 Mac 承接 Claude Code 的真实工作，让客户真正用上。欢迎来聊合作。\n👉 wodemac.com"
+    },
+    {
+      "id": "partner-training",
+      "group": "training",
+      "title": "把你教的方法，变成学员的真实作品",
+      "description": "黑板粉笔画风格。适合发给培训机构和 AI 老师。",
+      "image": "assets/materials/campaign-20261107-refresh/partner-training.webp",
+      "download": "assets/materials/campaign-20261107-refresh/partner-training.png",
+      "new": true,
+      "promo": "把你教的方法，变成学员的真实作品。\n加州独享 Mac，让学员的 Claude Code 实践有地方落地。培训机构和老师欢迎合作。\n👉 wodemac.com"
+    },
+    {
+      "id": "partner-subscriptions",
+      "group": "training",
+      "title": "服务不止于订阅，还可以延伸到生产力",
+      "description": "大理石黄铜静物风格。适合发给订阅服务商。",
+      "image": "assets/materials/campaign-20261107-refresh/partner-subscriptions.webp",
+      "download": "assets/materials/campaign-20261107-refresh/partner-subscriptions.png",
+      "new": true,
+      "promo": "服务不止于订阅，还可以延伸到生产力。\n把加州独享 Mac 带给需要用好 Claude Code 的客户，一起把服务做完整。欢迎渠道伙伴来聊。\n👉 wodemac.com"
+    },
+    {
+      "id": "service-no-fuss",
+      "group": "service",
+      "title": "想用最好的工具，不想先学会折腾",
+      "description": "日式枯山水极简风格。账号由伙伴衔接，环境由我们配置。",
+      "image": "assets/materials/campaign-20261107-refresh/service-no-fuss.webp",
+      "download": "assets/materials/campaign-20261107-refresh/service-no-fuss.png",
+      "new": true,
+      "promo": "想用最好的工具，不想先学会折腾？\n账号订阅由伙伴衔接，账号始终是你自己的；加州 Mac 环境由我们配置好，你直接开始用。\n👉 wodemac.com"
+    },
+    {
+      "id": "service-managed",
+      "group": "service",
+      "title": "机器在加州，运维有我们",
+      "description": "剖面模型插画风格。电源、网络和硬件由我们负责。",
+      "image": "assets/materials/campaign-20261107-refresh/service-managed.webp",
+      "download": "assets/materials/campaign-20261107-refresh/service-managed.png",
+      "new": true,
+      "promo": "机器在加州，运维有我们。\n电源、网络和硬件由 wodeMac 负责，你只管用 Claude Code 做事。\n👉 wodemac.com"
+    },
+    {
+      "id": "service-data",
+      "group": "service",
+      "title": "你的创造，值得被认真对待",
+      "description": "巴洛克油画风格。不把你的数据用于训练、出售或广告。",
+      "image": "assets/materials/campaign-20261107-refresh/service-data.webp",
+      "download": "assets/materials/campaign-20261107-refresh/service-data.png",
+      "new": true,
+      "promo": "你的创造，值得被认真对待。\nwodeMac 不把你的数据用于训练、出售或广告。独享 Mac，你的工作留在你的机器上。\n👉 wodemac.com"
+    },
+    {
       "id": "prototype-friday",
       "group": "business",
       "title": "周一的想法，周五客户就能点开",
       "description": "蓝图变实物。从需求到能验证的原型，更早拿到客户反馈。",
       "image": "assets/materials/campaign-20261107-scenes/prototype-friday.webp",
       "download": "assets/materials/campaign-20261107-scenes/prototype-friday.png",
-      "new": true,
       "promo": "周一的想法，周五客户就能点开。\n从需求到能验证的原型，用美国加州独享 Mac 上的 Claude Code 往前推，更早拿到客户的真实反馈。\n👉 wodemac.com"
     },
     {
@@ -52,7 +181,6 @@
       "description": "孔版印刷风格。多语言页面、内容和销售材料，跟上产品出海的速度。",
       "image": "assets/materials/campaign-20261107-scenes/one-doc-world.webp",
       "download": "assets/materials/campaign-20261107-scenes/one-doc-world.png",
-      "new": true,
       "promo": "一份产品资料，讲给全世界听。\n多语言页面、产品内容、销售材料，用 Claude Code 跟上产品出海的速度，团队精力留给客户。\n👉 wodemac.com"
     },
     {
@@ -62,7 +190,6 @@
       "description": "蜡笔画变 3D 游戏。家长陪着，把孩子的画做成能运行的小游戏。",
       "image": "assets/materials/campaign-20261107-scenes/drawing-to-game.webp",
       "download": "assets/materials/campaign-20261107-scenes/drawing-to-game.png",
-      "new": true,
       "promo": "孩子画的，今晚就能玩。\n家长陪着，用 Claude Code 把孩子本子上的一幅画，做成一个真正能运行的小游戏。想法变成作品的那一刻，孩子会记很久。\n👉 wodemac.com"
     },
     {
@@ -72,7 +199,6 @@
       "description": "演唱会舞台风格。工具、课程案例和学员作品，就是最响的招生口碑。",
       "image": "assets/materials/campaign-20261107-scenes/teacher-stage.webp",
       "download": "assets/materials/campaign-20261107-scenes/teacher-stage.png",
-      "new": true,
       "promo": "别人讲概念，你拿出作品。\n用 Claude Code 做出自己的工具、课程案例，再带学员做出作品。AI 老师和大V，欢迎来聊。\n👉 wodemac.com"
     },
     {
@@ -82,7 +208,6 @@
       "description": "微距金属链条。账号、订阅、环境、机器、工作流，一环环接上。",
       "image": "assets/materials/campaign-20261107-scenes/missing-link.webp",
       "download": "assets/materials/campaign-20261107-scenes/missing-link.png",
-      "new": true,
       "promo": "差的不是能力，是有一环没跑通。\n账号订阅由伙伴衔接，账号始终是你自己的；加州独享 Mac、远程环境和 Claude Code 工作流由我们接上。\n👉 wodemac.com"
     },
     {
@@ -92,7 +217,6 @@
       "description": "七十年代复古科幻插画。搞，就搞最好的。",
       "image": "assets/materials/campaign-20261107-scenes/gap-widening.webp",
       "download": "assets/materials/campaign-20261107-scenes/gap-widening.png",
-      "new": true,
       "promo": "AI 时代，生产力的差距正在被迅速拉大。\n搞，就搞最好的。用前沿工具，把工具的能力变成自己的竞争力。\n👉 wodemac.com"
     },
     {
@@ -102,7 +226,6 @@
       "description": "层叠剪纸风格。适合发给账号与订阅服务商、培训机构。",
       "image": "assets/materials/campaign-20261107-scenes/partner-unlock.webp",
       "download": "assets/materials/campaign-20261107-scenes/partner-unlock.png",
-      "new": true,
       "promo": "客户买了工具，下一步是真正用起来。\n账号与订阅服务商、培训机构：你继续做好现有服务，我们承接加州独享 Mac 和工作流，一起把客户服务得更深。\n👉 wodemac.com"
     },
     {
@@ -112,7 +235,6 @@
       "description": "运动大片风格。先定一个任务，开通当天开始用。",
       "image": "assets/materials/campaign-20261107-scenes/day-one.webp",
       "download": "assets/materials/campaign-20261107-scenes/day-one.png",
-      "new": true,
       "promo": "开通当天，就开始做事。\n先定一个最想完成的任务，加州独享 Mac 开通当天就开始用，第一份成果尽快拿到手。\n👉 wodemac.com"
     },
     {
@@ -213,159 +335,6 @@
       "image": "assets/materials/campaign-20261107/teachers-works.webp",
       "download": "assets/materials/campaign-20261107/teachers-works.png",
       "promo": "先做出更强的作品，再赢得更多学员。\n内容、课程和学员案例，都是增长的底气。AI 老师和大V，欢迎来聊合作。\n👉 wodemac.com"
-    },
-    {
-      "id": "access-barrier",
-      "group": "service",
-      "title": "很多人卡住的不是想法，而是根本没有跑通",
-      "description": "把少数人率先掌握的工具，变成你自己的日常生产力。机器、远程环境和工作流由我们接上。",
-      "image": "assets/materials/campaign-20261107/access-barrier.webp",
-      "download": "assets/materials/campaign-20261107/access-barrier.png",
-      "promo": "很多人卡住的不是想法，而是根本没有跑通。\n机器、远程环境和工作流由我们接上，把少数人先用上的工具，变成你自己的日常生产力。\n👉 wodemac.com"
-    },
-    {
-      "id": "manifesto",
-      "group": "brand",
-      "title": "搞，就搞最好的！",
-      "description": "用最先进的工具，把工具的能力变成自己的生产力。",
-      "image": "assets/materials/samples-20261106-final/manifesto.webp",
-      "download": "assets/materials/samples-20261106-final/manifesto.png",
-      "promo": "搞，就搞最好的！\n用最先进的工具，把工具的能力变成自己的生产力。美国加州独享 Mac，为 Claude Code 准备好。\n👉 wodemac.com"
-    },
-    {
-      "id": "parents-runway",
-      "group": "parents",
-      "title": "孩子的 AI 起跑线",
-      "description": "从第一次动手创造开始，让先进工具成为孩子探索的起点。",
-      "image": "assets/materials/samples-20261106-final/parents-runway.webp",
-      "download": "assets/materials/samples-20261106-final/parents-runway.png",
-      "promo": "孩子的 AI 起跑线，从第一次动手创造开始。\n家长陪着一起，让先进工具成为孩子探索世界的起点。\n👉 wodemac.com"
-    },
-    {
-      "id": "parents-ideas",
-      "group": "parents",
-      "title": "让想法长出作品",
-      "description": "用加州独享 Mac 上的 Claude Code，开始动手创造。",
-      "image": "assets/materials/campaign-20261106/parents-ideas.webp",
-      "download": "assets/materials/campaign-20261106/parents-ideas.png",
-      "promo": "让孩子的想法长出作品。\n一个小游戏、一本电子绘本、一个小工具，用加州独享 Mac 上的 Claude Code，和孩子一起做出来。\n👉 wodemac.com"
-    },
-    {
-      "id": "parents-questions",
-      "group": "parents",
-      "title": "让好奇心走得更远",
-      "description": "用 Claude Code，把一个问题变成一次动手探索。",
-      "image": "assets/materials/campaign-20261106/parents-questions.webp",
-      "download": "assets/materials/campaign-20261106/parents-questions.png",
-      "promo": "让好奇心走得更远。\n孩子问出一个问题，就和他一起用 Claude Code 动手探索一次，答案是自己做出来的。\n👉 wodemac.com"
-    },
-    {
-      "id": "environment",
-      "group": "personal",
-      "title": "别把创造力耗在运行环境上",
-      "description": "美国加州独享 Mac，让精力回到 Claude Code 与真正的创造。",
-      "image": "assets/materials/samples-20261106-final/environment.webp",
-      "download": "assets/materials/samples-20261106-final/environment.png",
-      "promo": "别把创造力耗在折腾运行环境上。\n美国加州独享 Mac，环境我们备好，你的精力留给 Claude Code 和真正想做的东西。\n👉 wodemac.com"
-    },
-    {
-      "id": "time-life",
-      "group": "personal",
-      "title": "省下的不只是时间，更是生命",
-      "description": "把省下来的时间，留给生活和更有价值的创造。",
-      "image": "assets/materials/samples-20261106-final/time-life.webp",
-      "download": "assets/materials/samples-20261106-final/time-life.png",
-      "promo": "省下的不只是时间，更是生命。\n把重复的活交给 Claude Code，省下来的时间，留给生活和更有价值的创造。\n👉 wodemac.com"
-    },
-    {
-      "id": "personal-network",
-      "group": "personal",
-      "title": "换个网络，工作不必重来",
-      "description": "任务在美国加州的独享 Mac 上运行。",
-      "image": "assets/materials/campaign-20261106/personal-network.webp",
-      "download": "assets/materials/campaign-20261106/personal-network.png",
-      "promo": "换个网络，工作不必重来。\n任务跑在美国加州的独享 Mac 上，在家、在路上、换了 Wi-Fi，连回去就能接着做。\n👉 wodemac.com"
-    },
-    {
-      "id": "business-after-hours",
-      "group": "business",
-      "title": "团队下班，远端继续运行",
-      "description": "Claude Code 在美国加州的独享 Mac 上运行。",
-      "image": "assets/materials/campaign-20261106/business-after-hours.webp",
-      "download": "assets/materials/campaign-20261106/business-after-hours.png",
-      "promo": "团队下班，远端继续运行。\nClaude Code 在美国加州的独享 Mac 上跑着，长任务不用守着电脑等。\n👉 wodemac.com"
-    },
-    {
-      "id": "business-ideas",
-      "group": "business",
-      "title": "别让好想法停在文档里",
-      "description": "用加州独享 Mac 上的 Claude Code，把想法往前推进。",
-      "image": "assets/materials/campaign-20261106/business-ideas.webp",
-      "download": "assets/materials/campaign-20261106/business-ideas.png",
-      "promo": "别让好想法停在文档里。\n用加州独享 Mac 上的 Claude Code，把想法往前推一步，做成能看、能试的东西。\n👉 wodemac.com"
-    },
-    {
-      "id": "business-focus",
-      "group": "business",
-      "title": "团队的时间用来做产品",
-      "description": "加州独享 Mac 由我们托管，团队专注 Claude Code 工作流。",
-      "image": "assets/materials/campaign-20261106/business-focus.webp",
-      "download": "assets/materials/campaign-20261106/business-focus.png",
-      "promo": "团队的时间，应该用来做产品。\n加州独享 Mac 由我们托管，电源、网络、硬件不用操心，团队专注 Claude Code 工作流。\n👉 wodemac.com"
-    },
-    {
-      "id": "partner-paid-clients",
-      "group": "training",
-      "title": "把客户的工具用起来",
-      "description": "用加州独享 Mac，承接 Claude Code 的真实工作。",
-      "image": "assets/materials/campaign-20261106/partner-paid-clients.webp",
-      "download": "assets/materials/campaign-20261106/partner-paid-clients.png",
-      "promo": "已经帮客户开好了工具？下一步是把它用起来。\n加州独享 Mac 承接 Claude Code 的真实工作，让客户真正用上。欢迎渠道伙伴来聊。\n👉 wodemac.com"
-    },
-    {
-      "id": "partner-training",
-      "group": "training",
-      "title": "把方法变成真实作品",
-      "description": "加州独享 Mac，让 Claude Code 实践有处落地。",
-      "image": "assets/materials/campaign-20261106/partner-training.webp",
-      "download": "assets/materials/campaign-20261106/partner-training.png",
-      "promo": "把课堂上的方法，变成真实作品。\n加州独享 Mac，让学员的 Claude Code 实践有地方落地。培训机构和老师欢迎合作。\n👉 wodemac.com"
-    },
-    {
-      "id": "partner-subscriptions",
-      "group": "training",
-      "title": "服务延伸到生产力",
-      "description": "把加州独享 Mac，带给需要用好 Claude Code 的客户。",
-      "image": "assets/materials/campaign-20261106/partner-subscriptions.webp",
-      "download": "assets/materials/campaign-20261106/partner-subscriptions.png",
-      "promo": "你的服务，可以延伸到生产力。\n把加州独享 Mac 带给需要用好 Claude Code 的客户，一起把服务做完整。欢迎渠道伙伴来聊。\n👉 wodemac.com"
-    },
-    {
-      "id": "service-no-fuss",
-      "group": "service",
-      "title": "想用好工具，不想折腾",
-      "description": "账号订阅由伙伴衔接，加州 Mac 环境由我们配置。",
-      "image": "assets/materials/campaign-20261106/service-no-fuss.webp",
-      "download": "assets/materials/campaign-20261106/service-no-fuss.png",
-      "promo": "想用好工具，又不想折腾？\n账号订阅由伙伴衔接，账号始终是你自己的；加州 Mac 环境由我们配置好，你直接开始用。\n👉 wodemac.com"
-    },
-    {
-      "id": "service-managed",
-      "group": "service",
-      "title": "机器在加州，运维有我们",
-      "description": "电源、网络和硬件，由我们负责。",
-      "image": "assets/materials/campaign-20261106/service-managed.webp",
-      "download": "assets/materials/campaign-20261106/service-managed.png",
-      "promo": "机器在加州，运维有我们。\n电源、网络和硬件由 wodeMac 负责，你只管用 Claude Code 做事。\n👉 wodemac.com"
-    },
-    {
-      "id": "service-data",
-      "group": "service",
-      "title": "认真对待你的创造",
-      "description": "wodeMac 不把你的数据用于训练、出售或广告。",
-      "image": "assets/materials/campaign-20261106/service-data.webp",
-      "download": "assets/materials/campaign-20261106/service-data.png",
-      "promo": "认真对待你的创造。\nwodeMac 不把你的数据用于训练、出售或广告。独享 Mac，你的工作留在你的机器上。\n👉 wodemac.com"
     },
     {
       "id": "parents-ai-learning-reference",
