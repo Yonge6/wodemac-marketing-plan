@@ -35,6 +35,7 @@
         const details=create('div','asset-details');
         const category=create('p','asset-category',groups.get(item.group));if(item.new)category.append(create('span','asset-new','最新'));
         details.append(category,create('h2','',item.title),create('p','asset-description',item.description));
+        if(item.promo){const promo=create('div','asset-promo');const copy=create('button','asset-copy','复制文案');copy.type='button';promo.append(create('p','asset-promo-label','推广文案'),create('p','asset-promo-text',item.promo),copy);details.append(promo);}
         let action;
         if(item.image){action=create('a','asset-download','下载图片 ↓');action.href=item.download||item.image;action.setAttribute('download','');}
         else{action=create('button','asset-download',isCases?'案例待补充':'素材待上架');action.type='button';action.disabled=true;}

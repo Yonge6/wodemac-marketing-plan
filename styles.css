@@ -78,3 +78,8 @@ main{max-width:1200px;margin:0 auto 0 220px;padding:40px clamp(28px,4.4vw,76px) 
 .save-image-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:0 12px;overflow:auto}
 .save-image-stage img{display:block;max-width:100%;max-height:100%;object-fit:contain;-webkit-touch-callout:default;-webkit-user-select:auto;user-select:auto;pointer-events:auto}
 .save-image-tip{padding:10px 16px calc(14px + env(safe-area-inset-bottom));color:#aab3a5;font-size:12px;text-align:center}
+
+/* Promo copy under each poster. */
+.asset-promo{margin-top:12px;padding:11px 12px 12px;border:1px solid #e3dccb;border-radius:6px;background:#faf7ef}.asset-promo-label{font-size:10px;color:var(--gold);letter-spacing:.5px;margin-bottom:5px}.asset-promo-text{font-size:12px;line-height:1.85;color:var(--ink);white-space:pre-line;user-select:text;-webkit-user-select:text}.asset-copy{display:block;width:100%;margin-top:10px;min-height:36px;padding:7px 10px;border:1px solid var(--gold);border-radius:5px;background:transparent;color:var(--gold);font-size:12px}.asset-copy:hover{background:var(--gold-soft)}.asset-copy.copied{background:var(--gold);color:#fffefa}
+@media(max-width:700px){.asset-promo{padding:9px 9px 10px}.asset-promo-text{font-size:11px;line-height:1.8}.asset-copy{font-size:11px;min-height:40px}}
+.asset-card{display:flex;flex-direction:column}.asset-details{flex:1}.asset-description{margin-bottom:14px}.asset-promo{margin:0 0 14px}.asset-details .asset-download{margin-top:auto}
