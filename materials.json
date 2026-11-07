@@ -36,13 +36,92 @@
   ],
   "items": [
     {
+      "id": "prototype-friday",
+      "group": "business",
+      "title": "周一的想法，周五客户就能点开",
+      "description": "蓝图变实物。从需求到能验证的原型，更早拿到客户反馈。",
+      "image": "assets/materials/campaign-20261107-scenes/prototype-friday.webp",
+      "download": "assets/materials/campaign-20261107-scenes/prototype-friday.png",
+      "new": true,
+      "promo": "周一的想法，周五客户就能点开。\n从需求到能验证的原型，用美国加州独享 Mac 上的 Claude Code 往前推，更早拿到客户的真实反馈。\n👉 wodemac.com"
+    },
+    {
+      "id": "one-doc-world",
+      "group": "business",
+      "title": "一份产品资料，讲给全世界听",
+      "description": "孔版印刷风格。多语言页面、内容和销售材料，跟上产品出海的速度。",
+      "image": "assets/materials/campaign-20261107-scenes/one-doc-world.webp",
+      "download": "assets/materials/campaign-20261107-scenes/one-doc-world.png",
+      "new": true,
+      "promo": "一份产品资料，讲给全世界听。\n多语言页面、产品内容、销售材料，用 Claude Code 跟上产品出海的速度，团队精力留给客户。\n👉 wodemac.com"
+    },
+    {
+      "id": "drawing-to-game",
+      "group": "parents",
+      "title": "孩子画的，今晚就能玩",
+      "description": "蜡笔画变 3D 游戏。家长陪着，把孩子的画做成能运行的小游戏。",
+      "image": "assets/materials/campaign-20261107-scenes/drawing-to-game.webp",
+      "download": "assets/materials/campaign-20261107-scenes/drawing-to-game.png",
+      "new": true,
+      "promo": "孩子画的，今晚就能玩。\n家长陪着，用 Claude Code 把孩子本子上的一幅画，做成一个真正能运行的小游戏。想法变成作品的那一刻，孩子会记很久。\n👉 wodemac.com"
+    },
+    {
+      "id": "teacher-stage",
+      "group": "teachers",
+      "title": "别人讲概念，你拿出作品",
+      "description": "演唱会舞台风格。工具、课程案例和学员作品，就是最响的招生口碑。",
+      "image": "assets/materials/campaign-20261107-scenes/teacher-stage.webp",
+      "download": "assets/materials/campaign-20261107-scenes/teacher-stage.png",
+      "new": true,
+      "promo": "别人讲概念，你拿出作品。\n用 Claude Code 做出自己的工具、课程案例，再带学员做出作品。AI 老师和大V，欢迎来聊。\n👉 wodemac.com"
+    },
+    {
+      "id": "missing-link",
+      "group": "service",
+      "title": "差的不是能力，是有一环没跑通",
+      "description": "微距金属链条。账号、订阅、环境、机器、工作流，一环环接上。",
+      "image": "assets/materials/campaign-20261107-scenes/missing-link.webp",
+      "download": "assets/materials/campaign-20261107-scenes/missing-link.png",
+      "new": true,
+      "promo": "差的不是能力，是有一环没跑通。\n账号订阅由伙伴衔接，账号始终是你自己的；加州独享 Mac、远程环境和 Claude Code 工作流由我们接上。\n👉 wodemac.com"
+    },
+    {
+      "id": "gap-widening",
+      "group": "brand",
+      "title": "生产力的差距，正在被迅速拉大",
+      "description": "七十年代复古科幻插画。搞，就搞最好的。",
+      "image": "assets/materials/campaign-20261107-scenes/gap-widening.webp",
+      "download": "assets/materials/campaign-20261107-scenes/gap-widening.png",
+      "new": true,
+      "promo": "AI 时代，生产力的差距正在被迅速拉大。\n搞，就搞最好的。用前沿工具，把工具的能力变成自己的竞争力。\n👉 wodemac.com"
+    },
+    {
+      "id": "partner-unlock",
+      "group": "training",
+      "title": "客户买了工具，下一步是真正用起来",
+      "description": "层叠剪纸风格。适合发给账号与订阅服务商、培训机构。",
+      "image": "assets/materials/campaign-20261107-scenes/partner-unlock.webp",
+      "download": "assets/materials/campaign-20261107-scenes/partner-unlock.png",
+      "new": true,
+      "promo": "客户买了工具，下一步是真正用起来。\n账号与订阅服务商、培训机构：你继续做好现有服务，我们承接加州独享 Mac 和工作流，一起把客户服务得更深。\n👉 wodemac.com"
+    },
+    {
+      "id": "day-one",
+      "group": "service",
+      "title": "开通当天，就开始做事",
+      "description": "运动大片风格。先定一个任务，开通当天开始用。",
+      "image": "assets/materials/campaign-20261107-scenes/day-one.webp",
+      "download": "assets/materials/campaign-20261107-scenes/day-one.png",
+      "new": true,
+      "promo": "开通当天，就开始做事。\n先定一个最想完成的任务，加州独享 Mac 开通当天就开始用，第一份成果尽快拿到手。\n👉 wodemac.com"
+    },
+    {
       "id": "teams-speed",
       "group": "business",
       "title": "出海拼的不是人多，是谁更快做成",
       "description": "极简大字报风格。一台独享 Mac，把 Claude Code 变成团队的执行力。",
       "image": "assets/materials/campaign-20261107-styles/teams-speed.webp",
       "download": "assets/materials/campaign-20261107-styles/teams-speed.png",
-      "new": true,
       "promo": "出海拼的不是人多，是谁更快把事做成。\n给团队一台美国加州独享 Mac，Claude Code 随时待命，从产品原型到多语言内容，想到就能动手做。\n👉 wodemac.com"
     },
     {
@@ -52,7 +131,6 @@
       "description": "上海 18:30 与加州 02:30 分屏。美国加州独享 Mac，7×24 小时跑完重复的活。",
       "image": "assets/materials/campaign-20261107-styles/night-shift.webp",
       "download": "assets/materials/campaign-20261107-styles/night-shift.png",
-      "new": true,
       "promo": "你下班，它上班。\n上海 18:30 关灯，加州那台独享 Mac 还在跑：重复的整理、测试、生成，交给 Claude Code 连夜完成，第二天来看结果。\n👉 wodemac.com"
     },
     {
@@ -62,7 +140,6 @@
       "description": "3D 动画电影风格。家长引导，孩子动手，用前沿工具把想法做成作品。",
       "image": "assets/materials/campaign-20261107-styles/giant-shoulders.webp",
       "download": "assets/materials/campaign-20261107-styles/giant-shoulders.png",
-      "new": true,
       "promo": "站在巨人的肩膀上，孩子能看见更大的世界。\n家长陪着，孩子动手，用 Claude Code 把一个想法做成能运行的小作品。\n👉 wodemac.com"
     },
     {
@@ -72,7 +149,6 @@
       "description": "水墨鎏金风格。学习新工具，靠的是一次次动手积累。",
       "image": "assets/materials/campaign-20261107-styles/not-later.webp",
       "download": "assets/materials/campaign-20261107-styles/not-later.png",
-      "new": true,
       "promo": "别把孩子的起点，留给“以后再说”。\n新工具不是看会的，是一次次动手练出来的。家长引导，从第一个小作品开始。\n👉 wodemac.com"
     },
     {
@@ -82,7 +158,6 @@
       "description": "杂志封面风格。作品、课程和学员案例，就是最好的招生广告。",
       "image": "assets/materials/campaign-20261107-styles/teacher-cover.webp",
       "download": "assets/materials/campaign-20261107-styles/teacher-cover.png",
-      "new": true,
       "promo": "你教 AI，先用 AI 做出让人服气的结果。\n一个好用的工具、一套能复现的工作流、一份学员作品，比任何招生文案都有说服力。\n👉 wodemac.com"
     },
     {
@@ -92,7 +167,6 @@
       "description": "超现实沙漏。节约的不仅仅是时间，更是生命。",
       "image": "assets/materials/campaign-20261107-styles/time-hourglass.webp",
       "download": "assets/materials/campaign-20261107-styles/time-hourglass.png",
-      "new": true,
       "promo": "把省下来的时间，用来创造更大的价值。\n节约的不仅仅是时间，更是生命。让 Claude Code 接手重复的活，你去做更重要的事。\n👉 wodemac.com"
     },
     {
@@ -102,7 +176,6 @@
       "description": "黏土等距插画。机器、远程环境、工作流，我们帮你一环环接上。",
       "image": "assets/materials/campaign-20261107-styles/last-mile.webp",
       "download": "assets/materials/campaign-20261107-styles/last-mile.png",
-      "new": true,
       "promo": "从想用，到真正用上，差的往往是最后一段路。\n机器、远程环境、Claude Code 工作流，wodeMac 帮你一环环接上，你直接开始做事。\n👉 wodemac.com"
     },
     {
