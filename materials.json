@@ -36,13 +36,75 @@
   ],
   "items": [
     {
+      "id": "teams-speed",
+      "group": "business",
+      "title": "出海拼的不是人多，是谁更快做成",
+      "description": "极简大字报风格。一台独享 Mac，把 Claude Code 变成团队的执行力。",
+      "image": "assets/materials/campaign-20261107-styles/teams-speed.webp",
+      "download": "assets/materials/campaign-20261107-styles/teams-speed.png",
+      "new": true
+    },
+    {
+      "id": "night-shift",
+      "group": "business",
+      "title": "你下班，它上班",
+      "description": "上海 18:30 与加州 02:30 分屏。美国加州独享 Mac，7×24 小时跑完重复的活。",
+      "image": "assets/materials/campaign-20261107-styles/night-shift.webp",
+      "download": "assets/materials/campaign-20261107-styles/night-shift.png",
+      "new": true
+    },
+    {
+      "id": "giant-shoulders",
+      "group": "parents",
+      "title": "站在巨人的肩膀上，看见更大的世界",
+      "description": "3D 动画电影风格。家长引导，孩子动手，用前沿工具把想法做成作品。",
+      "image": "assets/materials/campaign-20261107-styles/giant-shoulders.webp",
+      "download": "assets/materials/campaign-20261107-styles/giant-shoulders.png",
+      "new": true
+    },
+    {
+      "id": "not-later",
+      "group": "parents",
+      "title": "别把孩子的起点，留给“以后再说”",
+      "description": "水墨鎏金风格。学习新工具，靠的是一次次动手积累。",
+      "image": "assets/materials/campaign-20261107-styles/not-later.webp",
+      "download": "assets/materials/campaign-20261107-styles/not-later.png",
+      "new": true
+    },
+    {
+      "id": "teacher-cover",
+      "group": "teachers",
+      "title": "你教 AI，先用 AI 做出让人服气的结果",
+      "description": "杂志封面风格。作品、课程和学员案例，就是最好的招生广告。",
+      "image": "assets/materials/campaign-20261107-styles/teacher-cover.webp",
+      "download": "assets/materials/campaign-20261107-styles/teacher-cover.png",
+      "new": true
+    },
+    {
+      "id": "time-hourglass",
+      "group": "brand",
+      "title": "把省下来的时间，用来创造更大的价值",
+      "description": "超现实沙漏。节约的不仅仅是时间，更是生命。",
+      "image": "assets/materials/campaign-20261107-styles/time-hourglass.webp",
+      "download": "assets/materials/campaign-20261107-styles/time-hourglass.png",
+      "new": true
+    },
+    {
+      "id": "last-mile",
+      "group": "service",
+      "title": "从想用，到真正用上",
+      "description": "黏土等距插画。机器、远程环境、工作流，我们帮你一环环接上。",
+      "image": "assets/materials/campaign-20261107-styles/last-mile.webp",
+      "download": "assets/materials/campaign-20261107-styles/last-mile.png",
+      "new": true
+    },
+    {
       "id": "overview-values",
       "group": "brand",
       "title": "同一套前沿工具，不同的价值",
       "description": "团队要商业竞争力，家长要孩子的起点，老师要作品与生意。按客户选价值主张时先发这张。",
       "image": "assets/materials/campaign-20261107/overview-values.webp",
-      "download": "assets/materials/campaign-20261107/overview-values.png",
-      "new": true
+      "download": "assets/materials/campaign-20261107/overview-values.png"
     },
     {
       "id": "business-weapon",
@@ -50,8 +112,7 @@
       "title": "给团队配上生产力重武器",
       "description": "更快做出产品与内容，去争取更大的生意。适合发给出海团队负责人和企业客户。",
       "image": "assets/materials/campaign-20261107/business-weapon.webp",
-      "download": "assets/materials/campaign-20261107/business-weapon.png",
-      "new": true
+      "download": "assets/materials/campaign-20261107/business-weapon.png"
     },
     {
       "id": "parents-startline",
@@ -59,8 +120,7 @@
       "title": "AI 时代的起跑线，正在重新画",
       "description": "把前沿工具带进家庭，为孩子准备更高的能力起点。家长引导，孩子动手。",
       "image": "assets/materials/campaign-20261107/parents-startline.webp",
-      "download": "assets/materials/campaign-20261107/parents-startline.png",
-      "new": true
+      "download": "assets/materials/campaign-20261107/parents-startline.png"
     },
     {
       "id": "teachers-works",
@@ -68,8 +128,7 @@
       "title": "先做出更强的作品，再赢得更多学员",
       "description": "内容、课程和学员案例，都是增长的底气。适合发给 AI 培训老师和大V。",
       "image": "assets/materials/campaign-20261107/teachers-works.webp",
-      "download": "assets/materials/campaign-20261107/teachers-works.png",
-      "new": true
+      "download": "assets/materials/campaign-20261107/teachers-works.png"
     },
     {
       "id": "access-barrier",
@@ -77,8 +136,7 @@
       "title": "很多人卡住的不是想法，而是根本没有跑通",
       "description": "把少数人率先掌握的工具，变成你自己的日常生产力。机器、远程环境和工作流由我们接上。",
       "image": "assets/materials/campaign-20261107/access-barrier.webp",
-      "download": "assets/materials/campaign-20261107/access-barrier.png",
-      "new": true
+      "download": "assets/materials/campaign-20261107/access-barrier.png"
     },
     {
       "id": "manifesto",
