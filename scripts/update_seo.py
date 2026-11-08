@@ -25,7 +25,7 @@ FAQ = [
     ("commission", "推广伙伴的首单佣金怎么计算？", "当前 Mac 租赁推广规则按客户首单实际付款计佣：月付 5%、季付 7.5%、半年付 10%、年付 15%。注册、未付款订单、续费及退款订单不计佣，退款会作废相应佣金。推荐计划只有一级，不按招募其他推荐人发奖励，不承诺合作收入。"),
     ("attribution", "客户归属和佣金结算怎样核对？", "推广伙伴登录官网生成专属链接，首次访问来源保留 30 天，并在新用户首次登录时绑定；以官网实际记录和当期规则核验归属。佣金每月对账、人工审核并线下结算，不是自动打款；正式沟通前确认链接、客户归属、退款及对账方式。"),
     ("reseller", "推广伙伴和经销商是否使用同一份协议？", "推广伙伴使用官网推荐链接和当期首单计佣规则；经销合作的价格、客户关系、服务责任及收益分配单独沟通。Mac 租赁费用与额外支持分别列明，未经核定的一站式套餐不直接报价。批量配置和折扣按当前实际订单或书面报价确认，不根据营销测算自动承诺。"),
-    ("proof", "宣传素材、任务示例和客户案例有什么区别？", "素材库里的海报和场景图用于解释服务，不是客户已经取得结果的证明。任务示例说明如何验证开发与测试；真实案例需要客户授权、过程记录和可以核对的结果。当前客户案例库仍待补充，销售目标、漏斗和台数测算都不是已发生的销量或业绩。"),
+    ("proof", "宣传素材、任务示例和客户案例有什么区别？", "素材库里的海报和场景图用于解释服务，不是客户已经取得结果的证明。任务示例说明如何验证开发与测试；真实案例需要客户授权、过程记录和可以核对的结果。当前客户案例库仍待补充，价格、佣金与批量测算都不是已发生的销量或收入。"),
     ("contact", "想购买或合作，第一步提供什么？", "先说明你是开发团队、成年 AI 编程老师还是实施服务商，以及想完成的一个开发或测试任务、负责人、预计时间和预算范围。随后一起确认工具资格、配置、费用、交付与验收。不需要在首次咨询里发送账号密码、付款信息、私人客户表或儿童个人资料。"),
 ]
 
@@ -35,7 +35,7 @@ def esc(value: str) -> str:
 
 
 def sidebar(current: str) -> str:
-    entries = [("index.html", "营销方案"), ("partners.html", "渠道合作"), ("faq.html", "购买与合作问答"), ("materials.html", "宣传素材"), ("cases.html", "客户案例（待补充）")]
+    entries = [("index.html", "合作伙伴手册"), ("partners.html", "渠道合作"), ("faq.html", "购买与合作问答"), ("materials.html", "宣传素材"), ("cases.html", "客户案例（待补充）")]
     links = []
     for href, name in entries:
         active = ' class="current" aria-current="page"' if href == current else ""
@@ -70,7 +70,7 @@ def schema(base: str, filename: str, title: str, description: str, items: list[t
     if filename in ("partners.html", "faq.html"):
         graph[-1]["dateModified"] = UPDATED
     if filename != "index.html":
-        graph.append({"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "营销方案", "item": base + "/"}, {"@type": "ListItem", "position": 2, "name": title, "item": url}]})
+        graph.append({"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "合作伙伴手册", "item": base + "/"}, {"@type": "ListItem", "position": 2, "name": title, "item": url}]})
     if items:
         graph.append({"@type": "FAQPage", "@id": url + "#questions", "mainEntity": [{"@type": "Question", "name": question, "acceptedAnswer": {"@type": "Answer", "text": answer}} for _, question, answer in items]})
     data = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
@@ -155,7 +155,7 @@ def main() -> None:
     if parsed.scheme not in ("http", "https") or not parsed.netloc or parsed.path:
         raise ValueError("--base-url must be an HTTP(S) origin")
     pages = {
-        "index.html": ("Mac mini 租赁渠道合作与营销方案 | wodeMac", "wodeMac 美国加州独享 Mac mini 租赁的渠道合作与营销资料。了解远程开发与测试用途、客户适用条件、首单推广规则、宣传素材和购买合作问答。", False, None, "WebPage"),
+        "index.html": ("合作伙伴手册：Mac mini 租赁推广与经销合作 | wodeMac", "wodeMac 合作伙伴手册：美国加州独享 Mac mini 租赁的推广与经销合作方式、三类客户怎么讲、价格与首单佣金、建立合作步骤、前 30 天执行和分工。", False, None, "WebPage"),
         "partners.html": ("Mac mini 租赁渠道合作：AI 编程老师与实施伙伴 | wodeMac", "了解 wodeMac 美国加州独享 Mac mini 的渠道合作方式：面向 AI 编程老师、出海开发服务商与 IT 实施伙伴，说明交付分工、首单计佣、客户归属和人工对账。", False, [FAQ[8], FAQ[9], FAQ[10]], "WebPage"),
         "faq.html": ("美国 Mac mini 租赁与渠道合作常见问题 | wodeMac", "购买与合作前核对 wodeMac 的开发测试用途、第三方自有账号与资格、交付、独享权限、首单佣金、每月对账和经销边界。", False, FAQ, "WebPage"),
         "materials.html": ("伙伴宣传素材：61 张场景海报与参考截图 | wodeMac", "wodeMac 合作伙伴宣传素材，包含 61 张场景化海报与 1 张家长参考截图，按品牌理念、学生家长、个人用户、出海企业、AI 老师与大V、渠道伙伴和一站式服务分类查看及下载，最新素材排在最前。", False, None, "CollectionPage"),
@@ -170,7 +170,7 @@ def main() -> None:
         if filename not in ("partners.html", "faq.html") and 'href="partners.html"' not in source:
             source = source.replace('</nav>', '<a href="partners.html"><span>↗</span>渠道合作</a><a href="faq.html"><span>↗</span>购买与合作问答</a>\n  </nav>', 1)
         if filename == "index.html":
-            facts = '''<!-- service-facts:start --><section class="seo-facts" aria-labelledby="service-facts-title"><h2 id="service-facts-title">先了解服务，再讨论合作</h2><p>wodeMac 提供美国加州独享 Mac mini 租赁，用于软件开发与测试，按约配合远程环境和 AI 编程工作流支持。第三方工具账号与订阅由客户本人或企业通过官方渠道持有，需满足相应的年龄、地区与使用条件。</p><p>本页的目标、漏斗和台数测算用于规划，不是已发生的销量或业绩。推广伙伴首单规则、客户归属及对账方式可先查看合作说明；配置、批量价格、经销协议与额外支持按当前订单或书面确认核对。</p><nav aria-label="服务与合作资料"><a href="partners.html">渠道合作说明 →</a><a href="faq.html">购买与合作问答 →</a><a href="https://wodemac.com/guides/">官网中文指南 ↗</a></nav></section><!-- service-facts:end -->'''
+            facts = '''<!-- service-facts:start --><section class="seo-facts" aria-labelledby="service-facts-title"><h2 id="service-facts-title">先了解服务，再讨论合作</h2><p>wodeMac 提供美国加州独享 Mac mini 租赁，用于软件开发与测试，按约配合远程环境和 AI 编程工作流支持。第三方工具账号与订阅由客户本人或企业通过官方渠道持有，需满足相应的年龄、地区与使用条件。</p><p>本页的价格、佣金与批量测算仅供估算，不是已发生的销量或收入。推广伙伴首单规则、客户归属及对账方式可先查看合作说明；配置、批量价格、经销协议与额外支持按当前订单或书面确认核对。</p><nav aria-label="服务与合作资料"><a href="partners.html">渠道合作说明 →</a><a href="faq.html">购买与合作问答 →</a><a href="https://wodemac.com/guides/">官网中文指南 ↗</a></nav></section><!-- service-facts:end -->'''
             if '<!-- service-facts:start -->' in source:
                 source = re.sub(r'<!-- service-facts:start -->.*?<!-- service-facts:end -->', lambda _: facts, source, flags=re.S)
             else:
@@ -198,7 +198,7 @@ def main() -> None:
 - [渠道合作]({base}/partners.html)：适合的伙伴、首单推广规则、责任与对账方式。
 - [购买与合作常见问题]({base}/faq.html)：用途、第三方账号资格、交付、权限与合作边界。
 - [宣传素材]({base}/materials.html)：61 张场景海报与 1 张参考截图，不代表客户成果。
-- [营销方案]({base}/)：销售目标、漏斗与台数是规划测算，不是已经发生的销量或业绩。
+- [合作伙伴手册]({base}/)：合作方式、建立合作步骤、前 30 天执行与分工；价格与佣金测算仅供估算。
 
 ## 核对官网
 - [wodeMac 官网]({OFFICIAL}/)

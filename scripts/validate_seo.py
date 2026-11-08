@@ -136,7 +136,7 @@ expected = {pages[name].canonicals[0] for name in PAGES if name not in NOINDEX}
 check(set(urls) == expected and len(urls) == len(expected), "Sitemap must contain each indexable canonical exactly once and no empty case/preview pages")
 check("Sitemap: " + pages["index.html"].canonicals[0] + "sitemap.xml" in (ROOT / "robots.txt").read_text(), "robots.txt must point to canonical sitemap")
 check("Allow: /" in (ROOT / "robots.txt").read_text(), "Public crawling must remain allowed")
-check("目标、漏斗和台数测算用于规划，不是已发生的销量或业绩" in (ROOT / "index.html").read_text(), "Marketing plan must distinguish targets from real outcomes")
+check("价格、佣金与批量测算仅供估算，不是已发生的销量或收入" in (ROOT / "index.html").read_text(), "Partner handbook must distinguish estimates from real outcomes")
 check("案例待补充" in (ROOT / "cases.html").read_text(), "Empty cases page must retain its pending-evidence status")
 for name in ("partners.html", "faq.html"):
     content = (ROOT / name).read_text()
