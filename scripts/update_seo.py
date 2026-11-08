@@ -48,6 +48,11 @@ def resources() -> str:
         ("/guides/", "官网中文指南", "核对服务事实与适用条件"),
         ("/guides/mac-mini-rental.html", "美国 Mac mini 租赁指南", "配置、费用、远程连接与交付"),
         ("/guides/claude-code-remote-mac.html", "Claude Code 远程开发", "自有账号、项目准备与任务验证"),
+        ("/guides/codex-remote-mac.html", "Codex 远程开发", "预装 Codex，用自己的 ChatGPT 或 API 账号"),
+        ("/guides/claude-code-vs-codex.html", "Claude Code 和 Codex 怎么选", "同一台 Mac 上用真实任务对比"),
+        ("/guides/ai-coding-agent-always-on-mac.html", "Agent 7×24 持续工作", "合上笔记本，任务继续跑"),
+        ("/guides/ios-app-claude-code-codex.html", "没有 Mac 也能做 iOS", "Claude Code / Codex + Xcode 远程构建"),
+        ("/guides/en.html", "English guides", "Claude Code & Codex on a dedicated Mac mini"),
         ("/guides/teams-and-educators.html", "团队与编程老师", "从真实项目确定环境与验收"),
         ("/guides/partners.html", "官网合作说明", "合作分工、推荐与沟通入口"),
     ]
