@@ -108,3 +108,7 @@ main{max-width:1200px;margin:0 auto 0 220px;padding:40px clamp(28px,4.4vw,76px) 
 @media(max-width:700px){.mode-cards{grid-template-columns:1fr;gap:12px}.mode-cards article{padding:22px}.mode-cards h3{font-size:17px}.flow>li{padding:18px 0 18px 48px;font-size:13px}.flow>li:before{font-size:19px;top:18px}.flow>li>b{font-size:14px}.hero-actions a{font-size:12px}.hero-actions a.hero-primary{flex:1 0 100%;text-align:center;min-height:44px;display:grid;place-items:center}}
 @media(max-width:700px){.partner-facts{gap:10px}.partner-facts b{font-size:21px!important;letter-spacing:-.8px}.partner-facts b small{font-size:12px}.roles td:before,#execution .work td:before{content:attr(data-label);display:block;font:600 10px/1.6 var(--sans);letter-spacing:1px;color:var(--muted);margin-bottom:2px}}
 @media(max-width:370px){.partner-facts b{font-size:18px!important}}
+.materials-entry.is-soon{cursor:default;opacity:.72}.materials-entry.is-soon:hover{border-color:#d6dccb;background:#e8ebdf}
+.materials-entry .soon-badge{display:inline-block;vertical-align:middle;margin-left:14px;padding:2px 10px;border:1px solid #b9a77f;border-radius:999px;font-size:11px;font-weight:500;color:#8f7752;letter-spacing:1px}
+.chapter-nav a.is-soon{cursor:default;color:#9a9d91}.chapter-nav a.is-soon:hover{background:transparent;color:#9a9d91}
+.chapter-nav .soon-tag{font-size:10px;margin-left:6px;color:#b0a585;white-space:nowrap}
