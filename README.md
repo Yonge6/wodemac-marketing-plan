@@ -1,8 +1,8 @@
-# wodeMac 营销方案
+# WodeMac 营销方案
 
 原始 HTML 的 GitHub Pages 静态发布版本，保留营销方案和目标调整功能；已移除算账页面。
 
-- 来源：用户提供的 `wodeMac 营销方案.html`（2026-11-05 版）
+- 来源：用户提供的 `WodeMac 营销方案.html`（2026-11-05 版）
 - 发布：GitHub Pages，`main` 分支根目录
 - 无需构建或安装依赖
 - GitHub Pages 不连接 Claude 数据库；目标修改通过浏览器 localStorage 保存在各自设备
@@ -48,7 +48,7 @@
 
 ## 微信联系
 
-营销方案底部 `#contact` 展示 Elian 微信二维码，原图来自官网 `https://wodemac.com/assets/wechat-qr.jpg`，保存在 `assets/contact/elian-wechat-qr.jpg`。页面支持查看与保存原图；如二维码更新，请同步替换此文件。
+营销方案底部 `#contact` 展示微信二维码，原图来自官网 `https://wodemac.com/assets/wechat-qr.jpg`，保存在 `assets/contact/wechat-qr.jpg`。页面支持查看与保存原图；如二维码更新，请同步替换此文件。
 - 域名解析：`wodemac` CNAME → `yonge6.github.io`；GitHub Pages 自定义域名由根目录 `CNAME` 保留。
 
 ## 客群价值主张（2026-11-06 审核版）

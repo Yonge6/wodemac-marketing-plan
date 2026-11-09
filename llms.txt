@@ -1,6 +1,6 @@
-# wodeMac 服务与渠道合作资料
+# WodeMac 服务与渠道合作资料
 
-> wodeMac 提供美国加州独享 Mac mini 租赁，用于软件开发与测试，按约配合远程环境与 AI 编程工作流支持。此文件是公开资料目录，不代表任何搜索或 AI 平台已收录、推荐或引用本站。
+> WodeMac 提供美国加州独享 Mac mini 租赁，用于软件开发与测试，按约配合远程环境与 AI 编程工作流支持。此文件是公开资料目录，不代表任何搜索或 AI 平台已收录、推荐或引用本站。
 
 ## 公开资料
 - [渠道合作](https://wodemac.vilesaint.com/partners.html)：适合的伙伴、首单推广规则、责任与对账方式。
@@ -9,7 +9,7 @@
 - [合作伙伴手册](https://wodemac.vilesaint.com/)：合作方式、建立合作步骤、前 30 天执行与分工；价格与佣金测算仅供估算。
 
 ## 核对官网
-- [wodeMac 官网](https://wodemac.com/)
+- [WodeMac 官网](https://wodemac.com/)
 - [中文使用指南](https://wodemac.com/guides/)
 - [美国 Mac mini 租赁指南](https://wodemac.com/guides/mac-mini-rental.html)
 - [Claude Code 远程开发指南](https://wodemac.com/guides/claude-code-remote-mac.html)
