@@ -10,6 +10,10 @@
       "name": "品牌理念"
     },
     {
+      "id": "studios",
+      "name": "游戏/短剧团队"
+    },
+    {
       "id": "parents",
       "name": "学生家长"
     },
@@ -36,13 +40,132 @@
   ],
   "items": [
     {
+      "id": "studio-drama-night",
+      "group": "studios",
+      "title": "白天定创意，夜里持续跑任务",
+      "description": "电影感夜景，AI 任务队列持续运行。短剧团队的产能总纲。",
+      "image": "assets/materials/campaign-20261111-studio/drama-night.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-night.png",
+      "new": true,
+      "promo": "白天定创意，夜里持续跑任务。\n美国加州独享一台 Mac mini M6，分镜、镜头、素材排进队列，7×24 小时不停跑，第二天直接挑结果。\n👉 wodemac.com"
+    },
+    {
+      "id": "studio-drama-script",
+      "group": "studios",
+      "title": "剧本写好了，镜头一夜跑出来",
+      "description": "紫色霓虹，短剧 / 漫剧 / 影视三块屏。",
+      "image": "assets/materials/campaign-20261111-studio/drama-script.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-script.png",
+      "new": true,
+      "promo": "剧本写好了，镜头一夜跑出来。\n拆分镜、批量出镜头，交给加州那台不关机的 Mac。用你们自己的 AI 工具账号，手机、电脑随时远程看进度。\n👉 wodemac.com"
+    },
+    {
+      "id": "studio-drama-panels",
+      "group": "studios",
+      "title": "做 AI 短剧，别让环境拖住创意",
+      "description": "金色进度卡片：分镜已完成、镜头生成中、关电脑也不停。",
+      "image": "assets/materials/campaign-20261111-studio/drama-panels.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-panels.png",
+      "new": true,
+      "promo": "做 AI 短剧 / 漫剧 / 影视，别让环境拖住创意。\n分镜马上拆，镜头夜里批量跑，任务跑起来关掉自己的电脑也不停。美国加州独享 Mac mini M6。\n👉 wodemac.com"
+    },
+    {
+      "id": "studio-drama-stable",
+      "group": "studios",
+      "title": "有创意，却没有稳定的生产环境",
+      "description": "红蓝对比。本地电脑一关任务就停 → 加州独享 Mac 持续生产。",
+      "image": "assets/materials/campaign-20261111-studio/drama-stable.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-stable.png",
+      "new": true,
+      "promo": "有创意，却没有稳定的生产环境？\n合上电脑任务就停、网络一断就重来。加州独享 Mac，7×24 小时持续生产。\n👉 wodemac.com"
+    },
+    {
+      "id": "studio-drama-global",
+      "group": "studios",
+      "title": "创作面向全球",
+      "description": "左右撕裂构图，好莱坞夜景与任务完成清单。",
+      "image": "assets/materials/campaign-20261111-studio/drama-global.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-global.png",
+      "new": true,
+      "promo": "创作面向全球。\n美国加州独享整台 Mac，剧本、分镜、视频制作 7×24 小时在线跑，支持短剧、漫剧、影视 AI 工作流。\n👉 wodemac.com"
+    },
+    {
+      "id": "studio-drama-hollywood",
+      "group": "studios",
+      "title": "做海外内容、短剧，就用 WodeMac",
+      "description": "好莱坞暮光，常见问题与解决方案对照。",
+      "image": "assets/materials/campaign-20261111-studio/drama-hollywood.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-hollywood.png",
+      "new": true,
+      "promo": "做海外内容、短剧，就用 WodeMac。\n在自己电脑上跑 AI 内容，一关机就停、排队太久、出门看不到进度。加州独享 Mac mini M6，任务 24 小时不停跑。\n👉 wodemac.com"
+    },
+    {
+      "id": "studio-drama-freedom",
+      "group": "studios",
+      "title": "有创意，却被电脑拖住？",
+      "description": "加州海岸日落，痛点清单与产品卖点。",
+      "image": "assets/materials/campaign-20261111-studio/drama-freedom.webp",
+      "download": "assets/materials/campaign-20261111-studio/drama-freedom.png",
+      "new": true,
+      "promo": "有创意，却被电脑拖住？\n交给加州的 Mac，24 小时不停跑。整台独享、高性能 M6、稳定运行 Claude Code。\n👉 wodemac.com"
+    },
+    {
+      "id": "coding-workflow",
+      "group": "personal",
+      "title": "告别低效编程：Claude Code 重塑开发工作流",
+      "description": "白底极简产品风。",
+      "image": "assets/materials/campaign-20261111-studio/code-workflow.webp",
+      "download": "assets/materials/campaign-20261111-studio/code-workflow.png",
+      "new": true,
+      "promo": "告别低效编程。\nMac mini M6 遇上 Claude Code，让想法更快变成可用的产品。美国加州独享一台，用你们自己的 AI 工具账号，7×24 小时在线。\n👉 wodemac.com"
+    },
+    {
+      "id": "coding-collage",
+      "group": "personal",
+      "title": "告别低效编程：AI 结对编程伙伴",
+      "description": "复古拼贴海报风。",
+      "image": "assets/materials/campaign-20261111-studio/code-collage.webp",
+      "download": "assets/materials/campaign-20261111-studio/code-collage.png",
+      "new": true,
+      "promo": "告别低效编程！\nMac mini M6 + Claude Code，自然语言写代码、快速搭原型、重构优化。加州独享 Mac，用你们自己的 AI 工具账号，7×24 小时在线。\n👉 wodemac.com"
+    },
+    {
+      "id": "coding-neon",
+      "group": "personal",
+      "title": "告别低效编程：更快、更专注",
+      "description": "蓝紫霓虹科技风。",
+      "image": "assets/materials/campaign-20261111-studio/code-neon.webp",
+      "download": "assets/materials/campaign-20261111-studio/code-neon.png",
+      "new": true,
+      "promo": "告别低效编程。\n用 Claude Code + Mac mini M6，理解需求、规划方案、生成代码、调试上线一条龙。美国加州独享一台，7×24 小时在线。\n👉 wodemac.com"
+    },
+    {
+      "id": "coding-comic",
+      "group": "personal",
+      "title": "告别低效编程：从想法到可运行代码",
+      "description": "国漫风，加班程序员的前后对比。",
+      "image": "assets/materials/campaign-20261111-studio/code-comic.webp",
+      "download": "assets/materials/campaign-20261111-studio/code-comic.png",
+      "new": true,
+      "promo": "需求一堆写不完？调试半天没解决？\n用 Claude Code + 加州独享 Mac mini M6，从想法到可运行代码一步到位。7×24 小时在线。\n👉 wodemac.com"
+    },
+    {
+      "id": "coding-green",
+      "group": "personal",
+      "title": "告别低效编程：把想法更快变成产品",
+      "description": "暗色荧光绿风格。",
+      "image": "assets/materials/campaign-20261111-studio/code-green.webp",
+      "download": "assets/materials/campaign-20261111-studio/code-green.png",
+      "new": true,
+      "promo": "告别低效编程！\n用 Claude Code，把想法更快变成可运行的产品。美国加州独享 Mac mini M6，7×24 小时在线。\n👉 wodemac.com"
+    },
+    {
       "id": "play-strongest",
       "group": "parents",
       "title": "给孩子玩，就玩最强的 AI",
       "description": "黑白时装大片风格。家长专题“玩中探索”总纲。",
       "image": "assets/materials/campaign-20261107-play/play-strongest.webp",
       "download": "assets/materials/campaign-20261107-play/play-strongest.png",
-      "new": true,
       "promo": "给孩子玩，就玩最强的 AI。\n最强的 AI 是 Claude，家长带着孩子当游戏玩，想到什么就试什么。美国加州独享 Mac，环境我们备好。\n👉 wodemac.com"
     },
     {
@@ -52,7 +175,6 @@
       "description": "瑞士网格版式。不卷成绩，先养兴趣。",
       "image": "assets/materials/campaign-20261107-play/play-not-race.webp",
       "download": "assets/materials/campaign-20261107-play/play-not-race.png",
-      "new": true,
       "promo": "别人用 AI 卷，我们用 AI 玩。\n用最强的 Claude 玩，起跑线就是最高的。家长陪着，让孩子在玩里探索，兴趣自己会长出来。\n👉 wodemac.com"
     },
     {
@@ -62,7 +184,6 @@
       "description": "古典航海图烫金风格。",
       "image": "assets/materials/campaign-20261107-play/explore-map.webp",
       "download": "assets/materials/campaign-20261107-play/explore-map.png",
-      "new": true,
       "promo": "让孩子去探索，地图自己画。\n带上最强的 Claude，从最高的起点出发。没有标准路线，只有一次次好奇的出发，家长陪着一起走。\n👉 wodemac.com"
     },
     {
@@ -72,7 +193,6 @@
       "description": "孔版印刷风格。适合低年级家长。",
       "image": "assets/materials/campaign-20261107-play/afternoon-adventure.webp",
       "download": "assets/materials/campaign-20261107-play/afternoon-adventure.png",
-      "new": true,
       "promo": "放学早的下午，正好去冒险。\n冒险要带最好的装备：Claude。家长陪着，把空出来的时间变成探索时间：问问题、做小游戏、画故事。\n👉 wodemac.com"
     },
     {
@@ -82,7 +202,6 @@
       "description": "复古未来霓虹风格。",
       "image": "assets/materials/campaign-20261107-play/game-mode.webp",
       "download": "assets/materials/campaign-20261107-play/game-mode.png",
-      "new": true,
       "promo": "像打游戏一样，开局就配最强装备。\n最强的 AI 装备：Claude。家长陪着孩子一起玩，在玩中提问、试错、做出东西。\n👉 wodemac.com"
     },
     {
@@ -92,7 +211,6 @@
       "description": "发明家手稿风格。",
       "image": "assets/materials/campaign-20261107-play/curiosity-engine.webp",
       "download": "assets/materials/campaign-20261107-play/curiosity-engine.png",
-      "new": true,
       "promo": "好奇心是引擎，Claude 是最强的燃料。\n孩子想到什么，就用 Claude 动手试试。家长陪着，美国加州独享 Mac 帮你把环境备好。\n👉 wodemac.com"
     },
     {
@@ -102,7 +220,6 @@
       "description": "清水混凝土美术馆风格。",
       "image": "assets/materials/campaign-20261107-play/build-it.webp",
       "download": "assets/materials/campaign-20261107-play/build-it.png",
-      "new": true,
       "promo": "不止刷题，还能亲手造出来。\n用最强的 Claude Code，把孩子的点子变成看得见的作品：小游戏、小网页、绘本故事。家长陪着一起做。\n👉 wodemac.com"
     },
     {
@@ -112,7 +229,6 @@
       "description": "七十年代胶片风格。",
       "image": "assets/materials/campaign-20261107-play/school-and-ai.webp",
       "download": "assets/materials/campaign-20261107-play/school-and-ai.png",
-      "new": true,
       "promo": "学校里交朋友，回家玩 AI。\n回家就玩最强的 AI：Claude。同学和老师很重要，回家后的探索时间家长来陪。\n👉 wodemac.com"
     },
     {
@@ -122,7 +238,6 @@
       "description": "当代水墨鎏金风格。",
       "image": "assets/materials/campaign-20261107-play/little-ceo.webp",
       "download": "assets/materials/campaign-20261107-play/little-ceo.png",
-      "new": true,
       "promo": "起跑线最高的装备，叫 Claude。\n美国加州独享 Mac，为 Claude Code 准备好，家长陪着孩子一起用。\n👉 wodemac.com"
     },
     {

@@ -167,10 +167,10 @@ def main() -> None:
     if parsed.scheme not in ("http", "https") or not parsed.netloc or parsed.path:
         raise ValueError("--base-url must be an HTTP(S) origin")
     pages = {
-        "index.html": ("合作伙伴手册：Mac mini 租赁推广与经销合作 | WodeMac", "WodeMac 合作伙伴手册：美国加州独享 Mac mini 租赁的推广与经销合作方式、三类客户怎么讲、价格与首单佣金、建立合作步骤、前 30 天执行和分工。", False, None, "WebPage"),
+        "index.html": ("合作伙伴手册：Mac mini 租赁推广与经销合作 | WodeMac", "WodeMac 合作伙伴手册：美国加州独享 Mac mini 租赁的推广与经销合作方式、四类客户怎么讲、价格与首单佣金、建立合作步骤、前 30 天执行和分工。", False, None, "WebPage"),
         "partners.html": ("Mac mini 租赁渠道合作：AI 编程老师与实施伙伴 | WodeMac", "了解 WodeMac 美国加州独享 Mac mini 的渠道合作方式：面向 AI 编程老师、出海开发服务商与 IT 实施伙伴，说明交付分工、首单计佣、客户归属和人工对账。", False, [FAQ[8], FAQ[9], FAQ[10]], "WebPage"),
         "faq.html": ("美国 Mac mini 租赁与渠道合作常见问题 | WodeMac", "购买与合作前核对 WodeMac 的开发测试用途、第三方自有账号与资格、交付、独享权限、首单佣金、每月对账和经销边界。", False, FAQ, "WebPage"),
-        "materials.html": ("伙伴宣传素材：61 张场景海报与参考截图 | WodeMac", "WodeMac 合作伙伴宣传素材，包含 61 张场景化海报与 1 张家长参考截图，按品牌理念、学生家长、个人用户、出海企业、AI 老师与大V、渠道伙伴和一站式服务分类查看及下载，最新素材排在最前。", False, None, "CollectionPage"),
+        "materials.html": ("伙伴宣传素材：73 张场景海报与参考截图 | WodeMac", "WodeMac 合作伙伴宣传素材，包含 73 张场景化海报与 1 张家长参考截图，按品牌理念、游戏/短剧团队、学生家长、个人用户、出海企业、AI 老师与大V、渠道伙伴和一站式服务分类查看及下载，最新素材排在最前。", False, None, "CollectionPage"),
         "cases.html": ("客户案例资料待补充 | WodeMac", "WodeMac 客户案例资料页，当前预留分类位置，真实客户照片与案例说明待客户授权和核验后补充。", True, None, "CollectionPage"),
         "materials-preview.html": ("海报样稿预览 | WodeMac", "WodeMac 首批四款海报的创意思路与大图预览，完整宣传海报可在素材库查看和下载；创意场景不代表实际客户案例。", True, None, "WebPage"),
     }
@@ -189,7 +189,7 @@ def main() -> None:
                 source = source.replace('  <section class="belief"', "  " + facts + '\n\n  <section class="belief"', 1)
         if filename == "materials.html":
             source = re.sub(r'<div class="asset-grid" id="asset-grid">.*?</div>\s*(?=<p class="library-error")', lambda _: '<div class="asset-grid" id="asset-grid">' + render_materials() + '</div>\n    ', source, flags=re.S)
-            source = re.sub(r'(<p id="asset-count" aria-live="polite">).*?(</p>)', r'\g<1>62 项素材 · 62 项已上架\2', source)
+            source = re.sub(r'(<p id="asset-count" aria-live="polite">).*?(</p>)', r'\g<1>74 项素材 · 74 项已上架\2', source)
         (ROOT / filename).write_text(source)
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n")
     namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -209,7 +209,7 @@ def main() -> None:
 ## 公开资料
 - [渠道合作]({base}/partners.html)：适合的伙伴、首单推广规则、责任与对账方式。
 - [购买与合作常见问题]({base}/faq.html)：用途、第三方账号资格、交付、权限与合作边界。
-- [宣传素材]({base}/materials.html)：61 张场景海报与 1 张参考截图，不代表客户成果。
+- [宣传素材]({base}/materials.html)：73 张场景海报与 1 张参考截图，不代表客户成果。
 - [合作伙伴手册]({base}/)：合作方式、建立合作步骤、前 30 天执行与分工；价格与佣金测算仅供估算。
 
 ## 核对官网
