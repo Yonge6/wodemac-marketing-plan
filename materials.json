@@ -40,13 +40,112 @@
   ],
   "items": [
     {
+      "id": "workflow-20261120-game-frame-spikes",
+      "group": "studios",
+      "title": "掉帧，先定位热点",
+      "description": "黑白长曝光",
+      "image": "assets/materials/campaign-20261120-workflows/game-frame-spikes.webp",
+      "download": "assets/materials/campaign-20261120-workflows/game-frame-spikes.png",
+      "new": true,
+      "promo": "掉帧，先定位热点。\n卡在哪 · 同一关卡偶发掉帧。\n用 Claude · 分析性能日志，定位耗时热点。\n交付 · 复现步骤和帧耗时表。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-game-controller-map",
+      "group": "studios",
+      "title": "换个手柄，键位也对",
+      "description": "朱砂靛蓝木刻",
+      "image": "assets/materials/campaign-20261120-workflows/game-controller-map.webp",
+      "download": "assets/materials/campaign-20261120-workflows/game-controller-map.png",
+      "new": true,
+      "promo": "换个手柄，键位也对。\n卡在哪 · 换手柄后，按键提示错位。\n用 Claude · 比对输入映射，补两套测试。\n交付 · 键位映射表和测试结果。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-drama-subtitle-length",
+      "group": "studios",
+      "title": "先把超行字幕找全",
+      "description": "漫画网点",
+      "image": "assets/materials/campaign-20261120-workflows/drama-subtitle-length.webp",
+      "download": "assets/materials/campaign-20261120-workflows/drama-subtitle-length.png",
+      "new": true,
+      "promo": "先把超行字幕找全。\n卡在哪 · 竖屏字幕太长，来不及读。\n用 Claude · 按字数规则找长行，拟短句。\n交付 · 带时间码的待审字幕稿。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-drama-continuity-cup",
+      "group": "studios",
+      "title": "接下一镜，杯子在哪？",
+      "description": "硬闪双景静物",
+      "image": "assets/materials/campaign-20261120-workflows/drama-continuity-cup.webp",
+      "download": "assets/materials/campaign-20261120-workflows/drama-continuity-cup.png",
+      "new": true,
+      "promo": "接下一镜，杯子在哪？\n卡在哪 · 两镜之间，道具位置接不上。\n用 Claude · 比对场记与分镜，标出冲突。\n交付 · 接戏检查表和补拍清单。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-global-timezone-booking",
+      "group": "business",
+      "title": "把预约时间对上",
+      "description": "银版钟表微距",
+      "image": "assets/materials/campaign-20261120-workflows/global-timezone-booking.webp",
+      "download": "assets/materials/campaign-20261120-workflows/global-timezone-booking.png",
+      "new": true,
+      "promo": "把预约时间对上。\n卡在哪 · 夏令时切换后，预约偏一小时。\n用 Claude · 按预约样本补时区测试。\n交付 · 时区测试表和修复建议。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-global-catalog-import",
+      "group": "business",
+      "title": "换个平台，商品表先对齐",
+      "description": "包豪斯网格",
+      "image": "assets/materials/campaign-20261120-workflows/global-catalog-import.webp",
+      "download": "assets/materials/campaign-20261120-workflows/global-catalog-import.png",
+      "new": true,
+      "promo": "换个平台，商品表先对齐。\n卡在哪 · 同一批商品，两套上架字段。\n用 Claude · 对照模板写转换与校验脚本。\n交付 · 可导入商品表和异常清单。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-family-offline-album",
+      "group": "parents",
+      "title": "给老照片办个家庭展",
+      "description": "暗房相纸与投影",
+      "image": "assets/materials/campaign-20261120-workflows/family-offline-album.webp",
+      "download": "assets/materials/campaign-20261120-workflows/family-offline-album.png",
+      "new": true,
+      "promo": "给老照片办个家庭展。\n卡在哪 · 照片散在几个相册。\n用 Claude · 家长搭网页，孩子配文。\n交付 · 一本可离线翻看的家庭相册。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。 家长用本人账号操作。 先用占位图搭网页，家庭照片保留在本地。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-family-clickable-menu",
+      "group": "parents",
+      "title": "孩子当一次菜单设计师",
+      "description": "复古珐琅餐馆招牌",
+      "image": "assets/materials/campaign-20261120-workflows/family-clickable-menu.webp",
+      "download": "assets/materials/campaign-20261120-workflows/family-clickable-menu.png",
+      "new": true,
+      "promo": "孩子当一次菜单设计师。\n卡在哪 · 想吃什么总说不清。\n用 Claude · 家长搭菜单，孩子分类。\n交付 · 一张能点选菜品的家庭菜单。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。 家长用本人账号操作。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-teacher-recording-index",
+      "group": "teachers",
+      "title": "点一下，回到这一步",
+      "description": "广播监听台",
+      "image": "assets/materials/campaign-20261120-workflows/teacher-recording-index.webp",
+      "download": "assets/materials/campaign-20261120-workflows/teacher-recording-index.png",
+      "new": true,
+      "promo": "点一下，回到这一步。\n卡在哪 · 学员回看时找不到操作步骤。\n用 Claude · 根据带时间码的讲稿拟章节。\n交付 · 老师核对过的回看索引。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。 老师逐条点回录屏核对定位。\n👉 wodemac.com"
+    },
+    {
+      "id": "workflow-20261120-teacher-course-materials",
+      "group": "teachers",
+      "title": "课程资料，给学员一个入口",
+      "description": "折扇式文具摄影",
+      "image": "assets/materials/campaign-20261120-workflows/teacher-course-materials.webp",
+      "download": "assets/materials/campaign-20261120-workflows/teacher-course-materials.png",
+      "new": true,
+      "promo": "课程资料，给学员一个入口。\n卡在哪 · 例题和讲义散在几处。\n用 Claude · 整理文件，搭一个下载页。\n交付 · 可集中下载的课程资料页。\n美国加州独享 Mac。使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
+    },
+    {
       "id": "scenes-20261120-game-first-level",
       "group": "studios",
       "title": "先让主策玩一遍新手关",
       "description": "实体沙盘摄影。用 Claude Code 写关卡脚本。先试玩，再调提示和节奏。",
       "image": "assets/materials/campaign-20261120-real-scenes/game-first-level.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/game-first-level.png",
-      "new": true,
       "promo": "先让主策玩一遍新手关。\n选一关新手教学，用 Claude Code 把触发、提示和失败重试写进关卡脚本。主策亲手试玩，再调整提示顺序和节奏。用加州独享 Mac 做团队的试玩与验证工位。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -56,7 +155,6 @@
       "description": "磁带故障艺术。用 Claude Code 补一条测试。存档、退出、重开，再读档。",
       "image": "assets/materials/campaign-20261120-real-scenes/game-save-reload.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/game-save-reload.png",
-      "new": true,
       "promo": "修完存档，再测一次读档。\n把存档问题记成可复现步骤，用 Claude Code 补一条回归用例。在加州独享 Mac 上按存档、退出、重开、读档逐步验收，再由团队确认修复。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -66,7 +164,6 @@
       "description": "胶片灯箱。用 Claude 拆出两套分镜。导演比过悬念和反转，再定拍法。",
       "image": "assets/materials/campaign-20261120-real-scenes/drama-two-openings.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/drama-two-openings.png",
-      "new": true,
       "promo": "同一场戏，先比两个开场。\n把同一场戏的剧本交给 Claude，拆出悬念先行和反转先行两套分镜。导演对照开场信息量、镜头成本和节奏，再选拍法。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -76,7 +173,6 @@
       "description": "纸质场记档案。用 Claude Code 写素材核对脚本。按分镜表列出缺失文件。",
       "image": "assets/materials/campaign-20261120-real-scenes/drama-shot-check.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/drama-shot-check.png",
-      "new": true,
       "promo": "还缺哪一镜？按镜号核一遍。\n给分镜表和素材文件统一镜号，在加州独享 Mac 上用 Claude Code 写一个只读核对脚本。列出缺失或命名不一致的文件，把结果交给剪辑确认。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -86,7 +182,6 @@
       "description": "彩色亚克力装置。用 Claude Code 写测试。在测试环境试选套餐和结账。",
       "image": "assets/materials/campaign-20261120-real-scenes/global-checkout-test.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/global-checkout-test.png",
-      "new": true,
       "promo": "定价页上线前，先试一遍结账。\n在加州独享 Mac 上让 Claude Code 写端到端用例。用测试环境从定价页选套餐、走到结账，再看返回后是否保留选择。团队读完测试结果，再决定何时上线。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -96,7 +191,6 @@
       "description": "粗蜡笔商业插画。用 Claude 归类脱敏工单。把高频问题写成可复现步骤。",
       "image": "assets/materials/campaign-20261120-real-scenes/global-support-patterns.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/global-support-patterns.png",
-      "new": true,
       "promo": "工单反复出现，用户卡在哪？\n导出一份已脱敏的工单样本，用 Claude 按用户卡住的步骤归类。让产品与客服核对高频问题，写出能复现的步骤，带进下一轮改版。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -106,7 +200,6 @@
       "description": "透光彩窗玻璃。孩子写两条剧情。家长操作 Claude Code 做成互动故事。",
       "image": "assets/materials/campaign-20261120-real-scenes/family-story-choices.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/family-story-choices.png",
-      "new": true,
       "promo": "让故事有两个结局。\n孩子想好主人公在路口会做的两个选择。家长用本人账号操作 Claude Code，把两条剧情做成可点击的互动故事。孩子试玩，再选哪里要改。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -116,7 +209,6 @@
       "description": "植物蓝晒。孩子画叶脉、记变化。家长操作 Claude Code 做成网页。",
       "image": "assets/materials/campaign-20261120-real-scenes/family-plant-page.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/family-plant-page.png",
-      "new": true,
       "promo": "做一张自己的植物观察页。\n和孩子挑一株容易观察的植物。孩子画叶脉、记变化，家长用本人账号操作 Claude Code 做一个观察网页。隔几天更新一条，最后让孩子讲自己发现了什么。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -126,7 +218,6 @@
       "description": "大幅刺绣织物。用 Claude Code 整理依赖和启动步骤。老师重跑一遍，再交给学员。",
       "image": "assets/materials/campaign-20261120-real-scenes/teacher-clean-rerun.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/teacher-clean-rerun.png",
-      "new": true,
       "promo": "开课前，换个干净环境再跑。\n把讲义中的依赖和启动步骤交给 Claude Code 整理。课前换到干净目录重跑，把缺失步骤写回讲义，再把已核对的步骤交给学员。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
@@ -136,7 +227,6 @@
       "description": "陶瓷浮雕装置。老师用 Claude Code 写测试。学员跑完样例，再讲做法。",
       "image": "assets/materials/campaign-20261120-real-scenes/teacher-three-examples.webp",
       "download": "assets/materials/campaign-20261120-real-scenes/teacher-three-examples.png",
-      "new": true,
       "promo": "作业先跑三个样例。\n为课堂工具准备三个可复查的输入样例，用 Claude Code 写验收测试。学员先运行样例，再解释自己的实现和仍要处理的边界。 使用 Claude 须符合 Anthropic 地区与账号政策。\n👉 wodemac.com"
     },
     {
