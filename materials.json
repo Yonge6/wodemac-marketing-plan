@@ -40,13 +40,112 @@
   ],
   "items": [
     {
+      "id": "impact-20261120-scale",
+      "group": "brand",
+      "title": "机身很小，工位很大。",
+      "description": "用机身与巨大空间的尺度反差，突出一人独享一整台 Mac mini。",
+      "image": "assets/materials/campaign-20261120-impact/scale.webp",
+      "download": "assets/materials/campaign-20261120-impact/scale.png",
+      "new": true,
+      "promo": "机身很小，工位很大。\n一台小小的 Mac mini，是你独享的开发与测试工位。美国加州托管，交付预装 Claude Code。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-admin",
+      "group": "brand",
+      "title": "把权限交到你手上。",
+      "description": "烧橙金属海报，突出整机独享和交付管理员账号。",
+      "image": "assets/materials/campaign-20261120-impact/admin.webp",
+      "download": "assets/materials/campaign-20261120-impact/admin.png",
+      "new": true,
+      "promo": "把权限交到你手上。\n装开发工具、配依赖、调自己的工作环境。WodeMac 交付整机和管理员账号，适合需要可配置开发环境的团队。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-reconnect",
+      "group": "studios",
+      "title": "断网三秒，角色还在吗？",
+      "description": "游戏网络异常场景，将断线重连写成可复验的开发测试脚本。",
+      "image": "assets/materials/campaign-20261120-impact/reconnect.webp",
+      "download": "assets/materials/campaign-20261120-impact/reconnect.png",
+      "new": true,
+      "promo": "断网三秒，角色还在吗？\n局内断网再连，角色状态会不会丢失？用 Claude Code 把断线、重连和状态恢复写成测试步骤，团队可以在发版前复验。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-shot-files",
+      "group": "studios",
+      "title": "最后一镜，别找错文件。",
+      "description": "短剧素材整理场景。写批量命名脚本，并生成可按镜号核对的目录。",
+      "image": "assets/materials/campaign-20261120-impact/shot-files.webp",
+      "download": "assets/materials/campaign-20261120-impact/shot-files.png",
+      "new": true,
+      "promo": "最后一镜，别找错文件。\n最后一批镜头进盘时，文件名容易和镜号对不上。用 Claude Code 把场次、镜号、版本写成命名规则，先在副本上试跑，再交付可核对的素材目录。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-currency",
+      "group": "business",
+      "title": "同一张报表，三种币种。",
+      "description": "出海报表开发场景。测试不同币种下的金额格式，交付可复用的报表组件。",
+      "image": "assets/materials/campaign-20261120-impact/currency.webp",
+      "download": "assets/materials/campaign-20261120-impact/currency.png",
+      "new": true,
+      "promo": "同一张报表，三种币种。\n同一张报表发给多个市场，货币符号、千分位和小数位都得对。用 Claude Code 写好格式测试，再交付一个能复用的多币种报表组件。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-keyboard",
+      "group": "business",
+      "title": "不用鼠标，也能注册。",
+      "description": "出海产品无障碍测试场景，验证只使用键盘也能走完整个注册流程。",
+      "image": "assets/materials/campaign-20261120-impact/keyboard.webp",
+      "download": "assets/materials/campaign-20261120-impact/keyboard.png",
+      "new": true,
+      "promo": "不用鼠标，也能注册。\n用键盘从注册页第一项一路走到提交，看看焦点顺序和错误提示是否清楚。用 Claude Code 编写测试，交付团队可以复跑的注册流程。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-bookcase",
+      "group": "parents",
+      "title": "家里这本书，放哪儿了？",
+      "description": "亲子共创场景。家长搭家庭藏书搜索页，孩子分类并贴标签。",
+      "image": "assets/materials/campaign-20261120-impact/bookcase.webp",
+      "download": "assets/materials/campaign-20261120-impact/bookcase.png",
+      "new": true,
+      "promo": "家里这本书，放哪儿了？\n想找的那本书总藏在最里面？家长用自己的 Claude 账号搭一个能搜索的家庭书架，孩子决定分类、贴标签，再试着找到它。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-shadow",
+      "group": "parents",
+      "title": "影子为什么换了方向？",
+      "description": "亲子科学动手场景。制作日影模拟页，再用真实观察对照。",
+      "image": "assets/materials/campaign-20261120-impact/shadow.webp",
+      "download": "assets/materials/campaign-20261120-impact/shadow.png",
+      "new": true,
+      "promo": "影子为什么换了方向？\n先在早上和午后各画一次影子。家长用 Claude 搭日影模拟页，孩子用实际观察验证影子的方向怎样变。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-reset-demo",
+      "group": "teachers",
+      "title": "演示重来，数据也归位。",
+      "description": "AI 教学开发场景。用样例数据和重置脚本，让演示可以从同一起点重新开始。",
+      "image": "assets/materials/campaign-20261120-impact/reset-demo.webp",
+      "download": "assets/materials/campaign-20261120-impact/reset-demo.png",
+      "new": true,
+      "promo": "演示重来，数据也归位。\n一轮课堂演示改过数据，下一轮想从头开始。用 Claude Code 写重置脚本，把样例数据还原到起点，每班都能重跑这段演示。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
+      "id": "impact-20261120-hint-card",
+      "group": "teachers",
+      "title": "卡住了，先拆一小步。",
+      "description": "AI 教学交互练习场景。把难题拆成按需展开的提示，给学员逐步尝试。",
+      "image": "assets/materials/campaign-20261120-impact/hint-card.webp",
+      "download": "assets/materials/campaign-20261120-impact/hint-card.png",
+      "new": true,
+      "promo": "卡住了，先拆一小步。\n学员卡住时，老师可以先给一个小提示。用 Claude Code 搭一份交互练习，让提示逐步展开，给学员留出自己尝试的空间。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
+    },
+    {
       "id": "premium-vol2-20261120-time",
       "group": "brand",
       "title": "把时间还给工作。",
       "description": "品牌口号海报。以银色机身和深蓝留白呈现美国加州托管的独享 Mac mini。",
       "image": "assets/materials/campaign-20261120-premium-vol2/time.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/time.png",
-      "new": true,
       "promo": "把时间还给工作。\n租一整台美国加州托管的 Mac mini，在自己的机器环境里运行 Claude Code、写代码和跑测试。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -56,7 +155,6 @@
       "description": "游戏本地化场景。检查多语言文本中的术语、变量与占位符，整理成供团队导入的文本表。",
       "image": "assets/materials/campaign-20261120-premium-vol2/localize.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/localize.png",
-      "new": true,
       "promo": "多一种语言，还是同一个世界。\n游戏加新语言时，术语、变量和占位符要对得上。用 Claude Code 辅助核对文本和导入格式，交付一张可以进项目复核的本地化文本表。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -66,7 +164,6 @@
       "description": "短剧制作场景。为分集剧本建立人物知情时间线，分清每个角色何时知道哪件事。",
       "image": "assets/materials/campaign-20261120-premium-vol2/continuity.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/continuity.png",
-      "new": true,
       "promo": "第十二集，他还认得这封信吗？\n拍到第十二集，人物还记不记得那封信？用 Claude Code 做剧情核对工具，把分集剧本整理成人物知情时间线，供编剧和场记复核。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -76,7 +173,6 @@
       "description": "出海团队场景。把范围与交期填进报价工具，生成可由团队审核的英文报价初稿。",
       "image": "assets/materials/campaign-20261120-premium-vol2/quote.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/quote.png",
-      "new": true,
       "promo": "开完会，报价就有了底稿。\n用 Claude Code 做一个内部报价工具。开完会，把项目范围、交期和待确认项填进去，生成英文报价初稿，再交给团队审核。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -86,7 +182,6 @@
       "description": "出海产品开发场景。编写英寸与毫米换算及校验逻辑，交付可测试的选型页。",
       "image": "assets/materials/campaign-20261120-premium-vol2/units.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/units.png",
-      "new": true,
       "promo": "客户用英寸，图纸用毫米。\n客户习惯英寸，工程图却用毫米。用 Claude Code 把单位换算、舍入和输入校验做进选型页，用样例规格测试再交付。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -96,7 +191,6 @@
       "description": "亲子逛展场景。家长搭互动导览页，孩子选一件展品并试讲。",
       "image": "assets/materials/campaign-20261120-premium-vol2/museum.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/museum.png",
-      "new": true,
       "promo": "这次逛展，孩子来当向导。\n家长用自己的 Claude 账号搭一个互动导览页，孩子负责选展品、整理想讲的内容，再把这趟逛展讲给家人听。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -106,7 +200,6 @@
       "description": "家庭共创场景。用样例用电数据制作图表页，让孩子找出峰值并说明依据。",
       "image": "assets/materials/campaign-20261120-premium-vol2/electricity.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/electricity.png",
-      "new": true,
       "promo": "哪一天，家里最费电？\n家长用 Claude 搭一页互动用电图表。孩子用样例数据找出哪天用电最多，再说说自己怎么看出来的。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -116,7 +209,6 @@
       "description": "AI 教学场景。把同一教学目标做成三档互动练习，供不同进度的学员使用。",
       "image": "assets/materials/campaign-20261120-premium-vol2/levels.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/levels.png",
-      "new": true,
       "promo": "同一堂课，三种进度。\n用 Claude Code 搭分级练习页，把同一个教学目标设计成三档题目。老师先亲自跑一遍，再按学员进度布置练习。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -126,7 +218,6 @@
       "description": "AI 教学场景。开发匿名反馈看板，按常见错因汇总作答情况，为讲评备课。",
       "image": "assets/materials/campaign-20261120-premium-vol2/feedback.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/feedback.png",
-      "new": true,
       "promo": "作业收齐，先找全班卡点。\n用 Claude Code 搭一个匿名反馈看板，把作业中的高频错因摆在一起。下堂课先讲大家最容易卡住的那一步。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
@@ -136,7 +227,6 @@
       "description": "季付方案海报。美国加州托管的独享 Mac mini，适合为一轮开发和上线留出三个月。",
       "image": "assets/materials/campaign-20261120-premium-vol2/quarter.webp",
       "download": "assets/materials/campaign-20261120-premium-vol2/quarter.png",
-      "new": true,
       "promo": "给下一次上线，留三个月。\n用一个季度推进下一次上线。独享 Mac mini 季付 95 折，US$481.65 / 3 个月，一次付清。\nClaude 订阅另计，使用须符合 Anthropic 地区与账号要求。\n👉 wodemac.com"
     },
     {
