@@ -40,13 +40,72 @@
   ],
   "items": [
     {
+      "id": "scene-20261120-game-build",
+      "group": "studios",
+      "title": "睡前跑构建，早上验版本",
+      "description": "独立游戏团队把需求、工具和夜间构建接成一条工作流。",
+      "image": "assets/materials/campaign-20261120-scenes/game-build.webp",
+      "download": "assets/materials/campaign-20261120-scenes/game-build.png",
+      "new": true,
+      "promo": "睡前跑构建，早上验版本。\n下班前用 Claude Code 整理需求、写工具，把构建任务交给美国加州的独享 Mac mini。第二天看构建和测试结果，团队再决定下一版改什么。\n👉 wodemac.com"
+    },
+    {
+      "id": "scene-20261120-short-drama",
+      "group": "studios",
+      "title": "先跑一集样片，再排整季产能",
+      "description": "从一集短剧开始，以能采用的镜头估算制作节奏。",
+      "image": "assets/materials/campaign-20261120-scenes/short-drama.webp",
+      "download": "assets/materials/campaign-20261120-scenes/short-drama.png",
+      "new": true,
+      "promo": "先跑一集样片，再排整季产能。\n先用 Claude Code 拆剧本、整理分镜，再用团队自己的视频工具跑一集样片。记录花了多久、有多少镜头能用，再用这组数据安排下一集。美国加州独享 Mac mini，可远程看进度。\n👉 wodemac.com"
+    },
+    {
+      "id": "scene-20261120-global-prototype",
+      "group": "business",
+      "title": "早一点拿原型，早一点问客户",
+      "description": "出海团队用 Codex 把产品想法推进到可测试的版本。",
+      "image": "assets/materials/campaign-20261120-scenes/global-prototype.webp",
+      "download": "assets/materials/campaign-20261120-scenes/global-prototype.png",
+      "new": true,
+      "promo": "早一点拿原型，早一点问客户。\n选一个要验证的需求，用加州独享 Mac mini 上的 Codex 做出可测试的原型。拿给真实客户试一遍，把反馈带回下一轮开发。\n👉 wodemac.com"
+    },
+    {
+      "id": "scene-20261120-family-weekend",
+      "group": "parents",
+      "title": "周末一起做个自己的小游戏",
+      "description": "家长操作工具，孩子想关卡、试玩并展示自己的作品。",
+      "image": "assets/materials/campaign-20261120-scenes/family-weekend.webp",
+      "download": "assets/materials/campaign-20261120-scenes/family-weekend.png",
+      "new": true,
+      "promo": "周末一起做个自己的小游戏。\n选孩子感兴趣的题目，一起画一关。家长用自己的账号操作 Claude Code，孩子负责想点子、试玩和解释为什么这么改。周末结束，一起把小游戏演示给家人。\n👉 wodemac.com"
+    },
+    {
+      "id": "scene-20261120-teacher-workshop",
+      "group": "teachers",
+      "title": "把做成的项目，变成一堂课",
+      "description": "从老师做过的真实工具出发，带学员做出自己的作品。",
+      "image": "assets/materials/campaign-20261120-scenes/teacher-workshop.webp",
+      "download": "assets/materials/campaign-20261120-scenes/teacher-workshop.png",
+      "new": true,
+      "promo": "把做成的项目，变成一堂课。\n先在加州独享 Mac mini 上用 Claude Code 做出一个你真的会用的小工具。把过程拆成学员能跟做的步骤，再留一个空间让他们改出自己的版本。\n👉 wodemac.com"
+    },
+    {
+      "id": "scene-20261120-first-task",
+      "group": "service",
+      "title": "第一次连上，就从你的任务开始",
+      "description": "从远程连接开始，用自己的账号试跑一个真实任务。",
+      "image": "assets/materials/campaign-20261120-scenes/first-task.webp",
+      "download": "assets/materials/campaign-20261120-scenes/first-task.png",
+      "new": true,
+      "promo": "第一次连上，就从你的任务开始。\n带一项手头正要做的任务来。WodeMac 协助你远程连上加州的独享 Mac mini，确认工具可用，再用本人通过官方渠道开通的账号试跑一次。\n👉 wodemac.com"
+    },
+    {
       "id": "studio-drama-night",
       "group": "studios",
       "title": "白天定创意，夜里持续跑任务",
       "description": "电影感夜景，AI 任务队列持续运行。短剧团队的产能总纲。",
       "image": "assets/materials/campaign-20261111-studio/drama-night.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-night.png",
-      "new": true,
       "promo": "白天定创意，夜里持续跑任务。\n美国加州独享一台 Mac mini M6，分镜、镜头、素材排进队列，7×24 小时不停跑，第二天直接挑结果。\n👉 wodemac.com"
     },
     {
@@ -56,7 +115,6 @@
       "description": "紫色霓虹，短剧 / 漫剧 / 影视三块屏。",
       "image": "assets/materials/campaign-20261111-studio/drama-script.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-script.png",
-      "new": true,
       "promo": "剧本写好了，镜头一夜跑出来。\n拆分镜、批量出镜头，交给加州那台不关机的 Mac。用你们自己的 AI 工具账号，手机、电脑随时远程看进度。\n👉 wodemac.com"
     },
     {
@@ -66,7 +124,6 @@
       "description": "金色进度卡片：分镜已完成、镜头生成中、关电脑也不停。",
       "image": "assets/materials/campaign-20261111-studio/drama-panels.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-panels.png",
-      "new": true,
       "promo": "做 AI 短剧 / 漫剧 / 影视，别让环境拖住创意。\n分镜马上拆，镜头夜里批量跑，任务跑起来关掉自己的电脑也不停。美国加州独享 Mac mini M6。\n👉 wodemac.com"
     },
     {
@@ -76,7 +133,6 @@
       "description": "红蓝对比。本地电脑一关任务就停 → 加州独享 Mac 持续生产。",
       "image": "assets/materials/campaign-20261111-studio/drama-stable.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-stable.png",
-      "new": true,
       "promo": "有创意，却没有稳定的生产环境？\n合上电脑任务就停、网络一断就重来。加州独享 Mac，7×24 小时持续生产。\n👉 wodemac.com"
     },
     {
@@ -86,7 +142,6 @@
       "description": "左右撕裂构图，好莱坞夜景与任务完成清单。",
       "image": "assets/materials/campaign-20261111-studio/drama-global.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-global.png",
-      "new": true,
       "promo": "创作面向全球。\n美国加州独享整台 Mac，剧本、分镜、视频制作 7×24 小时在线跑，支持短剧、漫剧、影视 AI 工作流。\n👉 wodemac.com"
     },
     {
@@ -96,7 +151,6 @@
       "description": "好莱坞暮光，常见问题与解决方案对照。",
       "image": "assets/materials/campaign-20261111-studio/drama-hollywood.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-hollywood.png",
-      "new": true,
       "promo": "做海外内容、短剧，就用 WodeMac。\n在自己电脑上跑 AI 内容，一关机就停、排队太久、出门看不到进度。加州独享 Mac mini M6，任务 24 小时不停跑。\n👉 wodemac.com"
     },
     {
@@ -106,7 +160,6 @@
       "description": "加州海岸日落，痛点清单与产品卖点。",
       "image": "assets/materials/campaign-20261111-studio/drama-freedom.webp",
       "download": "assets/materials/campaign-20261111-studio/drama-freedom.png",
-      "new": true,
       "promo": "有创意，却被电脑拖住？\n交给加州的 Mac，24 小时不停跑。整台独享、高性能 M6、稳定运行 Claude Code。\n👉 wodemac.com"
     },
     {
@@ -116,7 +169,6 @@
       "description": "白底极简产品风。",
       "image": "assets/materials/campaign-20261111-studio/code-workflow.webp",
       "download": "assets/materials/campaign-20261111-studio/code-workflow.png",
-      "new": true,
       "promo": "告别低效编程。\nMac mini M6 遇上 Claude Code，让想法更快变成可用的产品。美国加州独享一台，用你们自己的 AI 工具账号，7×24 小时在线。\n👉 wodemac.com"
     },
     {
@@ -126,7 +178,6 @@
       "description": "复古拼贴海报风。",
       "image": "assets/materials/campaign-20261111-studio/code-collage.webp",
       "download": "assets/materials/campaign-20261111-studio/code-collage.png",
-      "new": true,
       "promo": "告别低效编程！\nMac mini M6 + Claude Code，自然语言写代码、快速搭原型、重构优化。加州独享 Mac，用你们自己的 AI 工具账号，7×24 小时在线。\n👉 wodemac.com"
     },
     {
@@ -136,7 +187,6 @@
       "description": "蓝紫霓虹科技风。",
       "image": "assets/materials/campaign-20261111-studio/code-neon.webp",
       "download": "assets/materials/campaign-20261111-studio/code-neon.png",
-      "new": true,
       "promo": "告别低效编程。\n用 Claude Code + Mac mini M6，理解需求、规划方案、生成代码、调试上线一条龙。美国加州独享一台，7×24 小时在线。\n👉 wodemac.com"
     },
     {
@@ -146,7 +196,6 @@
       "description": "国漫风，加班程序员的前后对比。",
       "image": "assets/materials/campaign-20261111-studio/code-comic.webp",
       "download": "assets/materials/campaign-20261111-studio/code-comic.png",
-      "new": true,
       "promo": "需求一堆写不完？调试半天没解决？\n用 Claude Code + 加州独享 Mac mini M6，从想法到可运行代码一步到位。7×24 小时在线。\n👉 wodemac.com"
     },
     {
@@ -156,7 +205,6 @@
       "description": "暗色荧光绿风格。",
       "image": "assets/materials/campaign-20261111-studio/code-green.webp",
       "download": "assets/materials/campaign-20261111-studio/code-green.png",
-      "new": true,
       "promo": "告别低效编程！\n用 Claude Code，把想法更快变成可运行的产品。美国加州独享 Mac mini M6，7×24 小时在线。\n👉 wodemac.com"
     },
     {
